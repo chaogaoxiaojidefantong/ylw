@@ -1,0 +1,14 @@
+server:
+  port: 9999
+
+spring:
+  application:
+    name: zipkinService
+  profiles:
+    active: dev
+
+
+eureka:
+  client:
+    healthcheck:
+      enabled: false   #关闭健康检查,不然无法注册到eureka注册中心

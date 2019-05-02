@@ -1,0 +1,62 @@
+spring:
+  zipkin.base-url: http://localhost:9999
+  application:
+    name: adminService
+  datasource:
+    name:
+    url: jdbc:mysql://localhost:3306/canteen?useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    filters: stat
+    maxActive: 20
+    initialSize: 1
+    maxWait: 60000
+    minIdle: 1
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: select 'x'
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+    maxOpenPreparedStatements: 20
+    thymeleaf:
+      mode: HTML5
+      #出现错误时, 直接抛出异常
+    mvc:
+      throw-exception-if-no-handler-found: true
+      #不要为我们工程中的资源文件建立映射
+    resources:
+      add-mappings: false
+    redis:
+      host: localhost
+      port: 6379
+logging:
+  config: classpath:logback-boot.xml  # 默认logback.xml配置文件目录
+  level:
+    com.canteen.adminService.dao: debug  #打印sql
+
+eureka:
+  client:
+    #    register-with-eureka: false #把自己当成客户端
+    #    fetch-registry: false
+    healthcheck:
+      enabled: false   #关闭健康检查，不然无法注册到eureka注册中心
+    #普通安全级别设置访问Eureka的访问密码
+    serviceUrl:
+      defaultZone: http://localhost:10000/eureka
+  instance:
+    prefer-ip-address: true
+    #自定义 eureka 监控服务的ip服务名等
+    instance-id: ${spring.application.name}:${spring.cloud.client.ipAddress}:${spring.application.instance_id:${server.port}}
+#ribbon.eureka.enable: true
+
+file:
+  dir: D:/canteen-upload
+  url: http://image.xikecanteen.com
+
+
+
+

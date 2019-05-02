@@ -1,0 +1,296 @@
+2019-04-25 13:46:06,062 INFO (SpringApplication.java:597)- The following profiles are active: dev
+2019-04-25 13:46:20,811 INFO (StartupInfoLogger.java:57)- Started AdminServiceApp in 19.164 seconds (JVM running for 21.798)
+2019-04-25 14:02:17,093 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT user_id,user_phone,user_pwd,user_email,user_status,user_name,canteen_id,verify_code FROM user WHERE user_pwd = ? AND user_email = ? 
+2019-04-25 14:02:17,112 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 310dcbbf4cce62f762a2aaa148d556bd(String), 333@qq.com(String)
+2019-04-25 14:02:17,124 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 14:17:18,887 INFO (SpringApplication.java:597)- The following profiles are active: dev
+2019-04-25 14:17:33,515 INFO (StartupInfoLogger.java:57)- Started AdminServiceApp in 19.434 seconds (JVM running for 21.516)
+2019-04-25 14:29:30,907 INFO (SpringApplication.java:597)- The following profiles are active: dev
+2019-04-25 14:29:51,609 INFO (StartupInfoLogger.java:57)- Started AdminServiceApp in 26.368 seconds (JVM running for 28.947)
+2019-04-25 14:30:52,055 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 14:30:52,084 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 14:30:52,105 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 14:31:22,765 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 14:31:22,766 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 14:31:22,770 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 14:32:15,392 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 14:32:15,393 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 14:32:15,398 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 14:33:11,686 INFO (SpringApplication.java:597)- The following profiles are active: dev
+2019-04-25 14:33:26,058 INFO (StartupInfoLogger.java:57)- Started AdminServiceApp in 18.968 seconds (JVM running for 20.611)
+2019-04-25 14:42:26,910 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 14:42:26,933 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 14:42:26,944 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 14:43:03,565 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 14:43:03,566 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 14:43:03,571 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 14:43:14,681 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 14:43:14,682 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 14:43:14,686 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 14:45:40,500 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 14:45:40,501 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 14:45:40,507 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 14:46:22,487 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 14:46:22,488 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 14:46:22,494 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 14:47:28,076 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 14:47:28,077 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 14:47:28,082 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 14:54:21,456 INFO (SpringApplication.java:597)- The following profiles are active: dev
+2019-04-25 14:54:40,456 INFO (StartupInfoLogger.java:57)- Started AdminServiceApp in 24.499 seconds (JVM running for 27.476)
+2019-04-25 15:01:49,073 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT user_id,user_phone,user_pwd,user_email,user_status,user_name,canteen_id,verify_code FROM user WHERE user_pwd = ? AND user_email = ? 
+2019-04-25 15:01:49,092 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 310dcbbf4cce62f762a2aaa148d556bd(String), 333@qq.com(String)
+2019-04-25 15:01:49,104 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 15:06:41,293 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT user_id,user_phone,user_pwd,user_email,user_status,user_name,canteen_id,verify_code FROM user WHERE user_pwd = ? AND user_email = ? 
+2019-04-25 15:06:41,294 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 310dcbbf4cce62f762a2aaa148d556bd(String), 333@qq.com(String)
+2019-04-25 15:06:41,296 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 15:07:53,443 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 15:07:53,445 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 15:07:53,447 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 15:10:38,986 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 15:10:38,987 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 15:10:38,989 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 15:10:40,565 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 15:10:40,566 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 15:10:40,568 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 15:25:46,614 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 15:25:46,616 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 15:25:46,618 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 15:26:00,356 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 15:26:00,357 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 15:26:00,359 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 15:28:48,453 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 15:28:48,454 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 15:28:48,456 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 15:30:22,322 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 15:30:22,324 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 15:30:22,326 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 15:30:40,587 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 15:30:40,588 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 15:30:40,590 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 15:31:12,048 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 15:31:12,049 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 15:31:12,052 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 15:32:28,596 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 15:32:28,597 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 15:32:28,602 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 15:33:34,209 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 15:33:34,210 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 15:33:34,212 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 15:35:19,309 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: UPDATE canteen SET canteen_id = ?,canteen_label = ?,canteen_name = ?,canteen_des = ?,canteen_image = ? WHERE canteen_id = ? AND canteen_label = ? AND canteen_name = ? AND canteen_des = ? AND canteen_image = ? 
+2019-04-25 15:35:19,313 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer), 湘菜(String), 二食堂(String), 辣(String), null, 8(Integer), 湘菜(String), 二食堂(String), 辣(String), null
+2019-04-25 15:35:19,317 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 0
+2019-04-25 15:36:55,960 INFO (SpringApplication.java:597)- The following profiles are active: dev
+2019-04-25 15:37:10,840 INFO (StartupInfoLogger.java:57)- Started AdminServiceApp in 19.811 seconds (JVM running for 22.058)
+2019-04-25 15:38:26,527 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 15:38:26,552 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 15:38:26,565 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 15:38:35,562 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 15:38:35,563 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 15:38:35,566 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 15:39:03,862 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: UPDATE canteen SET canteen_id = ?,canteen_label = ?,canteen_name = ?,canteen_des = ?,canteen_image = ? WHERE canteen_id = ? AND canteen_label = ? AND canteen_name = ? AND canteen_des = ? AND canteen_image = ? 
+2019-04-25 15:39:03,864 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer), 湘菜(String), 二食堂(String), 辣(String), null, 8(Integer), 湘菜(String), 二食堂(String), 辣(String), null
+2019-04-25 15:39:03,867 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 0
+2019-04-25 16:21:18,046 INFO (SpringApplication.java:597)- The following profiles are active: dev
+2019-04-25 16:21:32,602 INFO (StartupInfoLogger.java:57)- Started AdminServiceApp in 19.066 seconds (JVM running for 20.807)
+2019-04-25 16:30:59,385 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 16:30:59,427 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 16:30:59,450 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 16:31:23,441 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: UPDATE canteen SET canteen_id = ?,canteen_label = ?,canteen_name = ?,canteen_des = ?,canteen_image = ? WHERE canteen_id = ? AND canteen_label = ? AND canteen_name = ? AND canteen_des = ? AND canteen_image = ? 
+2019-04-25 16:31:23,445 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer), 超级辣(String), (String), 难吃(String), null, 8(Integer), 超级辣(String), (String), 难吃(String), null
+2019-04-25 16:31:23,448 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 0
+2019-04-25 16:33:18,207 INFO (SpringApplication.java:597)- The following profiles are active: dev
+2019-04-25 16:33:34,331 INFO (StartupInfoLogger.java:57)- Started AdminServiceApp in 20.865 seconds (JVM running for 22.623)
+2019-04-25 16:34:17,772 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 16:34:17,798 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 16:34:17,813 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 16:35:33,212 INFO (SpringApplication.java:597)- The following profiles are active: dev
+2019-04-25 16:35:58,218 INFO (StartupInfoLogger.java:57)- Started AdminServiceApp in 32.07 seconds (JVM running for 34.471)
+2019-04-25 16:40:48,885 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 16:40:48,912 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 16:40:48,932 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 16:41:01,708 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: update canteen set canteen_label=?, canteen_name=?, canteen_des=? where canteen_id=? 
+2019-04-25 16:41:01,710 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 超辣(String), (String), (String), 8(Integer)
+2019-04-25 16:41:01,715 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2019-04-25 16:42:49,794 INFO (SpringApplication.java:597)- The following profiles are active: dev
+2019-04-25 16:43:05,113 INFO (StartupInfoLogger.java:57)- Started AdminServiceApp in 20.133 seconds (JVM running for 22.588)
+2019-04-25 16:45:07,901 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 16:45:07,928 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 16:45:07,941 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 16:45:25,087 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: update canteen set canteen_label=?, canteen_des=? where canteen_id=? 
+2019-04-25 16:45:25,090 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 狠辣(String), 便宜(String), 8(Integer)
+2019-04-25 16:45:25,096 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2019-04-25 16:47:36,984 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 16:47:36,985 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 16:47:36,988 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 16:54:27,127 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 16:54:27,128 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 16:54:27,130 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 20:36:29,585 INFO (SpringApplication.java:597)- The following profiles are active: dev
+2019-04-25 20:36:48,789 INFO (StartupInfoLogger.java:57)- Started AdminServiceApp in 24.306 seconds (JVM running for 26.371)
+2019-04-25 20:40:21,576 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 20:40:21,601 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 20:40:21,625 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 20:44:17,089 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: update canteen set where canteen_id=? 
+2019-04-25 20:44:17,090 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 20:45:07,419 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 20:45:07,420 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 20:45:07,423 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 20:45:57,514 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 20:45:57,515 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 20:45:57,517 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 20:46:59,224 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 20:46:59,226 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 20:46:59,229 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 20:48:00,374 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 20:48:00,375 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 20:48:00,379 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 20:49:18,886 INFO (SpringApplication.java:597)- The following profiles are active: dev
+2019-04-25 20:49:57,391 INFO (StartupInfoLogger.java:57)- Started AdminServiceApp in 45.986 seconds (JVM running for 53.492)
+2019-04-25 21:01:19,868 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 21:01:19,897 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 21:01:19,914 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 21:02:15,209 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 21:02:15,211 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 21:02:15,216 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 21:50:41,467 INFO (SpringApplication.java:597)- The following profiles are active: dev
+2019-04-25 21:51:03,554 INFO (StartupInfoLogger.java:57)- Started AdminServiceApp in 28.708 seconds (JVM running for 33.075)
+2019-04-25 21:52:22,735 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 21:52:22,763 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 21:52:22,796 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 21:53:45,770 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 21:53:45,772 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 21:53:45,775 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 21:55:41,393 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 21:55:41,394 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 21:55:41,398 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 21:56:42,056 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 21:56:42,058 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 21:56:42,063 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 22:02:09,469 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 22:02:09,470 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 22:02:09,472 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 22:08:47,233 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 22:08:47,237 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 22:08:47,240 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 22:08:47,241 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 22:08:47,243 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 22:08:47,246 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 22:08:57,816 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 22:08:57,817 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 22:08:57,822 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 22:08:57,868 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 22:08:57,869 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 22:08:57,873 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 22:11:02,853 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 22:11:02,854 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 22:11:02,858 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 22:11:02,890 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 22:11:02,891 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 22:11:02,894 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 22:15:31,055 INFO (SpringApplication.java:597)- The following profiles are active: dev
+2019-04-25 22:15:49,300 INFO (StartupInfoLogger.java:57)- Started AdminServiceApp in 23.583 seconds (JVM running for 25.422)
+2019-04-25 22:17:39,119 INFO (SpringApplication.java:597)- The following profiles are active: dev
+2019-04-25 22:17:56,505 INFO (StartupInfoLogger.java:57)- Started AdminServiceApp in 21.942 seconds (JVM running for 23.982)
+2019-04-25 22:20:32,505 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 22:20:32,531 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 22:20:32,573 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 22:20:32,575 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 22:20:32,575 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 22:20:32,584 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 22:23:25,655 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 22:23:25,656 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 22:23:25,661 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 22:23:26,163 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 22:23:26,164 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 22:23:26,167 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 22:24:09,310 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 22:24:09,311 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 22:24:09,315 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 22:24:13,648 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 22:24:13,649 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 22:24:13,653 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 22:24:13,688 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 22:24:13,689 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 22:24:13,693 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 22:24:42,462 INFO (SpringApplication.java:597)- The following profiles are active: dev
+2019-04-25 22:24:56,811 INFO (StartupInfoLogger.java:57)- Started AdminServiceApp in 18.502 seconds (JVM running for 20.095)
+2019-04-25 22:25:42,190 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 22:25:42,218 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 22:25:42,233 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 22:25:42,638 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 22:25:42,638 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 22:25:42,640 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 22:27:15,521 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 22:27:15,523 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 22:27:15,526 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 22:27:20,227 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 22:27:20,228 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 22:27:20,232 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 22:27:43,777 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 22:27:43,778 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 22:27:43,782 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 22:30:51,620 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 22:30:51,621 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 22:30:51,798 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 22:30:51,800 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 22:30:51,803 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 22:30:51,992 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 22:30:51,993 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 22:30:51,994 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 22:30:52,154 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 22:30:52,154 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 22:30:52,155 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 22:30:52,345 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 22:30:59,150 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 22:30:59,152 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 22:30:59,156 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 22:30:59,197 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 22:30:59,198 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 22:30:59,201 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 22:32:24,048 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 22:32:24,048 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 22:32:24,051 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 22:32:32,054 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 22:32:32,055 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 22:32:32,059 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 22:32:32,091 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 22:32:32,092 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 22:32:32,094 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 22:34:23,336 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 22:34:23,337 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 22:34:23,340 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 22:34:23,385 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 22:34:23,387 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 22:34:23,395 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 22:34:57,172 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 22:34:57,173 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 22:34:57,180 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 22:34:57,220 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 22:34:57,221 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 22:34:57,225 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 22:35:51,928 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 22:35:51,929 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 22:35:51,933 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 22:35:51,934 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 22:35:51,937 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 22:35:51,941 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 22:35:59,620 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 22:35:59,621 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 22:35:59,623 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 22:36:07,028 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 22:36:07,029 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 22:36:07,031 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 22:36:07,069 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 22:36:07,070 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 22:36:07,073 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 22:44:22,802 INFO (SpringApplication.java:597)- The following profiles are active: dev
+2019-04-25 22:44:42,520 INFO (StartupInfoLogger.java:57)- Started AdminServiceApp in 26.362 seconds (JVM running for 29.523)
+2019-04-25 22:46:36,533 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 22:46:36,559 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 22:46:36,580 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 22:46:36,581 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-25 22:46:36,582 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-25 22:46:36,598 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-25 22:51:32,377 INFO (SpringApplication.java:597)- The following profiles are active: dev
+2019-04-25 22:51:47,422 INFO (StartupInfoLogger.java:57)- Started AdminServiceApp in 20.084 seconds (JVM running for 21.691)

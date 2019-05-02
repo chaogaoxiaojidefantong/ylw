@@ -1,0 +1,1203 @@
+2019-04-28 12:17:36,084 INFO (SpringApplication.java:597)- The following profiles are active: dev
+2019-04-28 12:17:50,902 INFO (StartupInfoLogger.java:57)- Started AdminServiceApp in 19.487 seconds (JVM running for 21.667)
+2019-04-28 12:54:37,713 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT user_id,user_phone,user_pwd,user_email,user_status,user_name,canteen_id,verify_code FROM user WHERE user_pwd = ? AND user_email = ? 
+2019-04-28 12:54:37,734 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 310dcbbf4cce62f762a2aaa148d556bd(String), 333@qq.com(String)
+2019-04-28 12:54:37,750 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 12:54:37,910 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 12:54:37,912 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 12:54:37,917 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 12:54:41,078 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE canteen_id = ? 
+2019-04-28 12:54:41,079 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 12:54:41,085 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2019-04-28 12:54:41,668 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE canteen_id = ? 
+2019-04-28 12:54:41,668 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 12:54:41,671 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2019-04-28 12:55:42,518 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE canteen_id = ? 
+2019-04-28 12:55:42,519 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 12:55:42,523 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2019-04-28 12:56:44,874 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE canteen_id = ? 
+2019-04-28 12:56:44,875 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 12:56:44,882 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2019-04-28 12:56:44,922 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE canteen_id = ? 
+2019-04-28 12:56:44,923 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 12:56:44,925 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2019-04-28 12:56:55,990 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE canteen_id = ? 
+2019-04-28 12:56:55,991 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 12:56:55,994 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2019-04-28 12:57:00,842 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE canteen_id = ? 
+2019-04-28 12:57:00,843 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 12:57:00,845 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2019-04-28 12:57:16,355 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE canteen_id = ? 
+2019-04-28 12:57:16,356 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 12:57:16,359 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2019-04-28 12:57:21,865 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE canteen_id = ? 
+2019-04-28 12:57:21,866 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 12:57:21,869 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2019-04-28 12:57:43,298 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE canteen_id = ? 
+2019-04-28 12:57:43,300 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 12:57:43,302 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2019-04-28 12:57:49,809 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE canteen_id = ? 
+2019-04-28 12:57:49,810 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 12:57:49,813 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2019-04-28 12:58:05,210 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE canteen_id = ? 
+2019-04-28 12:58:05,211 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 12:58:05,213 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2019-04-28 12:58:12,231 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE canteen_id = ? 
+2019-04-28 12:58:12,232 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 12:58:12,235 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2019-04-28 12:58:12,818 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE canteen_id = ? 
+2019-04-28 12:58:12,820 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 12:58:12,825 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2019-04-28 12:58:20,683 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE canteen_id = ? 
+2019-04-28 12:58:20,684 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 12:58:20,687 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2019-04-28 12:58:44,517 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE canteen_id = ? 
+2019-04-28 12:58:44,518 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 12:58:44,522 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2019-04-28 12:58:51,245 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE canteen_id = ? 
+2019-04-28 12:58:51,246 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 12:58:51,248 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2019-04-28 12:59:04,342 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE canteen_id = ? 
+2019-04-28 12:59:04,343 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 12:59:04,345 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2019-04-28 12:59:10,541 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE canteen_id = ? 
+2019-04-28 12:59:10,542 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 12:59:10,544 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2019-04-28 12:59:26,739 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE canteen_id = ? 
+2019-04-28 12:59:26,740 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 12:59:26,743 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2019-04-28 12:59:39,498 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE canteen_id = ? 
+2019-04-28 12:59:39,499 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 12:59:39,502 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2019-04-28 12:59:53,635 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE canteen_id = ? 
+2019-04-28 12:59:53,637 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 12:59:53,639 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2019-04-28 13:00:11,285 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE canteen_id = ? 
+2019-04-28 13:00:11,286 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:00:11,289 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2019-04-28 13:00:11,329 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE canteen_id = ? 
+2019-04-28 13:00:11,330 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:00:11,333 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2019-04-28 13:00:22,397 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE canteen_id = ? 
+2019-04-28 13:00:22,398 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:00:22,400 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2019-04-28 13:00:37,457 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE canteen_id = ? 
+2019-04-28 13:00:37,458 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:00:37,460 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2019-04-28 13:00:40,120 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE canteen_id = ? 
+2019-04-28 13:00:40,121 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:00:40,125 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2019-04-28 13:01:34,431 INFO (SpringApplication.java:597)- The following profiles are active: dev
+2019-04-28 13:01:57,039 INFO (StartupInfoLogger.java:57)- Started AdminServiceApp in 29.706 seconds (JVM running for 33.566)
+2019-04-28 13:04:41,309 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE canteen_id = ? 
+2019-04-28 13:04:41,498 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:04:41,528 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2019-04-28 13:04:41,565 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 13:04:41,566 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:04:41,570 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:06:24,294 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE canteen_id = ? 
+2019-04-28 13:06:24,295 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:06:24,299 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2019-04-28 13:06:30,025 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE canteen_id = ? 
+2019-04-28 13:06:30,027 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:06:30,031 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2019-04-28 13:06:43,268 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: delete from food where food_id in ( ? , ? ) 
+2019-04-28 13:06:43,270 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String), 5(String)
+2019-04-28 13:06:43,274 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 2
+2019-04-28 13:07:05,702 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE canteen_id = ? 
+2019-04-28 13:07:05,705 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:07:05,711 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-04-28 13:07:05,751 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 13:07:05,752 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:07:05,755 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:07:08,136 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE canteen_id = ? 
+2019-04-28 13:07:08,139 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:07:08,143 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-04-28 13:07:08,868 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE canteen_id = ? 
+2019-04-28 13:07:08,869 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:07:08,871 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-04-28 13:07:09,630 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE canteen_id = ? 
+2019-04-28 13:07:09,630 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:07:09,633 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-04-28 13:07:11,232 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE canteen_id = ? 
+2019-04-28 13:07:11,233 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:07:11,235 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-04-28 13:07:11,908 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE canteen_id = ? 
+2019-04-28 13:07:11,909 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:07:11,912 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-04-28 13:07:15,962 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE canteen_id = ? 
+2019-04-28 13:07:15,963 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:07:15,965 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-04-28 13:07:26,381 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 13:07:26,382 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:07:26,385 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:10:21,254 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 13:10:21,254 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:10:21,257 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:10:30,703 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 13:10:30,704 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:10:30,709 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:10:48,944 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 13:10:48,946 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:10:48,951 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:11:51,468 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 13:11:51,469 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:11:51,471 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:11:51,778 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 13:11:51,779 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:11:51,782 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:12:18,501 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 13:12:18,502 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:12:18,506 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:15:05,545 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: update canteen set canteen_id=? ,canteen_image=? where canteen_id=? 
+2019-04-28 13:15:05,546 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer), http://image.xikecanteen.com/canteen/8/ershitang.png(String), 8(Integer)
+2019-04-28 13:15:05,555 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2019-04-28 13:15:50,744 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 13:15:50,744 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:15:50,748 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:16:06,626 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 13:16:06,626 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:16:06,630 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:16:07,108 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 13:16:07,108 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:16:07,110 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:16:11,078 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: update canteen set canteen_id=? ,canteen_image=? where canteen_id=? 
+2019-04-28 13:16:11,079 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer), http://image.xikecanteen.com/canteen/8/jipai.png(String), 8(Integer)
+2019-04-28 13:16:11,083 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2019-04-28 13:16:35,313 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 13:16:35,314 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:16:35,317 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:16:46,460 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 13:16:46,462 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:16:46,467 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:16:51,489 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: update canteen set canteen_id=? ,canteen_image=? where canteen_id=? 
+2019-04-28 13:16:51,490 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer), http://image.xikecanteen.com/canteen/8/kaochang.png(String), 8(Integer)
+2019-04-28 13:16:51,494 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2019-04-28 13:16:55,260 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: update canteen set canteen_id=? ,canteen_image=? where canteen_id=? 
+2019-04-28 13:16:55,261 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer), http://image.xikecanteen.com/canteen/8/luroufan.png(String), 8(Integer)
+2019-04-28 13:16:55,265 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2019-04-28 13:18:12,662 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 13:18:12,663 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:18:12,666 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:18:12,726 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 13:18:12,727 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:18:12,733 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:19:03,697 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 13:19:03,698 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:19:03,701 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:19:03,742 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 13:19:03,743 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:19:03,746 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:19:13,483 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: update canteen set canteen_id=? ,canteen_image=? where canteen_id=? 
+2019-04-28 13:19:13,483 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer), http://image.xikecanteen.com/canteen/8/jipai.png(String), 8(Integer)
+2019-04-28 13:19:13,487 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2019-04-28 13:20:04,098 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE canteen_id = ? 
+2019-04-28 13:20:04,098 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:20:04,100 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-04-28 13:20:04,683 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE canteen_id = ? 
+2019-04-28 13:20:04,684 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:20:04,687 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-04-28 13:20:05,927 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 13:20:05,928 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:20:05,930 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:20:10,839 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: update canteen set canteen_id=? ,canteen_image=? where canteen_id=? 
+2019-04-28 13:20:10,840 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer), http://image.xikecanteen.com/canteen/8/kaochang.png(String), 8(Integer)
+2019-04-28 13:20:10,845 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2019-04-28 13:20:18,604 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE canteen_id = ? 
+2019-04-28 13:20:18,605 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:20:18,608 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-04-28 13:20:19,535 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE food_id = ? 
+2019-04-28 13:20:19,538 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Long)
+2019-04-28 13:20:19,541 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:20:21,687 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE canteen_id = ? 
+2019-04-28 13:20:21,688 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:20:21,690 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-04-28 13:20:22,324 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE food_id = ? 
+2019-04-28 13:20:22,325 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(Long)
+2019-04-28 13:20:22,327 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:20:23,824 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE canteen_id = ? 
+2019-04-28 13:20:23,824 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:20:23,827 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-04-28 13:20:24,480 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE food_id = ? 
+2019-04-28 13:20:24,480 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(Long)
+2019-04-28 13:20:24,482 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:20:26,695 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE canteen_id = ? 
+2019-04-28 13:20:26,696 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:20:26,700 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-04-28 13:20:28,389 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE canteen_id = ? 
+2019-04-28 13:20:28,389 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:20:28,391 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-04-28 13:20:30,218 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: delete from food where food_id in ( ? ) 
+2019-04-28 13:20:30,218 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2019-04-28 13:20:30,222 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2019-04-28 13:20:50,758 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE canteen_id = ? 
+2019-04-28 13:20:50,759 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:20:50,762 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2019-04-28 13:21:08,130 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE canteen_id = ? 
+2019-04-28 13:21:08,131 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:21:08,134 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2019-04-28 13:21:16,976 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE canteen_id = ? 
+2019-04-28 13:21:16,977 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:21:16,981 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2019-04-28 13:21:33,209 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE canteen_id = ? 
+2019-04-28 13:21:33,210 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:21:33,212 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2019-04-28 13:21:33,880 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE canteen_id = ? 
+2019-04-28 13:21:33,881 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:21:33,883 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2019-04-28 13:21:34,454 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE canteen_id = ? 
+2019-04-28 13:21:34,455 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:21:34,457 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2019-04-28 13:21:48,173 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: INSERT INTO food ( food_id,food_describe,food_price,food_image,canteen_id,food_name ) VALUES( ?,?,?,?,?,? ) 
+2019-04-28 13:21:48,174 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: null, 好吃(String), 2(Integer), null, 8(Integer), 烤肠(String)
+2019-04-28 13:21:48,184 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2019-04-28 13:21:49,219 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE canteen_id = ? 
+2019-04-28 13:21:49,220 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:21:49,221 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-04-28 13:21:49,986 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE food_id = ? 
+2019-04-28 13:21:49,986 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 6(Long)
+2019-04-28 13:21:49,988 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:21:53,739 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: update food set food_id=? ,food_image = ? where food_id = ? 
+2019-04-28 13:21:53,740 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 6(Long), http://image.xikecanteen.com/canteen/8/6/kaochang.png(String), 6(Long)
+2019-04-28 13:21:53,743 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2019-04-28 13:22:14,563 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: update food set food_id=? ,food_image = ? where food_id = ? 
+2019-04-28 13:22:14,564 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 6(Long), http://image.xikecanteen.com/canteen/8/6/luroufan.png(String), 6(Long)
+2019-04-28 13:22:14,568 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2019-04-28 13:22:21,549 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE food_id = ? 
+2019-04-28 13:22:21,550 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 6(Long)
+2019-04-28 13:22:21,553 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:22:21,620 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 13:22:21,621 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:22:21,624 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:22:23,729 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE canteen_id = ? 
+2019-04-28 13:22:23,730 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:22:23,735 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-04-28 13:22:24,633 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE food_id = ? 
+2019-04-28 13:22:24,634 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 6(Long)
+2019-04-28 13:22:24,637 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:22:27,239 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: update food set food_id=? ,food_image = ? where food_id = ? 
+2019-04-28 13:22:27,241 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 6(Long), http://image.xikecanteen.com/canteen/8/6/kaochang.png(String), 6(Long)
+2019-04-28 13:22:27,248 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2019-04-28 13:22:34,543 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 13:22:34,544 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:22:34,547 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:22:39,498 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE canteen_id = ? 
+2019-04-28 13:22:39,499 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:22:39,502 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-04-28 13:22:40,375 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 13:22:40,376 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:22:40,378 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:22:43,368 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: update canteen set canteen_id=? ,canteen_image=? where canteen_id=? 
+2019-04-28 13:22:43,369 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer), http://image.xikecanteen.com/canteen/8/ershitang.png(String), 8(Integer)
+2019-04-28 13:22:43,373 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2019-04-28 13:32:56,923 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 13:32:56,924 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:32:56,927 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:32:56,963 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 13:32:56,963 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:32:56,966 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:33:25,897 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 13:33:25,899 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:33:25,903 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:33:25,915 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 13:33:25,915 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:33:25,918 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:33:27,347 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 13:33:27,348 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:33:27,352 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:33:27,399 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 13:33:27,400 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:33:27,403 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:34:55,086 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 13:34:55,087 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:34:55,089 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:34:55,094 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 13:34:55,094 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:34:55,097 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:35:19,605 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 13:35:19,607 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:35:19,611 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:35:19,621 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 13:35:19,621 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:35:19,623 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:35:28,202 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 13:35:28,203 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:35:28,206 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:35:28,216 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 13:35:28,216 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:35:28,218 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:35:31,481 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 13:35:31,481 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:35:31,485 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:35:31,503 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 13:35:31,503 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:35:31,507 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:36:04,979 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 13:36:04,980 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:36:04,982 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:36:05,307 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 13:36:05,307 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:36:05,309 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:36:10,252 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 13:36:10,253 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:36:10,261 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:36:10,278 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 13:36:10,279 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:36:10,281 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:37:01,896 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 13:37:01,897 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:37:01,900 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:37:01,942 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 13:37:01,943 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:37:01,945 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:37:24,894 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 13:37:24,894 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:37:24,897 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:37:24,926 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 13:37:24,927 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:37:24,929 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:37:29,084 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 13:37:29,085 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:37:29,088 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:37:29,098 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 13:37:29,099 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:37:29,101 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:37:38,009 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 13:37:38,010 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:37:38,013 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:37:38,028 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 13:37:38,029 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:37:38,031 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:37:46,976 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 13:37:46,977 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:37:46,980 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:37:47,002 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 13:37:47,002 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:37:47,004 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:37:57,400 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 13:37:57,401 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:37:57,404 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:37:57,449 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 13:37:57,449 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:37:57,452 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:38:07,967 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 13:38:07,967 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:38:07,970 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:38:08,220 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 13:38:08,220 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:38:08,222 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:38:38,381 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 13:38:38,382 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:38:38,385 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:38:38,675 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 13:38:38,676 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:38:38,678 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:38:43,838 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 13:38:43,839 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:38:43,844 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:38:43,859 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 13:38:43,860 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:38:43,862 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:38:54,831 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 13:38:54,832 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:38:54,835 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:38:55,099 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 13:38:55,100 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:38:55,102 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:39:19,072 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 13:39:19,073 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:39:19,077 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:39:19,094 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 13:39:19,095 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:39:19,097 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:40:08,482 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 13:40:08,482 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:40:08,485 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:40:08,519 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 13:40:08,519 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:40:08,523 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:40:22,700 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 13:40:22,701 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:40:22,704 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:40:22,769 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 13:40:22,769 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:40:22,772 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:41:09,891 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT user_id,user_phone,user_pwd,user_email,user_status,user_name,canteen_id,verify_code FROM user WHERE user_pwd = ? AND user_email = ? 
+2019-04-28 13:41:09,892 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 310dcbbf4cce62f762a2aaa148d556bd(String), 333@qq.com(String)
+2019-04-28 13:41:09,896 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:41:09,971 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 13:41:09,971 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:41:09,973 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:41:25,271 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 13:41:25,272 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:41:25,274 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:43:22,719 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 13:43:22,719 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:43:22,721 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:43:38,990 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 13:43:38,992 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:43:38,996 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:43:39,022 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 13:43:39,023 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:43:39,025 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:43:44,760 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE canteen_id = ? 
+2019-04-28 13:43:44,761 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:43:44,763 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-04-28 13:43:46,609 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE canteen_id = ? 
+2019-04-28 13:43:46,609 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:43:46,611 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-04-28 13:43:49,252 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE food_id = ? 
+2019-04-28 13:43:49,253 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Long)
+2019-04-28 13:43:49,255 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:43:53,066 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE canteen_id = ? 
+2019-04-28 13:43:53,068 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:43:53,070 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-04-28 13:44:04,003 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE canteen_id = ? 
+2019-04-28 13:44:04,004 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:44:04,007 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-04-28 13:44:04,869 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE canteen_id = ? 
+2019-04-28 13:44:04,869 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:44:04,872 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-04-28 13:44:05,904 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE canteen_id = ? 
+2019-04-28 13:44:05,905 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:44:05,908 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-04-28 13:44:06,945 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE canteen_id = ? 
+2019-04-28 13:44:06,946 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:44:06,948 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-04-28 13:44:07,465 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE canteen_id = ? 
+2019-04-28 13:44:07,466 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:44:07,469 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-04-28 13:46:56,508 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE canteen_id = ? 
+2019-04-28 13:46:56,509 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:46:56,511 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-04-28 13:46:56,947 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE canteen_id = ? 
+2019-04-28 13:46:56,947 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:46:56,950 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-04-28 13:46:58,192 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 13:46:58,193 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 13:46:58,196 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 13:47:55,411 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT user_id,user_phone,user_pwd,user_email,user_status,user_name,canteen_id,verify_code FROM user WHERE user_pwd = ? AND user_email = ? 
+2019-04-28 13:47:55,412 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 310dcbbf4cce62f762a2aaa148d556bd(String), 333@qq.com(String)
+2019-04-28 13:47:55,414 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 14:23:34,519 INFO (SpringApplication.java:597)- The following profiles are active: dev
+2019-04-28 14:23:56,021 INFO (StartupInfoLogger.java:57)- Started AdminServiceApp in 29.602 seconds (JVM running for 33.897)
+2019-04-28 14:30:47,174 INFO (SpringApplication.java:597)- The following profiles are active: dev
+2019-04-28 14:31:02,944 INFO (StartupInfoLogger.java:57)- Started AdminServiceApp in 20.237 seconds (JVM running for 22.076)
+2019-04-28 14:31:29,243 INFO (SpringApplication.java:597)- The following profiles are active: dev
+2019-04-28 14:31:42,090 INFO (StartupInfoLogger.java:57)- Started AdminServiceApp in 17.209 seconds (JVM running for 19.156)
+2019-04-28 14:32:37,824 INFO (SpringApplication.java:597)- The following profiles are active: dev
+2019-04-28 14:32:50,768 INFO (StartupInfoLogger.java:57)- Started AdminServiceApp in 17.132 seconds (JVM running for 18.787)
+2019-04-28 14:34:11,226 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT user_id,user_phone,user_pwd,user_email,user_status,user_name,canteen_id,verify_code FROM user WHERE user_pwd = ? AND user_email = ? 
+2019-04-28 14:34:11,242 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 310dcbbf4cce62f762a2aaa148d556bd(String), 333@qq.com(String)
+2019-04-28 14:34:11,256 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 16:45:12,928 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 16:45:12,932 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 16:45:12,939 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 16:45:21,029 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 16:45:21,030 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 16:45:21,035 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 16:45:21,064 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 16:45:21,065 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 16:45:21,067 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 16:45:23,642 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 16:45:23,643 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 16:45:23,645 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 16:45:40,017 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 16:45:40,018 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 16:45:40,021 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 16:47:17,588 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT user_id,user_phone,user_pwd,user_email,user_status,user_name,canteen_id,verify_code FROM user WHERE user_pwd = ? AND user_email = ? 
+2019-04-28 16:47:17,591 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 310dcbbf4cce62f762a2aaa148d556bd(String), 333@qq.com(String)
+2019-04-28 16:47:17,594 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 16:47:20,690 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 16:47:20,691 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 16:47:20,693 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 16:47:24,323 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 16:47:24,324 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 16:47:24,325 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 16:47:25,962 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 16:47:25,962 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 16:47:25,964 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 16:47:27,060 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 16:47:27,061 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 16:47:27,062 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 16:47:28,230 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 16:47:28,231 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 16:47:28,233 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 16:47:31,252 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 16:47:31,252 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 16:47:31,255 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 16:47:44,644 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 16:47:44,645 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 16:47:44,647 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 16:47:48,816 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT user_id,user_phone,user_pwd,user_email,user_status,user_name,canteen_id,verify_code FROM user WHERE canteen_id = ? 
+2019-04-28 16:47:48,820 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 16:47:48,822 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-04-28 16:47:50,736 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 16:47:50,739 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 16:47:50,744 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 16:48:46,487 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 16:48:46,487 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 16:48:46,490 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 16:48:49,613 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 16:48:49,614 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 16:48:49,616 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 16:52:36,065 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 16:52:36,066 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 16:52:36,070 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 16:52:38,698 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 16:52:38,699 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 16:52:38,704 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 16:54:30,812 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 16:54:30,815 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 16:54:30,817 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 16:54:44,063 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 16:54:44,064 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 16:54:44,065 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 16:54:49,986 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 16:54:49,987 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 16:54:49,988 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 16:54:58,376 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 16:54:58,377 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 16:54:58,381 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 16:55:03,832 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 16:55:03,833 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 16:55:03,835 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 16:55:06,088 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 16:55:06,089 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 9(Integer)
+2019-04-28 16:55:06,091 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 16:55:08,436 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 16:55:08,437 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 16:55:08,442 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 16:55:10,359 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 16:55:10,360 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 16:55:10,362 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 16:55:11,867 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 16:55:11,867 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 16:55:11,869 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 16:55:13,585 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 16:55:13,585 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 16:55:13,586 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 16:55:15,098 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 16:55:15,098 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 16:55:15,100 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 16:55:17,432 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 16:55:17,434 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 9(Integer)
+2019-04-28 16:55:17,435 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 17:01:06,641 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 17:01:06,642 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 17:01:06,644 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 17:01:08,689 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 17:01:08,690 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 17:01:08,692 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 17:01:10,530 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 17:01:10,531 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 17:01:10,533 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 17:01:12,663 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 17:01:12,664 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 9(Integer)
+2019-04-28 17:01:12,666 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 17:02:16,674 INFO (SpringApplication.java:597)- The following profiles are active: dev
+2019-04-28 17:02:31,571 INFO (StartupInfoLogger.java:57)- Started AdminServiceApp in 19.502 seconds (JVM running for 21.51)
+2019-04-28 19:52:29,464 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 19:52:29,503 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 9(Integer)
+2019-04-28 19:52:29,522 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 19:52:32,121 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 19:52:32,122 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 19:52:32,125 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 19:52:34,743 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 19:52:34,743 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 19:52:34,746 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 19:52:36,556 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 19:52:36,557 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 19:52:36,561 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 19:52:39,537 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 19:52:39,537 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 19:52:39,539 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 19:52:41,701 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 19:52:41,702 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 19:52:41,705 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 19:52:44,185 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 19:52:44,186 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 9(Integer)
+2019-04-28 19:52:44,189 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 19:53:35,564 INFO (SpringApplication.java:597)- The following profiles are active: dev
+2019-04-28 19:53:56,457 INFO (StartupInfoLogger.java:57)- Started AdminServiceApp in 28.883 seconds (JVM running for 32.042)
+2019-04-28 19:54:33,757 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 19:54:33,777 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 9(Integer)
+2019-04-28 19:54:33,791 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 19:56:42,849 INFO (SpringApplication.java:597)- The following profiles are active: dev
+2019-04-28 19:56:57,219 INFO (StartupInfoLogger.java:57)- Started AdminServiceApp in 19.582 seconds (JVM running for 21.339)
+2019-04-28 19:58:24,329 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 19:58:24,357 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 9(Integer)
+2019-04-28 19:58:24,372 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 19:58:27,174 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: update canteen set canteen_id=? ,canteen_image=? where canteen_id=? 
+2019-04-28 19:58:27,176 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 9(Integer), http://image.xikecanteen.com/canteen/9/1.png(String), 9(Integer)
+2019-04-28 19:58:27,184 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2019-04-28 19:58:29,805 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 19:58:29,806 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 19:58:29,808 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 19:58:31,404 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 19:58:31,406 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 9(Integer)
+2019-04-28 19:58:31,409 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 19:58:34,085 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 19:58:34,086 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 19:58:34,090 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 19:58:35,934 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 19:58:35,934 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 11(Integer)
+2019-04-28 19:58:35,936 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 19:58:39,290 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: update canteen set canteen_id=? ,canteen_image=? where canteen_id=? 
+2019-04-28 19:58:39,291 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 11(Integer), http://image.xikecanteen.com/canteen/11/2.png(String), 11(Integer)
+2019-04-28 19:58:39,296 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2019-04-28 19:58:41,056 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 19:58:41,057 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 19:58:41,059 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 19:58:42,983 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 19:58:42,984 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 12(Integer)
+2019-04-28 19:58:42,986 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 19:58:46,833 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: update canteen set canteen_id=? ,canteen_image=? where canteen_id=? 
+2019-04-28 19:58:46,834 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 12(Integer), http://image.xikecanteen.com/canteen/12/4.png(String), 12(Integer)
+2019-04-28 19:58:46,838 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2019-04-28 19:58:48,596 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 19:58:48,597 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 19:58:48,600 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 19:58:50,283 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 19:58:50,284 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 13(Integer)
+2019-04-28 19:58:50,287 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 19:58:54,875 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: update canteen set canteen_id=? ,canteen_image=? where canteen_id=? 
+2019-04-28 19:58:54,876 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 13(Integer), http://image.xikecanteen.com/canteen/13/6.png(String), 13(Integer)
+2019-04-28 19:58:54,882 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2019-04-28 19:58:56,603 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 19:58:56,603 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 19:58:56,607 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 19:58:58,053 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 19:58:58,053 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 14(Integer)
+2019-04-28 19:58:58,055 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 19:59:01,800 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: update canteen set canteen_id=? ,canteen_image=? where canteen_id=? 
+2019-04-28 19:59:01,803 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 14(Integer), http://image.xikecanteen.com/canteen/14/7.png(String), 14(Integer)
+2019-04-28 19:59:01,808 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2019-04-28 19:59:03,191 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 19:59:03,191 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 19:59:03,194 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 19:59:04,814 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 19:59:04,815 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 20(Integer)
+2019-04-28 19:59:04,817 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 19:59:07,513 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: update canteen set canteen_id=? ,canteen_image=? where canteen_id=? 
+2019-04-28 19:59:07,514 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 20(Integer), http://image.xikecanteen.com/canteen/20/8.png(String), 20(Integer)
+2019-04-28 19:59:07,519 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2019-04-28 19:59:09,815 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 19:59:09,816 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 19:59:09,819 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 19:59:12,083 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 19:59:12,084 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 9(Integer)
+2019-04-28 19:59:12,086 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 19:59:25,749 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: update canteen set canteen_id=? ,canteen_label=? ,canteen_des=? where canteen_id=? 
+2019-04-28 19:59:25,750 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 9(Integer), 女生多(String), 色香味俱全(String), 9(Integer)
+2019-04-28 19:59:25,754 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2019-04-28 19:59:26,059 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 19:59:26,060 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 19:59:26,065 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 19:59:27,707 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE canteen_id = ? 
+2019-04-28 19:59:27,707 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 19:59:27,712 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-04-28 19:59:30,957 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE canteen_id = ? 
+2019-04-28 19:59:30,957 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 19:59:30,959 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-04-28 19:59:32,415 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE canteen_id = ? 
+2019-04-28 19:59:32,417 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 19:59:32,421 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-04-28 19:59:33,830 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE canteen_id = ? 
+2019-04-28 19:59:33,831 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 19:59:33,834 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-04-28 20:00:24,740 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 20:00:24,741 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 20:00:24,743 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 20:00:26,907 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 20:00:26,907 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 20:00:26,910 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 20:00:29,267 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 20:00:29,268 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2019-04-28 20:00:29,271 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 20:00:37,323 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 20:00:37,323 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 20:00:37,325 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 20:00:39,225 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 20:00:39,225 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2019-04-28 20:00:39,228 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 20:00:42,710 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: update canteen set canteen_id=? ,canteen_image=? where canteen_id=? 
+2019-04-28 20:00:42,711 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer), http://image.xikecanteen.com/canteen/10/3.png(String), 10(Integer)
+2019-04-28 20:00:42,716 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2019-04-28 20:01:09,186 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: update canteen set canteen_id=? ,canteen_label=? ,canteen_des=? where canteen_id=? 
+2019-04-28 20:01:09,187 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer), 快餐(String), 速度快(String), 10(Integer)
+2019-04-28 20:01:09,190 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2019-04-28 20:01:13,486 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 20:01:13,487 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 20:01:13,490 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 20:01:16,446 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 20:01:16,447 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 11(Integer)
+2019-04-28 20:01:16,450 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 20:01:28,660 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: update canteen set canteen_id=? ,canteen_label=? ,canteen_des=? where canteen_id=? 
+2019-04-28 20:01:28,661 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 11(Integer), 肠粉主打(String), 真的好(String), 11(Integer)
+2019-04-28 20:01:28,664 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2019-04-28 20:01:28,976 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: update canteen set canteen_id=? ,canteen_label=? ,canteen_des=? where canteen_id=? 
+2019-04-28 20:01:28,977 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 11(Integer), 肠粉主打(String), 真的好(String), 11(Integer)
+2019-04-28 20:01:28,981 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2019-04-28 20:01:30,946 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 20:01:30,946 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 20:01:30,950 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 20:01:34,024 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 20:01:34,025 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 12(Integer)
+2019-04-28 20:01:34,028 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 20:01:35,701 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 20:01:35,702 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 20:01:35,706 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 20:01:37,799 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 20:01:37,800 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 20:01:37,802 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 20:01:39,651 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 20:01:39,652 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 20:01:39,656 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 20:01:46,380 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 20:01:46,380 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 20:01:46,382 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 20:01:49,624 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 20:01:49,624 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 20:01:49,626 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 20:01:51,315 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 20:01:51,316 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 20:01:51,318 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 20:01:52,651 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 20:01:52,652 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 20:01:52,655 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 20:01:54,716 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 20:01:54,717 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 20:01:54,719 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 20:02:03,090 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 20:02:03,090 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 20:02:03,093 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 20:02:04,908 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT user_id,user_phone,user_pwd,user_email,user_status,user_name,canteen_id,verify_code FROM user WHERE canteen_id = ? 
+2019-04-28 20:02:04,908 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 20:02:04,912 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-04-28 20:02:06,256 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 20:02:06,256 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 20:02:06,259 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 20:02:08,100 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT user_id,user_phone,user_pwd,user_email,user_status,user_name,canteen_id,verify_code FROM user WHERE canteen_id = ? 
+2019-04-28 20:02:08,101 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2019-04-28 20:02:08,104 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2019-04-28 20:02:09,659 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 20:02:09,659 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 20:02:09,661 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 20:02:33,440 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT user_id,user_phone,user_pwd,user_email,user_status,user_name,canteen_id,verify_code FROM user WHERE user_pwd = ? AND user_email = ? 
+2019-04-28 20:02:33,441 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 310dcbbf4cce62f762a2aaa148d556bd(String), 333@qq.com(String)
+2019-04-28 20:02:33,445 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 20:02:33,499 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 20:02:33,500 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 20:02:33,503 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 20:02:38,972 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 20:02:38,972 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 20:02:38,975 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 20:11:20,303 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 20:11:20,303 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 20:11:20,305 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 20:11:22,597 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 20:11:22,598 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 20:11:22,600 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 20:12:42,656 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 20:12:42,657 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 20:12:42,661 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 20:12:57,630 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 20:12:57,632 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 20:12:57,635 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 20:13:02,124 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 20:13:02,125 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 20:13:02,128 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 20:13:21,076 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 20:13:21,077 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 20:13:21,080 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 20:13:31,541 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 20:13:31,542 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 20:13:31,545 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 20:14:11,528 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 20:14:11,528 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 20:14:11,532 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 20:14:29,345 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 20:14:29,346 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 20:14:29,347 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 20:14:56,430 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 20:14:56,431 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 20:14:56,433 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 20:14:56,598 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 20:14:56,598 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 20:14:56,601 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 20:15:24,890 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 20:15:24,892 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 20:15:24,895 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 20:16:03,114 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 20:16:03,115 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 20:16:03,118 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 20:16:10,686 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 20:16:10,687 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 20:16:10,691 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 20:16:10,728 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 20:16:10,729 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 20:16:10,733 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 20:16:10,758 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 20:16:10,759 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 20:16:10,762 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 20:16:31,053 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 20:16:31,053 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 20:16:31,055 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 20:16:49,630 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 20:16:49,630 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 20:16:49,632 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 20:17:43,902 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 20:17:43,903 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 20:17:43,906 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 20:20:13,975 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 20:20:13,975 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 20:20:13,977 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 20:20:36,244 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 20:20:36,245 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 20:20:36,248 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 20:20:44,790 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 20:20:44,791 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 20:20:44,795 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 20:31:41,342 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 20:31:41,343 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 20:31:41,346 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 20:31:48,432 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 20:31:48,433 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 20:31:48,435 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 20:31:51,053 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 20:31:51,053 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 20:31:51,056 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 20:32:07,933 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 20:32:07,934 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 20:32:07,936 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 20:32:14,353 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 20:32:14,354 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 20:32:14,357 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 20:36:15,788 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 20:36:15,789 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 20:36:15,792 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 20:36:27,546 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 20:36:27,547 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 20:36:27,551 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 20:36:55,381 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 20:36:55,381 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 20:36:55,384 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 20:39:49,833 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 20:39:49,834 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 20:39:49,836 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 20:40:04,632 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 20:40:04,633 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 20:40:04,637 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 20:40:09,416 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 20:40:09,416 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 20:40:09,418 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 20:41:16,683 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 20:41:16,683 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 20:41:16,685 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 20:41:27,607 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 20:41:27,607 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 20:41:27,610 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 20:41:33,163 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 20:41:33,164 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 20:41:33,166 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 20:41:43,480 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 20:41:43,481 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 20:41:43,484 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 20:47:19,070 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 20:47:19,071 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 20:47:19,074 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 20:51:53,087 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 20:51:53,088 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 20:51:53,089 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 20:53:03,118 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 20:53:03,119 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 20:53:03,122 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 20:53:44,691 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 20:53:44,692 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 20:53:44,693 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 20:54:02,914 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 20:54:02,915 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 20:54:02,919 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 20:55:32,491 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 20:55:32,491 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 20:55:32,496 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 20:55:51,794 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 20:55:51,795 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 20:55:51,799 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 20:56:41,442 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 20:56:41,443 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 20:56:41,446 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 20:57:41,516 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 20:57:41,516 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 20:57:41,518 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 20:58:19,861 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 20:58:19,862 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 20:58:19,864 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 20:58:35,993 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 20:58:35,995 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 20:58:35,999 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 20:59:54,417 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 20:59:54,418 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 20:59:54,421 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 8
+2019-04-28 21:00:26,294 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT user_id,user_phone,user_pwd,user_email,user_status,user_name,canteen_id,verify_code FROM user WHERE user_pwd = ? AND user_email = ? 
+2019-04-28 21:00:26,295 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 310dcbbf4cce62f762a2aaa148d556bd(String), 333@qq.com(String)
+2019-04-28 21:00:26,298 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 21:00:36,744 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: INSERT INTO canteen ( canteen_id,canteen_label,canteen_name,canteen_des,canteen_image ) VALUES( ?,?,?,?,? ) 
+2019-04-28 21:00:36,750 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: null, null, 九食堂(String), null, null
+2019-04-28 21:00:36,759 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2019-04-28 21:00:37,972 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 21:00:37,973 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 21:00:37,974 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-04-28 21:00:42,149 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 21:00:42,150 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 21(Integer)
+2019-04-28 21:00:42,152 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 21:01:08,264 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: update canteen set canteen_id=? ,canteen_image=? where canteen_id=? 
+2019-04-28 21:01:08,265 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 21(Integer), http://image.xikecanteen.com/canteen/21/9.png(String), 21(Integer)
+2019-04-28 21:01:08,278 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2019-04-28 21:01:12,361 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: update canteen set canteen_id=? where canteen_id=? 
+2019-04-28 21:01:12,362 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 21(Integer), 21(Integer)
+2019-04-28 21:01:12,364 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2019-04-28 21:01:14,393 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 21:01:14,393 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 21:01:14,396 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-04-28 21:01:16,757 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen WHERE canteen_id = ? 
+2019-04-28 21:01:16,758 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 21(Integer)
+2019-04-28 21:01:16,760 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 21:01:18,144 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 21:01:18,145 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 21:01:18,147 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-04-28 21:01:18,887 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 21:01:18,888 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 21:01:18,890 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-04-28 21:01:20,285 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 21:01:20,285 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 21:01:20,287 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-04-28 21:01:22,265 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 21:01:22,265 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 21:01:22,267 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-04-28 21:01:22,657 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 21:01:22,657 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 21:01:22,659 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-04-28 21:01:39,873 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT user_id,user_phone,user_pwd,user_email,user_status,user_name,canteen_id,verify_code FROM user WHERE user_pwd = ? AND user_email = ? 
+2019-04-28 21:01:39,874 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 310dcbbf4cce62f762a2aaa148d556bd(String), 333@qq.com(String)
+2019-04-28 21:01:39,876 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-04-28 21:01:39,917 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 21:01:39,918 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 21:01:39,921 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-04-28 21:02:28,124 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 21:02:28,124 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 21:02:28,129 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-04-28 21:03:10,542 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 21:03:10,542 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 21:03:10,544 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-04-28 21:03:18,179 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 21:03:18,180 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 21:03:18,183 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-04-28 21:04:29,994 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 21:04:29,995 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 21:04:29,998 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-04-28 21:04:48,752 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 21:04:48,752 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 21:04:48,756 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-04-28 21:05:02,590 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 21:05:02,590 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 21:05:02,593 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-04-28 21:05:23,322 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 21:05:23,323 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 21:05:23,327 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-04-28 21:11:34,565 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 21:11:34,567 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 21:11:34,571 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-04-28 21:12:50,707 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 21:12:50,708 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 21:12:50,711 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-04-28 21:12:57,456 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 21:12:57,457 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 21:12:57,461 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-04-28 21:15:22,096 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 21:15:22,097 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 21:15:22,103 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-04-28 21:16:03,324 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 21:16:03,324 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 21:16:03,329 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-04-28 21:16:55,682 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 21:16:55,684 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 21:16:55,689 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-04-28 21:16:55,761 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 21:16:55,761 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 21:16:55,763 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-04-28 21:17:42,704 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 21:17:42,705 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 21:17:42,710 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-04-28 21:18:37,540 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 21:18:37,541 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 21:18:37,544 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-04-28 21:23:39,480 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 21:23:39,481 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 21:23:39,484 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-04-28 21:24:36,905 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 21:24:36,906 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 21:24:36,911 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-04-28 21:24:36,951 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 21:24:36,951 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 21:24:36,955 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-04-28 21:27:15,613 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 21:27:15,614 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 21:27:15,616 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-04-28 21:27:35,879 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 21:27:35,880 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 21:27:35,881 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-04-28 21:36:19,946 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 21:36:19,947 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 21:36:19,950 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-04-28 21:36:38,627 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 21:36:38,629 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 21:36:38,632 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-04-28 21:38:36,259 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 21:38:36,259 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 21:38:36,261 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-04-28 21:39:51,966 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 21:39:51,967 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 21:39:51,970 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-04-28 21:41:19,396 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 21:41:19,397 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 21:41:19,401 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-04-28 21:42:49,501 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 21:42:49,502 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 21:42:49,505 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-04-28 21:42:52,017 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 21:42:52,018 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 21:42:52,021 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-04-28 21:42:52,765 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 21:42:52,766 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 21:42:52,770 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-04-28 21:42:53,588 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 21:42:53,589 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 21:42:53,592 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-04-28 21:43:37,506 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 21:43:37,507 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 21:43:37,510 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-04-28 21:51:54,119 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 21:51:54,119 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 21:51:54,121 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-04-28 21:53:05,563 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 21:53:05,565 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 21:53:05,568 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-04-28 21:53:05,661 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 21:53:05,662 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 21:53:05,665 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-04-28 21:53:07,281 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 21:53:07,282 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 21:53:07,285 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-04-28 21:53:13,125 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 21:53:13,126 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 21:53:13,128 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-04-28 21:53:15,076 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 21:53:15,077 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 21:53:15,080 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-04-28 21:53:55,400 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 21:53:55,401 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 21:53:55,412 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-04-28 21:54:10,627 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 21:54:10,628 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 21:54:10,631 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-04-28 21:58:10,735 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 21:58:10,736 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 21:58:10,739 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-04-28 21:58:35,050 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 21:58:35,050 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 21:58:35,054 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-04-28 21:58:41,205 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 21:58:41,205 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 21:58:41,208 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-04-28 21:58:53,172 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 21:58:53,173 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 21:58:53,177 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-04-28 21:59:02,439 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 21:59:02,440 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 21:59:02,444 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-04-28 21:59:21,745 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 21:59:21,745 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 21:59:21,747 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-04-28 21:59:26,488 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 21:59:26,489 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 21:59:26,491 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-04-28 21:59:29,921 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 21:59:29,922 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 21:59:29,925 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-04-28 21:59:44,436 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 21:59:44,437 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 21:59:44,439 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-04-28 21:59:53,035 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 21:59:53,035 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 21:59:53,038 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-04-28 22:00:01,981 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 22:00:01,982 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 22:00:01,985 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-04-28 22:00:21,298 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 22:00:21,299 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 22:00:21,303 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-04-28 22:00:40,359 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 22:00:40,360 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 22:00:40,363 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-04-28 22:02:31,396 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 22:02:31,396 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 22:02:31,399 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-04-28 22:03:54,303 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 22:03:54,303 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 22:03:54,308 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-04-28 22:04:30,338 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 22:04:30,340 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 22:04:30,343 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-04-28 22:04:49,305 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 22:04:49,307 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 22:04:49,309 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-04-28 22:04:53,531 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 22:04:53,531 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 22:04:53,534 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-04-28 22:06:07,861 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 22:06:07,863 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 22:06:07,866 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-04-28 22:06:11,884 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 22:06:11,885 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 22:06:11,888 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-04-28 22:06:43,322 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 22:06:43,322 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 22:06:43,324 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-04-28 22:08:09,823 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 22:08:09,824 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 22:08:09,827 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-04-28 22:09:02,933 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 22:09:02,933 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 22:09:02,936 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-04-28 22:09:09,656 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 22:09:09,656 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 22:09:09,659 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-04-28 22:09:12,225 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE canteen_id = ? 
+2019-04-28 22:09:12,226 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 9(Integer)
+2019-04-28 22:09:12,228 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2019-04-28 22:09:36,564 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 22:09:36,565 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 22:09:36,567 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-04-28 22:09:38,235 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE canteen_id = ? 
+2019-04-28 22:09:38,235 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 22:09:38,239 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-04-28 22:09:41,936 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 22:09:41,937 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 22:09:41,940 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-04-28 22:09:43,009 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE canteen_id = ? 
+2019-04-28 22:09:43,010 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 22:09:43,017 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-04-28 22:10:05,841 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE canteen_id = ? 
+2019-04-28 22:10:05,842 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-04-28 22:10:05,844 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-04-28 22:41:47,802 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 22:41:47,803 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 22:41:47,808 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-04-28 22:42:07,665 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name FROM food WHERE canteen_id = ? 
+2019-04-28 22:42:07,666 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 9(Integer)
+2019-04-28 22:42:07,668 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2019-04-28 22:42:08,965 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image FROM canteen 
+2019-04-28 22:42:08,966 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-04-28 22:42:08,968 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9

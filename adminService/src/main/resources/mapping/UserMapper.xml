@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.canteen.adminService.dao.UserMapper" >
+  <resultMap id="BaseResultMap" type="com.canteen.common.pojo.User" >
+    <id column="user_id" property="userId" jdbcType="BIGINT" />
+    <result column="user_phone" property="userPhone" jdbcType="VARCHAR" />
+    <result column="user_pwd" property="userPwd" jdbcType="VARCHAR" />
+    <result column="user_email" property="userEmail" jdbcType="VARCHAR" />
+    <result column="user_status" property="userStatus" jdbcType="INTEGER" />
+    <result column="user_name" property="userName" jdbcType="VARCHAR" />
+    <result column="canteen_id" property="canteenId" jdbcType="INTEGER" />
+    <result column="verify_code" property="verifyCode" jdbcType="VARCHAR" />
+  </resultMap>
+
+  <delete id="batchDel">
+    delete from user
+    where user_id in
+    <foreach collection="userList" open="(" close=")" separator="," item="item">
+      #{item}
+    </foreach>
+  </delete>
+</mapper>

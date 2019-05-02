@@ -1,0 +1,11 @@
+eureka:
+  client:
+    healthcheck:
+      enabled: false   #关闭健康检查,不然无法注册到eureka注册中心
+    #普通安全级别设置访问Eureka的访问密码
+    serviceUrl:
+      defaultZone: http://localhost:10000/eureka
+  instance:
+    prefer-ip-address: true
+    #自定义 eureka 监控服务的ip服务名等
+    instance-id: ${spring.application.name}:${spring.cloud.client.ipAddress}:${spring.application.instance_id:${server.port}}

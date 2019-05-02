@@ -1,0 +1,13 @@
+server:
+  port: 8091
+
+
+mybatis:
+  mapper-locations: classpath:mapping/*.xml
+  type-aliases-package: com.canteen.common.pojo
+  configuration:
+    map-underscore-to-camel-case: true
+
+spring:
+  profiles:
+    active: dev
