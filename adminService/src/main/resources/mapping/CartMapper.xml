@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.canteen.adminService.dao.CartMapper" >
+    <update id="updateAllPrice">
+    update cart
+        <trim prefix="SET" suffixOverrides=",">
+        all_price =#{allPrice}
+        </trim>
+        <trim prefix="WHERE" prefixOverrides="AND|OR">
+            <if test="cartId!=null and cartId!=''">
+                cart_id=#{cartId}
+            </if>
+        </trim>
+    </update>
+</mapper>

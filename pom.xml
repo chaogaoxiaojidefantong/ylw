@@ -49,7 +49,7 @@
     <!--最简化配置，继承模块只需添加相关依赖即可，该依赖包含所有依赖子模块-->
     <dependencyManagement>
         <dependencies>
-
+            <!-- 邮箱 -->
 
             <!--Spring Cloud-->
             <dependency>

@@ -83,5 +83,15 @@ public class FoodService {
        return BiliResult.build(201,"上传图片失败");
     }
 
+    /**
+     * 通过食品名模糊查询食品
+     * @param foodName
+     * @return
+     */
+    public BiliResult selectByName(String foodName,Integer canteenId){
+        List<Food>list=foodMapper.selectByName("%"+foodName+"%",canteenId);
+        return BiliResult.oK(list);
+    }
+
 
 }

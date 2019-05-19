@@ -1,5 +1,7 @@
 package com.canteen.common.util;
 
+import org.springframework.web.multipart.MultipartFile;
+
 import java.io.File;
 
 public class FileUtil {
@@ -35,5 +37,32 @@ public class FileUtil {
                 deleteFile(childFile);//递归，对每个都进行判断
             }
         }
+    }
+
+    /**
+     * 上传文件
+     * @param file
+     * @param dirPath
+     * @param urlPath
+     * @param productName 存放的文件夹路径
+     * @return
+     */
+    public static String uploadFile(MultipartFile file, String dirPath, String urlPath, String productName){
+        String fileName=file.getOriginalFilename();
+        fileName=fileName.toLowerCase();
+        String filePath=dirPath+"/"+productName;
+        File mkdirFile=new File(filePath);//创建文件夹
+        if(!mkdirFile.exists()) {
+            mkdirFile.mkdirs();
+        }
+        File reallyFile=new File(filePath+"/"+fileName);
+        try {
+            file.transferTo(reallyFile);
+            String url=urlPath+"/"+productName+"/"+fileName;
+            return url;
+        }catch (Exception e){
+
+        }
+        return null;
     }
 }

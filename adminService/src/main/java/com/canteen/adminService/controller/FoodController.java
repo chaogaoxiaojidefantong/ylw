@@ -43,4 +43,9 @@ public class FoodController {
     public BiliResult uploadImg(MultipartFile file,Food food){
     return foodService.uploadImg(file,food);
     }
+
+    @RequestMapping("selectByName")
+    public BiliResult selectByName(String foodName,Integer canteenId){
+        return foodService.selectByName(foodName,canteenId);
+    }
 }

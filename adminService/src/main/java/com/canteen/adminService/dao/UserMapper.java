@@ -7,5 +7,6 @@ import tk.mybatis.mapper.common.Mapper;
 @Repository
 public interface UserMapper extends Mapper<User> {
     public Integer batchDel(@Param("userList") String[] userList);
-    
+    public Integer updateUser(User user);
+    public Integer updateUserByCode(User user);
 }

@@ -53,4 +53,24 @@ public class UserController {
         return userService.logout(token);
     }
 
+    /**
+     * 发送邮箱验证码
+     * @param user
+     * @return
+     */
+    @RequestMapping("emailCheck")
+    public BiliResult emailCheck(User user){
+        return userService.emailGoCheck(user);
+    }
+
+    @RequestMapping("loginBycode")
+    public BiliResult loginBycode(User user){
+        return userService.loginBycode(user);
+    }
+
+    @RequestMapping("updateUserByCode")
+    public BiliResult updateUserByCode(User user){
+        return userService.updateUserByCode(user);
+    }
+
 }

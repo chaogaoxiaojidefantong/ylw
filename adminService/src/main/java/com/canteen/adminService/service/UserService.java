@@ -1,23 +1,31 @@
 package com.canteen.adminService.service;
+import com.canteen.adminService.dao.CartMapper;
 import com.canteen.adminService.dao.UserMapper;
+import com.canteen.common.pojo.Cart;
 import com.canteen.common.pojo.User;
+import com.canteen.common.util.EmailUtil;
 import com.canteen.common.util.JsonUtil;
+import com.canteen.common.util.RandomUtil;
 import com.canteen.common.vo.BiliResult;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import redis.clients.jedis.Jedis;
-import redis.clients.jedis.JedisCluster;
-
 import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 
-
 @Service
 public class UserService {
+
+    public String emailFrom="759646095@qq.com";
+    public String emailAuthorization="boxpurjjugqmbfbc";
+
     @Autowired
     UserMapper userMapper;
+
+    @Autowired
+    CartMapper cartMapper;
 
     public JsonUtil<User> jsonUtil=new JsonUtil();
 
@@ -42,6 +50,18 @@ public class UserService {
         if(i1==0){
            return BiliResult.build(201,"注册失败");
         }
+        if(user.getUserStatus()==3){//如果是顾客注册则添加购物车
+            User userOne=new User();
+            userOne.setUserEmail(user.getUserEmail());
+            User userResult=userMapper.selectOne(userOne);
+            Cart cart=new Cart();
+            cart.setAllPrice(0);
+            cart.setUserId(userResult.getUserId());
+            cartMapper.insert(cart);
+            Cart cartResult=cartMapper.selectOne(cart);
+            userResult.setCartId(cartResult.getCartId());
+            userMapper.updateUser(userResult);
+        }
         return BiliResult.oK();
     }
 
@@ -49,11 +69,17 @@ public class UserService {
      * 更改用户信息
      */
     public BiliResult updateUser(User user){
-        Integer i1=userMapper.updateByPrimaryKey(user);
+        String userPwd=DigestUtils.md5Hex(user.getUserPwd());
+        user.setUserPwd(userPwd);
+        Integer i1=userMapper.updateUser(user);
         if(i1==0){
             return BiliResult.build(201,"更新失败");
         }
-        return BiliResult.oK();
+        User user1=new User();
+        user1.setUserId(user.getUserId());
+        User userResult=userMapper.selectOne(user1);
+        Map map=handleToken(userResult);
+        return BiliResult.oK(map);
     }
 
     /**
@@ -67,6 +93,40 @@ public class UserService {
             return BiliResult.build(201,"删除失败");
         }
         return BiliResult.oK();
+    }
+
+    /**
+     * 发送邮箱验证码
+     * @param user
+     * @return
+     */
+    public  BiliResult emailGoCheck(User user){
+        String userEmail=user.getUserEmail();
+        //String verifyCode=RandomUtil.randomVerifyCode(6);
+        EmailUtil emailUtil=new EmailUtil();
+        String verifyCode=emailUtil.emailCheck(userEmail);
+        user.setVerifyCode(verifyCode);
+        Integer i1=userMapper.updateUser(user);
+        if(i1==0){
+            return BiliResult.build(201,"发送验证码失败");
+        }
+        return BiliResult.oK();
+    }
+
+    /**
+     * 通过邮箱验证码登录
+     * @param user
+     * @return
+     */
+    public BiliResult loginBycode(User user){
+        User user1=userMapper.selectOne(user);
+        if(user1==null){
+            return    BiliResult.build(201,"登录有误");
+        }
+        else{
+            Map map=handleToken(user1);
+            return  BiliResult.oK(map);
+        }
     }
 
 
@@ -93,12 +153,25 @@ public class UserService {
     public BiliResult loginByToken(String token){
     String userJSON=jedis.get(token);
     User user=jsonUtil.writeJsonStringToObj(userJSON,User.class);
-    return  BiliResult.oK(user);
+    Map map=handleToken(user);
+    return  BiliResult.oK(map);
     }
 
     public  BiliResult logout(String token){
         jedis.del(token);
         return BiliResult.oK();
     }
+
+    //修改通过邮箱验证码修改密码
+    public BiliResult updateUserByCode(User user){
+        String userPwd=DigestUtils.md5Hex(user.getUserPwd());
+        user.setUserPwd(userPwd);
+        Integer i1=userMapper.updateUserByCode(user);
+        if(i1==0){
+            return BiliResult.build(201,"修改失败");
+        }
+        return BiliResult.oK();
+    }
+
 
 }

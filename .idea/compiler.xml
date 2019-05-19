@@ -6,13 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="zuulService" />
         <module name="eurekaService" />
-        <module name="generator" />
         <module name="common" />
         <module name="adminService" />
         <module name="zipkinService" />
         <module name="clientService" />
-        <module name="zuulService" />
+        <module name="generator" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

@@ -1,16 +1,22 @@
 package com.canteen.clientService.service;
 
 import com.canteen.clientService.dao.UserCollectMapper;
+import com.canteen.common.pojo.Canteen;
 import com.canteen.common.pojo.UserCollect;
 import com.canteen.common.vo.BiliResult;
+import com.google.gson.Gson;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 @Service
 public class UserCollectService {
 
     @Autowired
     UserCollectMapper userCollectMapper;
+
+
 
     /**
      * 收藏
@@ -50,4 +56,13 @@ public class UserCollectService {
         }
         return BiliResult.oK(u1);
     }
+
+//    public BiliResult selectMany(UserCollect userCollect){
+//        List<UserCollect> list=userCollectMapper.select(userCollect);
+//        for(UserCollect userCollect1:list){
+//            Canteen canteen=new Canteen();
+//            canteen.setCanteenId(userCollect1.getCanteenId());
+//
+//        }
+//    }
 }

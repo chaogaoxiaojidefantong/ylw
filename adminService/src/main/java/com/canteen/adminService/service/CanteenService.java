@@ -22,8 +22,7 @@ public class CanteenService {
 
     @Value("${file.url}")
     private String fileUrl;
-
-
+    
     @Autowired
     CanteenMapper canteenMapper;
 

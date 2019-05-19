@@ -45,7 +45,7 @@ public class CanteenController {
         return canteenService.selectOneCanteen(canteen);
     }
 
-    @RequestMapping("uploadCanteenImg")
+    @RequestMapping("/uploadCanteenImg")
     public BiliResult uploadCanteenPhoto(MultipartFile file,Canteen canteen){
         return  canteenService.uploadCanteenPhoto(file,canteen);
     }

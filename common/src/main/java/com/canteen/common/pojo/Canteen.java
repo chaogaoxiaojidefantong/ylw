@@ -20,6 +20,16 @@ public class Canteen {
     //销量
     private Long sales;
 
+    private Integer takeoutMoney;
+
+    public Integer getTakeoutMoney() {
+        return takeoutMoney;
+    }
+
+    public void setTakeoutMoney(Integer takeoutMoney) {
+        this.takeoutMoney = takeoutMoney;
+    }
+
     public Double getCanteenMark() {
         return canteenMark;
     }
