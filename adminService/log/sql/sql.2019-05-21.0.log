@@ -1,0 +1,2 @@
+2019-05-21 11:15:09,097 INFO (SpringApplication.java:597)- The following profiles are active: dev
+2019-05-21 11:15:25,515 INFO (StartupInfoLogger.java:57)- Started AdminServiceApp in 21.585 seconds (JVM running for 26.335)

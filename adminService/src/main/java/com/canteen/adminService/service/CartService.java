@@ -44,122 +44,127 @@ public class CartService {
 
     /**
      * 商品数量+1
+     *
      * @param cart
      * @param cartInfo
      * @return
      */
-    public BiliResult foodAddNum(Cart cart,CartInfo cartInfo){
-        CartInfo cartInfo1=cartInfoMapper.selectOne(cartInfo);
-        if(cartInfo1==null){//如果这件商品没在购物车里过，则添加到购物车里，并且数量为1
+    public BiliResult foodAddNum(Cart cart, CartInfo cartInfo) {
+        CartInfo cartInfo1 = cartInfoMapper.selectOne(cartInfo);
+        if (cartInfo1 == null) {//如果这件商品没在购物车里过，则添加到购物车里，并且数量为1
             cartInfo.setFoodNum(1);
             cartInfoMapper.insert(cartInfo);
-        }
-        else {
+        } else {
             cartInfoMapper.foodAddOneNum(cartInfo);
         }
         updateAllPrice(cart);
-        Map map=selectOneCart(cart);
+        Map map = selectOneCart(cart);
         return BiliResult.oK(map);
     }
 
     /**
      * 某样商品已经添加过，只是数量-1
+     *
      * @param cart
      * @param cartInfo
      * @return
      */
-    public BiliResult foodReduceOneNum(Cart cart,CartInfo cartInfo){
+    public BiliResult foodReduceOneNum(Cart cart, CartInfo cartInfo) {
         cartInfoMapper.foodReduceOneNum(cartInfo);
         updateAllPrice(cart);
-        Map map=selectOneCart(cart);
+        Map map = selectOneCart(cart);
         return BiliResult.oK(map);
     }
 
     /**
      * 查询某人的购物车与他购物车里的食品
+     *
      * @param cart
      * @return
      */
-    public BiliResult selectOne(Cart cart){
-        Map map=selectOneCart(cart);
+    public BiliResult selectOne(Cart cart) {
+        Map map = selectOneCart(cart);
         return BiliResult.oK(map);
     }
 
     /**
      * 修改购物车的金额
+     *
      * @param cart
      * @return
      */
-    public Integer updateAllPrice(Cart cart){
-   CartInfo cartInfo=new CartInfo();
-   cartInfo.setCartId(cart.getCartId());
-   List<CartInfo>list=cartInfoMapper.select(cartInfo);
-   Integer allPrice=0;
-   for(CartInfo cartInfo1:list){
-       Food food=new Food();
-       food.setFoodId(cartInfo1.getFoodId());
-       Food foodResult=foodMapper.selectOne(food);
-       Integer price=foodResult.getFoodPrice();
-       allPrice=cartInfo1.getFoodNum()*price+allPrice;
-   }
-   cart.setAllPrice(allPrice);
-   return cartMapper.updateAllPrice(cart);//修改总金额
+    public Integer updateAllPrice(Cart cart) {
+        CartInfo cartInfo = new CartInfo();
+        cartInfo.setCartId(cart.getCartId());
+        List<CartInfo> list = cartInfoMapper.select(cartInfo);
+        Integer allPrice = 0;
+        for (CartInfo cartInfo1 : list) {
+            Food food = new Food();
+            food.setFoodId(cartInfo1.getFoodId());
+            Food foodResult = foodMapper.selectOne(food);
+            Integer price = foodResult.getFoodPrice();
+            allPrice = cartInfo1.getFoodNum() * price + allPrice;
+        }
+        cart.setAllPrice(allPrice);
+        return cartMapper.updateAllPrice(cart);//修改总金额
     }
 
 
     /**
      * 返回此购物车与购物车里的商品
+     *
      * @return
      */
-    public Map selectOneCart(Cart cart){
-        Map map=new HashMap();
-        CartInfo cartInfo=new CartInfo();
+    public Map selectOneCart(Cart cart) {
+        Map map = new HashMap();
+        CartInfo cartInfo = new CartInfo();
         cartInfo.setCartId(cart.getCartId());
-        CartInfo delObj=new CartInfo();
+        CartInfo delObj = new CartInfo();
         delObj.setFoodNum(0);
         cartInfoMapper.delete(delObj);//删除表里所有数量为0的食品
-        List<CartInfo> list=cartInfoMapper.select(cartInfo);
-        List<FoodVo>foodVoList=new ArrayList<FoodVo>();//购物车里的食品集合
-        for(CartInfo cartInfo1:list){
-            Food food=new Food();
+        List<CartInfo> list = cartInfoMapper.select(cartInfo);
+        List<FoodVo> foodVoList = new ArrayList<FoodVo>();//购物车里的食品集合
+        for (CartInfo cartInfo1 : list) {
+            Food food = new Food();
             food.setFoodId(cartInfo1.getFoodId());
-            Food foodResult=foodMapper.selectOne(food);//获取这个食品的单价
-            FoodVo foodVo=getFoodVo(foodResult);
+            Food foodResult = foodMapper.selectOne(food);//获取这个食品的单价
+            FoodVo foodVo = getFoodVo(foodResult);
             foodVo.setFoodNum(cartInfo1.getFoodNum());
             foodVoList.add(foodVo);
         }
-        Cart cartRes=cartMapper.selectOne(cart);
-        map.put("foodVoList",foodVoList);
-        map.put("cart",cartRes);
+        Cart cartRes = cartMapper.selectOne(cart);
+        map.put("foodVoList", foodVoList);
+        map.put("cart", cartRes);
         return map;
     }
 
-    public FoodVo getFoodVo(Food food){
-    FoodVo foodVo=new FoodVo();
-    foodVo.setFoodId(food.getFoodId());
-    foodVo.setFoodImage(food.getFoodImage());
-    foodVo.setCanteenId(food.getCanteenId());
-    foodVo.setFoodDescribe(food.getFoodDescribe());
-    foodVo.setFoodPrice(food.getFoodPrice());
-    foodVo.setCreatedTime(food.getCreatedTime());
-    foodVo.setFoodName(food.getFoodName());
-    foodVo.setFoodRate(food.getFoodRate());
-    foodVo.setFoodRateNumber(food.getFoodRateNumber());
-    return foodVo;
+    public FoodVo getFoodVo(Food food) {
+        FoodVo foodVo = new FoodVo();
+        foodVo.setFoodId(food.getFoodId());
+        foodVo.setFoodImage(food.getFoodImage());
+        foodVo.setCanteenId(food.getCanteenId());
+        foodVo.setFoodDescribe(food.getFoodDescribe());
+        foodVo.setFoodPrice(food.getFoodPrice());
+        foodVo.setCreatedTime(food.getCreatedTime());
+        foodVo.setFoodName(food.getFoodName());
+        foodVo.setFoodRate(food.getFoodRate());
+        foodVo.setFoodRateNumber(food.getFoodRateNumber());
+        return foodVo;
     }
 
     /**
      * 清空购物车
+     *
      * @param cart
      * @return
      */
-    public BiliResult clearCart(Cart cart){
-    Integer cartId=cart.getCartId();
-    CartInfo cartInfo=new CartInfo();
-    cartInfo.setCartId(cartId);
-    cartInfoMapper.delete(cartInfo);
-    cart.setAllPrice(0);
-    cartMapper.updateAllPrice(cart);
-    return BiliResult.oK();
+    public BiliResult clearCart(Cart cart) {
+        Integer cartId = cart.getCartId();
+        CartInfo cartInfo = new CartInfo();
+        cartInfo.setCartId(cartId);
+        cartInfoMapper.delete(cartInfo);
+        cart.setAllPrice(0);
+        cartMapper.updateAllPrice(cart);
+        return BiliResult.oK();
     }
 }
