@@ -1,5 +1,4 @@
 package com.canteen.adminService.service;
-
 import com.canteen.adminService.dao.*;
 import com.canteen.adminService.util.EasyUtil;
 import com.canteen.common.pojo.*;
@@ -7,12 +6,9 @@ import com.canteen.common.pojoVo.FoodVo;
 import com.canteen.common.pojoVo.OrderVo;
 import com.canteen.common.util.TimeUtil;
 import com.canteen.common.vo.BiliResult;
-import org.aspectj.weaver.ast.Or;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
@@ -36,6 +32,9 @@ public class OrderService {
 
     @Autowired
     CartService cartService;
+
+    @Autowired
+    EasyUtil easyUtil;
 
     //添加订单
     public BiliResult addOne(Ord order, Long addressId) {
@@ -67,6 +66,7 @@ public class OrderService {
             orderInfoMapper.insert(orderInfo);
         }
         cartService.clearCart(cart);//最后需要清空购物车
+        easyUtil.updateFoodSale();//更新所有商品的销量
         return BiliResult.oK();
     }
 
@@ -98,7 +98,7 @@ public class OrderService {
 
     //通过订单号获得订单的所有信息，包括此订单中包括哪些食品
     public OrderVo getOrderVoGo(Ord order) {
-        EasyUtil easyUtil = new EasyUtil();
+       easyUtil = new EasyUtil();
         OrderInfo orderInfo = new OrderInfo();
         orderInfo.setOrderId(order.getOrderId());
         List<OrderInfo> list = orderInfoMapper.select(orderInfo);
@@ -115,4 +115,6 @@ public class OrderService {
         orderVo.setFoodAndNum(foodVoList);
         return orderVo;
     }
+
+
 }

@@ -1,7 +1,9 @@
 package com.canteen.adminService.service;
 
 import com.canteen.adminService.dao.CanteenMapper;
+import com.canteen.adminService.dao.FoodMapper;
 import com.canteen.common.pojo.Canteen;
+import com.canteen.common.pojo.Food;
 import com.canteen.common.util.FileUtil;
 import com.canteen.common.util.UploadImg;
 import com.canteen.common.vo.BiliResult;
@@ -25,6 +27,9 @@ public class CanteenService {
 
     @Autowired
     CanteenMapper canteenMapper;
+
+    @Autowired
+    FoodMapper foodMapper;
 
     /**
      * 添加食堂
@@ -73,6 +78,13 @@ public class CanteenService {
         Integer i1 = canteenMapper.deleteCanteen(ids.split(","));
         if (i1 == 0) {
             return BiliResult.build(201, "删除失败");
+        }
+        String []idList=ids.split(",");
+        for (String  idStr:idList){
+            Integer canteenId=Integer.parseInt(idStr);
+            Food food=new Food();
+            food.setCanteenId(canteenId);
+            foodMapper.delete(food);//删除食堂里的食品
         }
         return BiliResult.oK();
     }

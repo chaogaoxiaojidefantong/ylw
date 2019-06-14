@@ -23,9 +23,12 @@
         <if test="foodImage != null and foodImage!=''">
         ,food_image = #{foodImage}
         </if>
+        <if test="foodSale != null and foodSale!=''">
+        ,food_sale = #{foodSale}
+        </if>
     where food_id = #{foodId}
   </update>
-    <select id="selectPage" resultType="com.canteen.common.pojo.Food">
+    <select id="selectPage" resultType="Food">
             select *  from Food
             <trim prefix="where" suffixOverrides="and">
                 <if test="foodId!=null and foodId!=''" >
@@ -44,7 +47,10 @@
             ORDER BY create_time DESC
             limit #{startIndex},#{pageSize}
     </select>
-    <select id="selectByName" resultType="com.canteen.common.pojo.Food">
+    <select id="selectByName" resultType="Food">
       select * from food where food_name like #{foodName} and canteen_id=#{canteenId}
+    </select>
+    <select id="selectManyByDesc" resultType="Food">
+      SELECT * from food where canteen_id=#{canteenId} ORDER BY food_sale DESC
     </select>
 </mapper>

@@ -22,6 +22,17 @@ public class Food {
 
     private Date createdTime;
 
+    //销量
+    private Integer foodSale;
+
+    public Integer getFoodSale() {
+        return foodSale;
+    }
+
+    public void setFoodSale(Integer foodSale) {
+        this.foodSale = foodSale;
+    }
+
     public Date getCreatedTime() {
         return createdTime;
     }

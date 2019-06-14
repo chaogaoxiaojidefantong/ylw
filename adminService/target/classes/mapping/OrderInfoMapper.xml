@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.canteen.adminService.dao.OrderInfoMapper" >
-
+    <select id="getfoodIds" resultType="java.lang.Long">
+         select DISTINCT  food_id from order_info
+    </select>
+    <select id="getfoodSale" resultType="java.lang.Integer">
+        select sum(food_num) from order_info WHERE food_id=#{foodId}
+    </select>
 </mapper>

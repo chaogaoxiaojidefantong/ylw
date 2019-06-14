@@ -1,3 +1,0 @@
-2019-04-24 10:49:13,555 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT user_id,user_phone,user_pwd,user_email,user_status,user_name,canteen_id,verify_code FROM user WHERE user_pwd = ? AND user_email = ? 
-2019-04-24 10:49:13,593 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 310dcbbf4cce62f762a2aaa148d556bd(String), 333@qq.com(String)
-2019-04-24 10:49:13,603 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1

@@ -12,4 +12,5 @@ public interface FoodMapper extends Mapper<Food> {
 public Integer batchDel(@Param("foods") String []foods);
 public Integer updateFood(Food food);
 public List<Food>selectByName(@Param("foodName")String foodName,@Param("canteenId")Integer canteenId);
+public List<Food>selectManyByDesc(@Param("canteenId")Integer canteenId);//通过销量查询食品
 }

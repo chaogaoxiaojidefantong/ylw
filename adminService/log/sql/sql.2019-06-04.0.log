@@ -1,0 +1,1230 @@
+2019-06-04 12:50:04,425 INFO (SpringApplication.java:597)- The following profiles are active: dev
+2019-06-04 12:50:27,038 INFO (StartupInfoLogger.java:57)- Started AdminServiceApp in 26.505 seconds (JVM running for 28.872)
+2019-06-04 12:54:21,477 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT user_id,user_phone,user_pwd,user_email,user_status,user_name,canteen_id,verify_code,cart_id FROM user WHERE user_pwd = ? AND user_email = ? 
+2019-06-04 12:54:21,496 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 310dcbbf4cce62f762a2aaa148d556bd(String), 2150866957@qq.com(String)
+2019-06-04 12:54:21,505 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 12:54:21,637 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image,canteen_mark_number,canteen_mark,sales,takeout_money FROM canteen 
+2019-06-04 12:54:21,638 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-06-04 12:54:21,648 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-06-04 12:54:23,888 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image,canteen_mark_number,canteen_mark,sales,takeout_money FROM canteen WHERE canteen_id = ? 
+2019-06-04 12:54:23,890 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-06-04 12:54:23,892 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 12:54:23,906 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: DELETE FROM cart_info WHERE food_num = ? 
+2019-06-04 12:54:23,907 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer)
+2019-06-04 12:54:23,914 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 0
+2019-06-04 12:54:23,914 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE canteen_id = ? 
+2019-06-04 12:54:23,915 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-06-04 12:54:23,921 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,cart_id,food_id,food_num FROM cart_info 
+2019-06-04 12:54:23,922 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-06-04 12:54:23,923 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 12:54:23,924 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 6
+2019-06-04 12:54:23,925 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 12:54:23,926 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 102(Long)
+2019-06-04 12:54:23,928 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 12:54:23,931 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT cart_id,user_id,all_price FROM cart WHERE user_id = ? 
+2019-06-04 12:54:23,932 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 75(Long)
+2019-06-04 12:54:23,939 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 12:54:35,406 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * from food where canteen_id=? ORDER BY food_sale DESC 
+2019-06-04 12:54:35,406 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-06-04 12:54:35,411 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 6
+2019-06-04 12:55:10,095 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,cart_id,food_id,food_num FROM cart_info WHERE cart_id = ? AND food_id = ? 
+2019-06-04 12:55:10,096 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 1(Long)
+2019-06-04 12:55:10,097 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2019-06-04 12:55:10,100 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: INSERT INTO cart_info ( id,cart_id,food_id,food_num ) VALUES( ?,?,?,? ) 
+2019-06-04 12:55:10,102 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: null, 1(Integer), 1(Long), 1(Integer)
+2019-06-04 12:55:10,113 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2019-06-04 12:55:10,114 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,cart_id,food_id,food_num FROM cart_info WHERE cart_id = ? 
+2019-06-04 12:55:10,115 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer)
+2019-06-04 12:55:10,116 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2019-06-04 12:55:10,119 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 12:55:10,120 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 102(Long)
+2019-06-04 12:55:10,122 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 12:55:10,124 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 12:55:10,124 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Long)
+2019-06-04 12:55:10,125 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 12:55:10,127 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: update cart SET all_price =? WHERE cart_id=? 
+2019-06-04 12:55:10,128 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 32(Integer), 1(Integer)
+2019-06-04 12:55:10,134 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2019-06-04 12:55:10,136 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: DELETE FROM cart_info WHERE food_num = ? 
+2019-06-04 12:55:10,137 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer)
+2019-06-04 12:55:10,138 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 0
+2019-06-04 12:55:10,140 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,cart_id,food_id,food_num FROM cart_info WHERE cart_id = ? 
+2019-06-04 12:55:10,140 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer)
+2019-06-04 12:55:10,141 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2019-06-04 12:55:10,142 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 12:55:10,143 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 102(Long)
+2019-06-04 12:55:10,146 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 12:55:10,147 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 12:55:10,147 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Long)
+2019-06-04 12:55:10,149 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 12:55:10,151 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT cart_id,user_id,all_price FROM cart WHERE cart_id = ? AND user_id = ? AND all_price = ? 
+2019-06-04 12:55:10,152 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 75(Long), 32(Integer)
+2019-06-04 12:55:10,155 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:03:59,086 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image,canteen_mark_number,canteen_mark,sales,takeout_money FROM canteen 
+2019-06-04 13:03:59,086 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-06-04 13:03:59,090 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-06-04 13:07:03,817 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image,canteen_mark_number,canteen_mark,sales,takeout_money FROM canteen WHERE canteen_id = ? 
+2019-06-04 13:07:03,818 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 9(Integer)
+2019-06-04 13:07:03,819 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:07:03,824 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: DELETE FROM cart_info WHERE food_num = ? 
+2019-06-04 13:07:03,824 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE canteen_id = ? 
+2019-06-04 13:07:03,825 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer)
+2019-06-04 13:07:03,825 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 9(Integer)
+2019-06-04 13:07:03,827 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2019-06-04 13:07:03,828 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 0
+2019-06-04 13:07:03,829 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,cart_id,food_id,food_num FROM cart_info 
+2019-06-04 13:07:03,830 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-06-04 13:07:03,831 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2019-06-04 13:07:03,832 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:07:03,833 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 102(Long)
+2019-06-04 13:07:03,834 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:07:03,836 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:07:03,837 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Long)
+2019-06-04 13:07:03,839 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:07:03,840 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT cart_id,user_id,all_price FROM cart WHERE user_id = ? 
+2019-06-04 13:07:03,840 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 75(Long)
+2019-06-04 13:07:03,842 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:07:06,103 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image,canteen_mark_number,canteen_mark,sales,takeout_money FROM canteen 
+2019-06-04 13:07:06,104 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-06-04 13:07:06,107 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-06-04 13:07:06,644 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE canteen_id = ? 
+2019-06-04 13:07:06,644 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-06-04 13:07:06,648 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 6
+2019-06-04 13:07:06,659 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: DELETE FROM cart_info WHERE food_num = ? 
+2019-06-04 13:07:06,660 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer)
+2019-06-04 13:07:06,662 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 0
+2019-06-04 13:07:06,661 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image,canteen_mark_number,canteen_mark,sales,takeout_money FROM canteen WHERE canteen_id = ? 
+2019-06-04 13:07:06,667 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-06-04 13:07:06,668 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,cart_id,food_id,food_num FROM cart_info 
+2019-06-04 13:07:06,670 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-06-04 13:07:06,670 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:07:06,671 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2019-06-04 13:07:06,672 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:07:06,673 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 102(Long)
+2019-06-04 13:07:06,674 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:07:06,676 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:07:06,677 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Long)
+2019-06-04 13:07:06,678 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:07:06,679 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT cart_id,user_id,all_price FROM cart WHERE user_id = ? 
+2019-06-04 13:07:06,680 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 75(Long)
+2019-06-04 13:07:06,681 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:07:16,172 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * from food where canteen_id=? ORDER BY food_sale DESC 
+2019-06-04 13:07:16,173 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-06-04 13:07:16,174 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 6
+2019-06-04 13:07:19,868 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: update cart_info set food_num=food_num-1 WHERE cart_id=? and food_id=? 
+2019-06-04 13:07:19,870 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 1(Long)
+2019-06-04 13:07:19,879 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2019-06-04 13:07:19,880 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,cart_id,food_id,food_num FROM cart_info WHERE cart_id = ? 
+2019-06-04 13:07:19,880 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer)
+2019-06-04 13:07:19,881 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2019-06-04 13:07:19,883 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:07:19,884 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 102(Long)
+2019-06-04 13:07:19,885 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:07:19,887 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:07:19,888 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Long)
+2019-06-04 13:07:19,889 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:07:19,890 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: update cart SET all_price =? WHERE cart_id=? 
+2019-06-04 13:07:19,890 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 19(Integer), 1(Integer)
+2019-06-04 13:07:19,894 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2019-06-04 13:07:19,895 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: DELETE FROM cart_info WHERE food_num = ? 
+2019-06-04 13:07:19,896 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer)
+2019-06-04 13:07:19,900 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2019-06-04 13:07:19,901 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,cart_id,food_id,food_num FROM cart_info WHERE cart_id = ? 
+2019-06-04 13:07:19,902 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer)
+2019-06-04 13:07:19,903 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:07:19,904 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:07:19,905 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 102(Long)
+2019-06-04 13:07:19,905 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:07:19,907 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT cart_id,user_id,all_price FROM cart WHERE cart_id = ? AND user_id = ? AND all_price = ? 
+2019-06-04 13:07:19,907 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 75(Long), 19(Integer)
+2019-06-04 13:07:19,908 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:22:27,724 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image,canteen_mark_number,canteen_mark,sales,takeout_money FROM canteen 
+2019-06-04 13:22:27,725 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-06-04 13:22:27,727 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-06-04 13:22:29,187 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT order_id,user_id,user_email,all_price,user_address,user_name,order_remark,order_time,user_phone,order_state,created_time FROM ord WHERE user_id = ? 
+2019-06-04 13:22:29,188 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 75(Long)
+2019-06-04 13:22:29,197 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2019-06-04 13:22:29,199 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 13:22:29,199 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 18(Long)
+2019-06-04 13:22:29,207 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:22:29,208 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:22:29,209 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 102(Long)
+2019-06-04 13:22:29,211 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:22:29,212 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 13:22:29,212 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 19(Long)
+2019-06-04 13:22:29,213 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2019-06-04 13:22:29,214 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:22:29,214 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 102(Long)
+2019-06-04 13:22:29,215 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:22:29,216 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:22:29,216 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(Long)
+2019-06-04 13:22:29,217 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:22:29,218 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 13:22:29,218 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 20(Long)
+2019-06-04 13:22:29,219 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:22:29,220 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:22:29,221 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(Long)
+2019-06-04 13:22:29,221 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:22:29,222 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 13:22:29,223 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 21(Long)
+2019-06-04 13:22:29,224 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:22:29,225 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:22:29,226 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 7(Long)
+2019-06-04 13:22:29,227 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:22:29,228 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 13:22:29,229 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 22(Long)
+2019-06-04 13:22:29,230 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:22:29,231 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:22:29,232 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(Long)
+2019-06-04 13:22:29,233 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:22:29,234 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 13:22:29,235 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 23(Long)
+2019-06-04 13:22:29,236 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2019-06-04 13:22:29,237 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:22:29,237 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(Long)
+2019-06-04 13:22:29,238 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:22:29,239 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:22:29,239 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Long)
+2019-06-04 13:22:29,241 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:22:29,242 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 13:22:29,243 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 24(Long)
+2019-06-04 13:22:29,244 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:22:29,245 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:22:29,246 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Long)
+2019-06-04 13:22:29,247 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:22:29,248 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 13:22:29,248 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 25(Long)
+2019-06-04 13:22:29,249 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:22:29,249 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:22:29,250 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 102(Long)
+2019-06-04 13:22:29,251 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:22:29,252 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 13:22:29,252 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 26(Long)
+2019-06-04 13:22:29,253 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-06-04 13:22:29,254 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:22:29,254 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Long)
+2019-06-04 13:22:29,255 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:22:29,256 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:22:29,257 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(Long)
+2019-06-04 13:22:29,259 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:22:29,260 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:22:29,261 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 102(Long)
+2019-06-04 13:22:29,262 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:22:29,262 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 13:22:29,263 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 27(Long)
+2019-06-04 13:22:29,264 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:22:29,264 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:22:29,265 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 102(Long)
+2019-06-04 13:22:29,265 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:22:29,266 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 13:22:29,266 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 28(Long)
+2019-06-04 13:22:29,268 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:22:29,269 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:22:29,270 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 7(Long)
+2019-06-04 13:22:29,271 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:22:29,272 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 13:22:29,272 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 29(Long)
+2019-06-04 13:22:29,275 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:22:29,276 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:22:29,277 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 102(Long)
+2019-06-04 13:22:29,278 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:22:29,279 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 13:22:29,280 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 30(Long)
+2019-06-04 13:22:29,281 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:22:29,281 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:22:29,282 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 102(Long)
+2019-06-04 13:22:29,283 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:22:29,283 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 13:22:29,284 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 31(Long)
+2019-06-04 13:22:29,285 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:22:29,286 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:22:29,286 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(Long)
+2019-06-04 13:22:29,287 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:22:29,288 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 13:22:29,288 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 32(Long)
+2019-06-04 13:22:29,289 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:22:29,290 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:22:29,291 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 102(Long)
+2019-06-04 13:22:29,293 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:22:29,294 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 13:22:29,295 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 33(Long)
+2019-06-04 13:22:29,296 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2019-06-04 13:22:29,296 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:22:29,297 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 101(Long)
+2019-06-04 13:22:29,298 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:22:29,299 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:22:29,299 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 102(Long)
+2019-06-04 13:22:29,300 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:24:02,845 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image,canteen_mark_number,canteen_mark,sales,takeout_money FROM canteen 
+2019-06-04 13:24:02,846 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-06-04 13:24:02,847 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-06-04 13:24:03,634 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE canteen_id = ? 
+2019-06-04 13:24:03,635 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 9(Integer)
+2019-06-04 13:24:03,636 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2019-06-04 13:24:03,638 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image,canteen_mark_number,canteen_mark,sales,takeout_money FROM canteen WHERE canteen_id = ? 
+2019-06-04 13:24:03,639 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 9(Integer)
+2019-06-04 13:24:03,639 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: DELETE FROM cart_info WHERE food_num = ? 
+2019-06-04 13:24:03,640 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer)
+2019-06-04 13:24:03,640 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:24:03,641 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 0
+2019-06-04 13:24:03,642 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,cart_id,food_id,food_num FROM cart_info 
+2019-06-04 13:24:03,643 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-06-04 13:24:03,644 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:24:03,645 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:24:03,646 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 102(Long)
+2019-06-04 13:24:03,647 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:24:03,648 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT cart_id,user_id,all_price FROM cart WHERE user_id = ? 
+2019-06-04 13:24:03,649 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 75(Long)
+2019-06-04 13:24:03,650 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:24:11,057 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image,canteen_mark_number,canteen_mark,sales,takeout_money FROM canteen 
+2019-06-04 13:24:11,058 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-06-04 13:24:11,060 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-06-04 13:24:12,098 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE canteen_id = ? 
+2019-06-04 13:24:12,099 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-06-04 13:24:12,101 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 6
+2019-06-04 13:24:12,108 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: DELETE FROM cart_info WHERE food_num = ? 
+2019-06-04 13:24:12,108 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer)
+2019-06-04 13:24:12,109 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 0
+2019-06-04 13:24:12,110 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,cart_id,food_id,food_num FROM cart_info 
+2019-06-04 13:24:12,111 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-06-04 13:24:12,112 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:24:12,114 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:24:12,114 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 102(Long)
+2019-06-04 13:24:12,116 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:24:12,116 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image,canteen_mark_number,canteen_mark,sales,takeout_money FROM canteen WHERE canteen_id = ? 
+2019-06-04 13:24:12,117 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT cart_id,user_id,all_price FROM cart WHERE user_id = ? 
+2019-06-04 13:24:12,117 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 75(Long)
+2019-06-04 13:24:12,117 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-06-04 13:24:12,118 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:24:12,121 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:24:15,369 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: update cart_info set food_num=food_num-1 WHERE cart_id=? and food_id=? 
+2019-06-04 13:24:15,370 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 102(Long)
+2019-06-04 13:24:15,374 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2019-06-04 13:24:15,375 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,cart_id,food_id,food_num FROM cart_info WHERE cart_id = ? 
+2019-06-04 13:24:15,375 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer)
+2019-06-04 13:24:15,376 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:24:15,377 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:24:15,378 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 102(Long)
+2019-06-04 13:24:15,379 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:24:15,380 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: update cart SET all_price =? WHERE cart_id=? 
+2019-06-04 13:24:15,381 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer), 1(Integer)
+2019-06-04 13:24:15,406 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2019-06-04 13:24:15,407 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: DELETE FROM cart_info WHERE food_num = ? 
+2019-06-04 13:24:15,408 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer)
+2019-06-04 13:24:15,411 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2019-06-04 13:24:15,412 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,cart_id,food_id,food_num FROM cart_info WHERE cart_id = ? 
+2019-06-04 13:24:15,413 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer)
+2019-06-04 13:24:15,414 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2019-06-04 13:24:15,415 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT cart_id,user_id,all_price FROM cart WHERE cart_id = ? AND user_id = ? AND all_price = ? 
+2019-06-04 13:24:15,416 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 75(Long), 0(Integer)
+2019-06-04 13:24:15,417 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:24:16,400 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,cart_id,food_id,food_num FROM cart_info WHERE cart_id = ? AND food_id = ? 
+2019-06-04 13:24:16,400 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 7(Long)
+2019-06-04 13:24:16,400 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2019-06-04 13:24:16,401 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: INSERT INTO cart_info ( id,cart_id,food_id,food_num ) VALUES( ?,?,?,? ) 
+2019-06-04 13:24:16,401 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: null, 1(Integer), 7(Long), 1(Integer)
+2019-06-04 13:24:16,404 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2019-06-04 13:24:16,404 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,cart_id,food_id,food_num FROM cart_info WHERE cart_id = ? 
+2019-06-04 13:24:16,405 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer)
+2019-06-04 13:24:16,407 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:24:16,407 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:24:16,408 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 7(Long)
+2019-06-04 13:24:16,409 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:24:16,410 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: update cart SET all_price =? WHERE cart_id=? 
+2019-06-04 13:24:16,411 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(Integer), 1(Integer)
+2019-06-04 13:24:16,436 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2019-06-04 13:24:16,436 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: DELETE FROM cart_info WHERE food_num = ? 
+2019-06-04 13:24:16,437 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer)
+2019-06-04 13:24:16,438 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 0
+2019-06-04 13:24:16,438 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,cart_id,food_id,food_num FROM cart_info WHERE cart_id = ? 
+2019-06-04 13:24:16,438 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer)
+2019-06-04 13:24:16,440 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:24:16,441 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:24:16,441 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 7(Long)
+2019-06-04 13:24:16,442 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:24:16,443 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT cart_id,user_id,all_price FROM cart WHERE cart_id = ? AND user_id = ? AND all_price = ? 
+2019-06-04 13:24:16,443 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 75(Long), 15(Integer)
+2019-06-04 13:24:16,444 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:24:18,154 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,cart_id,food_id,food_num FROM cart_info WHERE cart_id = ? AND food_id = ? 
+2019-06-04 13:24:18,154 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 6(Long)
+2019-06-04 13:24:18,155 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2019-06-04 13:24:18,156 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: INSERT INTO cart_info ( id,cart_id,food_id,food_num ) VALUES( ?,?,?,? ) 
+2019-06-04 13:24:18,157 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: null, 1(Integer), 6(Long), 1(Integer)
+2019-06-04 13:24:18,161 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2019-06-04 13:24:18,161 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,cart_id,food_id,food_num FROM cart_info WHERE cart_id = ? 
+2019-06-04 13:24:18,162 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer)
+2019-06-04 13:24:18,163 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2019-06-04 13:24:18,164 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:24:18,165 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 7(Long)
+2019-06-04 13:24:18,166 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:24:18,167 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:24:18,168 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 6(Long)
+2019-06-04 13:24:18,169 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:24:18,170 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: update cart SET all_price =? WHERE cart_id=? 
+2019-06-04 13:24:18,171 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 17(Integer), 1(Integer)
+2019-06-04 13:24:18,173 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2019-06-04 13:24:18,174 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: DELETE FROM cart_info WHERE food_num = ? 
+2019-06-04 13:24:18,174 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer)
+2019-06-04 13:24:18,175 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 0
+2019-06-04 13:24:18,176 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,cart_id,food_id,food_num FROM cart_info WHERE cart_id = ? 
+2019-06-04 13:24:18,176 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer)
+2019-06-04 13:24:18,177 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2019-06-04 13:24:18,178 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:24:18,179 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 7(Long)
+2019-06-04 13:24:18,180 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:24:18,182 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:24:18,182 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 6(Long)
+2019-06-04 13:24:18,183 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:24:18,184 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT cart_id,user_id,all_price FROM cart WHERE cart_id = ? AND user_id = ? AND all_price = ? 
+2019-06-04 13:24:18,184 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 75(Long), 17(Integer)
+2019-06-04 13:24:18,185 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:24:19,370 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,cart_id,food_id,food_num FROM cart_info WHERE cart_id = ? AND food_id = ? 
+2019-06-04 13:24:19,370 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 7(Long)
+2019-06-04 13:24:19,371 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:24:19,372 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: update cart_info set food_num=food_num+1 WHERE cart_id=? and food_id=? 
+2019-06-04 13:24:19,372 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 7(Long)
+2019-06-04 13:24:19,377 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2019-06-04 13:24:19,378 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,cart_id,food_id,food_num FROM cart_info WHERE cart_id = ? 
+2019-06-04 13:24:19,379 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer)
+2019-06-04 13:24:19,381 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2019-06-04 13:24:19,382 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:24:19,382 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 7(Long)
+2019-06-04 13:24:19,384 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:24:19,385 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:24:19,385 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 6(Long)
+2019-06-04 13:24:19,386 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:24:19,387 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: update cart SET all_price =? WHERE cart_id=? 
+2019-06-04 13:24:19,387 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 32(Integer), 1(Integer)
+2019-06-04 13:24:19,390 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2019-06-04 13:24:19,390 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: DELETE FROM cart_info WHERE food_num = ? 
+2019-06-04 13:24:19,391 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer)
+2019-06-04 13:24:19,392 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 0
+2019-06-04 13:24:19,392 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,cart_id,food_id,food_num FROM cart_info WHERE cart_id = ? 
+2019-06-04 13:24:19,392 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer)
+2019-06-04 13:24:19,393 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2019-06-04 13:24:19,394 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:24:19,395 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 7(Long)
+2019-06-04 13:24:19,396 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:24:19,397 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:24:19,398 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 6(Long)
+2019-06-04 13:24:19,400 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:24:19,400 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT cart_id,user_id,all_price FROM cart WHERE cart_id = ? AND user_id = ? AND all_price = ? 
+2019-06-04 13:24:19,401 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 75(Long), 32(Integer)
+2019-06-04 13:24:19,401 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:24:22,152 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: DELETE FROM cart_info WHERE food_num = ? 
+2019-06-04 13:24:22,152 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer)
+2019-06-04 13:24:22,153 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 0
+2019-06-04 13:24:22,154 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,cart_id,food_id,food_num FROM cart_info 
+2019-06-04 13:24:22,154 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-06-04 13:24:22,155 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2019-06-04 13:24:22,156 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:24:22,157 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 7(Long)
+2019-06-04 13:24:22,158 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:24:22,161 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:24:22,161 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT address_id,user_name,user_phone,user_email,user_id,user_address FROM address WHERE user_id = ? 
+2019-06-04 13:24:22,161 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 6(Long)
+2019-06-04 13:24:22,162 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 75(Long)
+2019-06-04 13:24:22,163 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:24:22,164 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT cart_id,user_id,all_price FROM cart WHERE user_id = ? 
+2019-06-04 13:24:22,164 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 75(Long)
+2019-06-04 13:24:22,165 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:27:59,112 INFO (SpringApplication.java:597)- The following profiles are active: dev
+2019-06-04 13:28:17,949 INFO (StartupInfoLogger.java:57)- Started AdminServiceApp in 24.657 seconds (JVM running for 27.704)
+2019-06-04 13:52:37,514 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT user_id,user_phone,user_pwd,user_email,user_status,user_name,canteen_id,verify_code,cart_id FROM user WHERE user_pwd = ? AND user_email = ? 
+2019-06-04 13:52:37,532 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 310dcbbf4cce62f762a2aaa148d556bd(String), 2150866957@qq.com(String)
+2019-06-04 13:52:37,557 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:52:37,790 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image,canteen_mark_number,canteen_mark,sales,takeout_money FROM canteen 
+2019-06-04 13:52:37,791 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-06-04 13:52:37,798 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-06-04 13:52:49,082 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image,canteen_mark_number,canteen_mark,sales,takeout_money FROM canteen 
+2019-06-04 13:52:49,082 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-06-04 13:52:49,089 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-06-04 13:52:53,172 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: DELETE FROM cart_info WHERE food_num = ? 
+2019-06-04 13:52:53,174 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer)
+2019-06-04 13:53:35,292 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image,canteen_mark_number,canteen_mark,sales,takeout_money FROM canteen WHERE canteen_id = ? 
+2019-06-04 13:53:35,295 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 9(Integer)
+2019-06-04 13:53:35,299 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:53:35,304 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE canteen_id = ? 
+2019-06-04 13:53:35,306 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 9(Integer)
+2019-06-04 13:53:35,309 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image,canteen_mark_number,canteen_mark,sales,takeout_money FROM canteen WHERE canteen_id = ? 
+2019-06-04 13:53:35,313 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 9(Integer)
+2019-06-04 13:53:35,316 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:53:35,316 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2019-06-04 13:53:35,316 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE canteen_id = ? 
+2019-06-04 13:53:35,319 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 9(Integer)
+2019-06-04 13:53:35,322 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2019-06-04 13:54:13,843 INFO (SpringApplication.java:597)- The following profiles are active: dev
+2019-06-04 13:54:39,977 INFO (StartupInfoLogger.java:57)- Started AdminServiceApp in 30.601 seconds (JVM running for 33.347)
+2019-06-04 13:56:23,640 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT user_id,user_phone,user_pwd,user_email,user_status,user_name,canteen_id,verify_code,cart_id FROM user WHERE user_pwd = ? AND user_email = ? 
+2019-06-04 13:56:23,657 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 310dcbbf4cce62f762a2aaa148d556bd(String), 2150866957@qq.com(String)
+2019-06-04 13:56:23,665 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:56:23,753 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image,canteen_mark_number,canteen_mark,sales,takeout_money FROM canteen 
+2019-06-04 13:56:23,754 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-06-04 13:56:23,762 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-06-04 13:56:26,573 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT order_id,user_id,user_email,all_price,user_address,user_name,order_remark,order_time,user_phone,order_state,created_time FROM ord WHERE user_id = ? 
+2019-06-04 13:56:26,574 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 75(Long)
+2019-06-04 13:56:26,586 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2019-06-04 13:56:26,588 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 13:56:26,589 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 18(Long)
+2019-06-04 13:56:26,594 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:56:26,599 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:56:26,599 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 102(Long)
+2019-06-04 13:56:26,605 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:56:26,606 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 13:56:26,607 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 19(Long)
+2019-06-04 13:56:26,608 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2019-06-04 13:56:26,609 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:56:26,609 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 102(Long)
+2019-06-04 13:56:26,610 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:56:26,611 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:56:26,612 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(Long)
+2019-06-04 13:56:26,614 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:56:26,615 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 13:56:26,616 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 20(Long)
+2019-06-04 13:56:26,617 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:56:26,618 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:56:26,619 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(Long)
+2019-06-04 13:56:26,620 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:56:26,621 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 13:56:26,621 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 21(Long)
+2019-06-04 13:56:26,622 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:56:26,623 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:56:26,623 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 7(Long)
+2019-06-04 13:56:26,625 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:56:26,625 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 13:56:26,626 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 22(Long)
+2019-06-04 13:56:26,627 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:56:26,628 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:56:26,628 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(Long)
+2019-06-04 13:56:26,629 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:56:26,632 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 13:56:26,633 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 23(Long)
+2019-06-04 13:56:26,634 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2019-06-04 13:56:26,635 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:56:26,637 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(Long)
+2019-06-04 13:56:26,639 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:56:26,641 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:56:26,642 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Long)
+2019-06-04 13:56:26,643 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:56:26,644 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 13:56:26,644 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 24(Long)
+2019-06-04 13:56:26,645 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:56:26,647 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:56:26,647 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Long)
+2019-06-04 13:56:26,649 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:56:26,650 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 13:56:26,651 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 25(Long)
+2019-06-04 13:56:26,651 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:56:26,652 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:56:26,653 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 102(Long)
+2019-06-04 13:56:26,653 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:56:26,654 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 13:56:26,655 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 26(Long)
+2019-06-04 13:56:26,656 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-06-04 13:56:26,656 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:56:26,657 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Long)
+2019-06-04 13:56:26,658 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:56:26,659 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:56:26,659 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(Long)
+2019-06-04 13:56:26,660 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:56:26,661 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:56:26,662 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 102(Long)
+2019-06-04 13:56:26,663 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:56:26,664 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 13:56:26,665 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 27(Long)
+2019-06-04 13:56:26,667 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:56:26,667 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:56:26,668 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 102(Long)
+2019-06-04 13:56:26,669 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:56:26,670 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 13:56:26,670 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 28(Long)
+2019-06-04 13:56:26,671 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:56:26,672 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:56:26,673 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 7(Long)
+2019-06-04 13:56:26,674 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:56:26,674 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 13:56:26,675 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 29(Long)
+2019-06-04 13:56:26,676 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:56:26,678 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:56:26,678 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 102(Long)
+2019-06-04 13:56:26,682 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:56:26,683 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 13:56:26,684 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 30(Long)
+2019-06-04 13:56:26,684 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:56:26,685 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:56:26,686 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 102(Long)
+2019-06-04 13:56:26,687 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:56:26,688 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 13:56:26,688 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 31(Long)
+2019-06-04 13:56:26,690 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:56:26,691 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:56:26,691 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(Long)
+2019-06-04 13:56:26,692 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:56:26,693 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 13:56:26,693 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 32(Long)
+2019-06-04 13:56:26,694 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:56:26,695 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:56:26,696 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 102(Long)
+2019-06-04 13:56:26,697 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:56:26,699 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 13:56:26,700 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 33(Long)
+2019-06-04 13:56:26,701 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2019-06-04 13:56:26,701 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:56:26,702 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 101(Long)
+2019-06-04 13:56:26,703 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:56:26,703 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:56:26,704 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 102(Long)
+2019-06-04 13:56:26,705 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:56:33,751 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image,canteen_mark_number,canteen_mark,sales,takeout_money FROM canteen 
+2019-06-04 13:56:33,752 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-06-04 13:56:33,756 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-06-04 13:56:34,405 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE canteen_id = ? 
+2019-06-04 13:56:34,407 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 9(Integer)
+2019-06-04 13:56:34,408 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2019-06-04 13:56:34,415 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image,canteen_mark_number,canteen_mark,sales,takeout_money FROM canteen WHERE canteen_id = ? 
+2019-06-04 13:56:34,415 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 9(Integer)
+2019-06-04 13:56:34,417 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:56:34,417 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: DELETE FROM cart_info WHERE food_num = ? 
+2019-06-04 13:56:34,422 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer)
+2019-06-04 13:56:34,426 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 0
+2019-06-04 13:56:34,428 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,cart_id,food_id,food_num FROM cart_info 
+2019-06-04 13:56:34,428 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-06-04 13:56:34,430 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2019-06-04 13:56:34,431 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:56:34,432 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 7(Long)
+2019-06-04 13:56:34,433 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:56:34,434 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:56:34,434 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 6(Long)
+2019-06-04 13:56:34,436 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:56:34,437 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT cart_id,user_id,all_price FROM cart WHERE user_id = ? 
+2019-06-04 13:56:34,438 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 75(Long)
+2019-06-04 13:56:34,443 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:56:35,556 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image,canteen_mark_number,canteen_mark,sales,takeout_money FROM canteen 
+2019-06-04 13:56:35,557 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-06-04 13:56:35,559 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-06-04 13:56:36,186 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image,canteen_mark_number,canteen_mark,sales,takeout_money FROM canteen WHERE canteen_id = ? 
+2019-06-04 13:56:36,187 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-06-04 13:56:36,188 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:56:36,188 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: DELETE FROM cart_info WHERE food_num = ? 
+2019-06-04 13:56:36,194 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer)
+2019-06-04 13:56:36,195 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 0
+2019-06-04 13:56:36,196 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,cart_id,food_id,food_num FROM cart_info 
+2019-06-04 13:56:36,196 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-06-04 13:56:36,197 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE canteen_id = ? 
+2019-06-04 13:56:36,197 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2019-06-04 13:56:36,198 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-06-04 13:56:36,198 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:56:36,199 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 7(Long)
+2019-06-04 13:56:36,200 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 6
+2019-06-04 13:56:36,201 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:56:36,201 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:56:36,203 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 6(Long)
+2019-06-04 13:56:36,204 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:56:36,205 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT cart_id,user_id,all_price FROM cart WHERE user_id = ? 
+2019-06-04 13:56:36,206 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 75(Long)
+2019-06-04 13:56:36,207 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:56:37,726 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: DELETE FROM cart_info WHERE food_num = ? 
+2019-06-04 13:56:37,726 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer)
+2019-06-04 13:56:37,728 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 0
+2019-06-04 13:56:37,728 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,cart_id,food_id,food_num FROM cart_info 
+2019-06-04 13:56:37,729 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-06-04 13:56:37,729 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT address_id,user_name,user_phone,user_email,user_id,user_address FROM address WHERE user_id = ? 
+2019-06-04 13:56:37,731 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2019-06-04 13:56:37,731 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 75(Long)
+2019-06-04 13:56:37,732 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:56:37,733 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 7(Long)
+2019-06-04 13:56:37,734 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:56:37,734 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-06-04 13:56:37,735 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:56:37,736 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 6(Long)
+2019-06-04 13:56:37,737 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:56:37,738 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT cart_id,user_id,all_price FROM cart WHERE user_id = ? 
+2019-06-04 13:56:37,739 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 75(Long)
+2019-06-04 13:56:37,740 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:57:04,009 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image,canteen_mark_number,canteen_mark,sales,takeout_money FROM canteen 
+2019-06-04 13:57:04,010 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-06-04 13:57:04,012 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-06-04 13:57:04,790 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE canteen_id = ? 
+2019-06-04 13:57:04,791 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-06-04 13:57:04,793 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 6
+2019-06-04 13:57:04,793 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: DELETE FROM cart_info WHERE food_num = ? 
+2019-06-04 13:57:04,799 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer)
+2019-06-04 13:57:04,801 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 0
+2019-06-04 13:57:04,802 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,cart_id,food_id,food_num FROM cart_info 
+2019-06-04 13:57:04,803 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-06-04 13:57:04,804 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2019-06-04 13:57:04,805 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:57:04,805 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image,canteen_mark_number,canteen_mark,sales,takeout_money FROM canteen WHERE canteen_id = ? 
+2019-06-04 13:57:04,805 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 7(Long)
+2019-06-04 13:57:04,806 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-06-04 13:57:04,807 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:57:04,807 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:57:04,808 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:57:04,809 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 6(Long)
+2019-06-04 13:57:04,811 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:57:04,812 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT cart_id,user_id,all_price FROM cart WHERE user_id = ? 
+2019-06-04 13:57:04,813 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 75(Long)
+2019-06-04 13:57:04,814 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:57:05,703 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image,canteen_mark_number,canteen_mark,sales,takeout_money FROM canteen WHERE canteen_id = ? 
+2019-06-04 13:57:05,704 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-06-04 13:57:05,705 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:57:05,712 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT comment_id,comment_content,order_id,user_id,canteen_id FROM comment WHERE canteen_id = ? 
+2019-06-04 13:57:05,713 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-06-04 13:57:05,719 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-06-04 13:57:05,720 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT user_id,user_phone,user_pwd,user_email,user_status,user_name,canteen_id,verify_code,cart_id FROM user WHERE user_id = ? 
+2019-06-04 13:57:05,721 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 75(Long)
+2019-06-04 13:57:05,722 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:57:05,723 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT order_id,user_id,user_email,all_price,user_address,user_name,order_remark,order_time,user_phone,order_state,created_time FROM ord WHERE order_id = ? 
+2019-06-04 13:57:05,723 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 21(Long)
+2019-06-04 13:57:05,724 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:57:05,725 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT user_id,user_phone,user_pwd,user_email,user_status,user_name,canteen_id,verify_code,cart_id FROM user WHERE user_id = ? 
+2019-06-04 13:57:05,725 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 75(Long)
+2019-06-04 13:57:05,726 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:57:05,726 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT order_id,user_id,user_email,all_price,user_address,user_name,order_remark,order_time,user_phone,order_state,created_time FROM ord WHERE order_id = ? 
+2019-06-04 13:57:05,726 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 22(Long)
+2019-06-04 13:57:05,728 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:57:05,729 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT user_id,user_phone,user_pwd,user_email,user_status,user_name,canteen_id,verify_code,cart_id FROM user WHERE user_id = ? 
+2019-06-04 13:57:05,730 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 75(Long)
+2019-06-04 13:57:05,731 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:57:05,732 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT order_id,user_id,user_email,all_price,user_address,user_name,order_remark,order_time,user_phone,order_state,created_time FROM ord WHERE order_id = ? 
+2019-06-04 13:57:05,733 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 22(Long)
+2019-06-04 13:57:05,734 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:58:49,131 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image,canteen_mark_number,canteen_mark,sales,takeout_money FROM canteen 
+2019-06-04 13:58:49,131 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-06-04 13:58:49,132 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-06-04 13:59:19,315 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: DELETE FROM cart_info WHERE food_num = ? 
+2019-06-04 13:59:19,315 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer)
+2019-06-04 13:59:19,316 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 0
+2019-06-04 13:59:19,317 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,cart_id,food_id,food_num FROM cart_info 
+2019-06-04 13:59:19,318 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-06-04 13:59:19,319 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2019-06-04 13:59:19,320 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:59:19,321 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 7(Long)
+2019-06-04 13:59:19,322 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:59:19,315 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image,canteen_mark_number,canteen_mark,sales,takeout_money FROM canteen WHERE canteen_id = ? 
+2019-06-04 13:59:19,323 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE canteen_id = ? 
+2019-06-04 13:59:19,324 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-06-04 13:59:19,324 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-06-04 13:59:19,325 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:59:19,325 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 6
+2019-06-04 13:59:19,326 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:59:19,326 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 6(Long)
+2019-06-04 13:59:19,331 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:59:19,332 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT cart_id,user_id,all_price FROM cart WHERE user_id = ? 
+2019-06-04 13:59:19,333 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 75(Long)
+2019-06-04 13:59:19,334 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:59:21,250 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT address_id,user_name,user_phone,user_email,user_id,user_address FROM address WHERE user_id = ? 
+2019-06-04 13:59:21,250 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: DELETE FROM cart_info WHERE food_num = ? 
+2019-06-04 13:59:21,252 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 75(Long)
+2019-06-04 13:59:21,253 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer)
+2019-06-04 13:59:21,255 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 0
+2019-06-04 13:59:21,255 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-06-04 13:59:21,255 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,cart_id,food_id,food_num FROM cart_info 
+2019-06-04 13:59:21,256 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-06-04 13:59:21,258 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2019-06-04 13:59:21,259 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:59:21,260 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 7(Long)
+2019-06-04 13:59:21,261 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:59:21,262 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 13:59:21,263 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 6(Long)
+2019-06-04 13:59:21,264 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:59:21,265 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT cart_id,user_id,all_price FROM cart WHERE user_id = ? 
+2019-06-04 13:59:21,266 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 75(Long)
+2019-06-04 13:59:21,267 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:02:01,193 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT order_id,user_id,user_email,all_price,user_address,user_name,order_remark,order_time,user_phone,order_state,created_time FROM ord WHERE user_id = ? 
+2019-06-04 14:02:01,193 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 75(Long)
+2019-06-04 14:02:01,196 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2019-06-04 14:02:01,197 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 14:02:01,198 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 18(Long)
+2019-06-04 14:02:01,199 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:02:01,199 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:02:01,200 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 102(Long)
+2019-06-04 14:02:01,201 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:02:01,201 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 14:02:01,202 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 19(Long)
+2019-06-04 14:02:01,202 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2019-06-04 14:02:01,203 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:02:01,204 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 102(Long)
+2019-06-04 14:02:01,204 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:02:01,205 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:02:01,206 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(Long)
+2019-06-04 14:02:01,206 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:02:01,207 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 14:02:01,207 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 20(Long)
+2019-06-04 14:02:01,208 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:02:01,208 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:02:01,209 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(Long)
+2019-06-04 14:02:01,209 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:02:01,210 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 14:02:01,210 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 21(Long)
+2019-06-04 14:02:01,211 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:02:01,212 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:02:01,213 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 7(Long)
+2019-06-04 14:02:01,214 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:02:01,215 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 14:02:01,215 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 22(Long)
+2019-06-04 14:02:01,216 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:02:01,217 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:02:01,217 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(Long)
+2019-06-04 14:02:01,218 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:02:01,218 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 14:02:01,219 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 23(Long)
+2019-06-04 14:02:01,219 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2019-06-04 14:02:01,220 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:02:01,220 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(Long)
+2019-06-04 14:02:01,221 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:02:01,221 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:02:01,222 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Long)
+2019-06-04 14:02:01,223 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:02:01,223 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 14:02:01,224 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 24(Long)
+2019-06-04 14:02:01,224 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:02:01,225 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:02:01,225 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Long)
+2019-06-04 14:02:01,226 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:02:01,226 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 14:02:01,227 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 25(Long)
+2019-06-04 14:02:01,228 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:02:01,229 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:02:01,230 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 102(Long)
+2019-06-04 14:02:01,232 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:02:01,233 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 14:02:01,233 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 26(Long)
+2019-06-04 14:02:01,234 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-06-04 14:02:01,234 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:02:01,235 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Long)
+2019-06-04 14:02:01,236 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:02:01,236 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:02:01,237 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(Long)
+2019-06-04 14:02:01,237 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:02:01,238 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:02:01,238 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 102(Long)
+2019-06-04 14:02:01,239 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:02:01,240 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 14:02:01,240 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 27(Long)
+2019-06-04 14:02:01,241 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:02:01,241 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:02:01,242 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 102(Long)
+2019-06-04 14:02:01,242 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:02:01,243 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 14:02:01,243 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 28(Long)
+2019-06-04 14:02:01,244 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:02:01,245 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:02:01,245 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 7(Long)
+2019-06-04 14:02:01,247 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:02:01,248 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 14:02:01,248 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 29(Long)
+2019-06-04 14:02:01,249 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:02:01,250 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:02:01,250 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 102(Long)
+2019-06-04 14:02:01,251 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:02:01,252 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 14:02:01,252 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 30(Long)
+2019-06-04 14:02:01,252 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:02:01,253 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:02:01,254 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 102(Long)
+2019-06-04 14:02:01,254 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:02:01,255 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 14:02:01,255 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 31(Long)
+2019-06-04 14:02:01,256 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:02:01,256 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:02:01,256 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(Long)
+2019-06-04 14:02:01,257 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:02:01,258 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 14:02:01,258 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 32(Long)
+2019-06-04 14:02:01,259 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:02:01,259 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:02:01,260 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 102(Long)
+2019-06-04 14:02:01,261 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:02:01,262 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 14:02:01,263 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 33(Long)
+2019-06-04 14:02:01,265 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2019-06-04 14:02:01,266 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:02:01,266 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 101(Long)
+2019-06-04 14:02:01,267 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:02:01,267 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:02:01,268 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 102(Long)
+2019-06-04 14:02:01,269 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:02:09,050 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT address_id,user_name,user_phone,user_email,user_id,user_address FROM address WHERE user_id = ? 
+2019-06-04 14:02:09,051 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 75(Long)
+2019-06-04 14:02:09,053 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-06-04 14:14:26,683 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT order_id,user_id,user_email,all_price,user_address,user_name,order_remark,order_time,user_phone,order_state,created_time FROM ord WHERE user_id = ? 
+2019-06-04 14:14:26,684 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 75(Long)
+2019-06-04 14:14:26,687 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2019-06-04 14:14:26,689 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 14:14:26,689 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 18(Long)
+2019-06-04 14:14:26,690 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:14:26,691 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:14:26,692 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 102(Long)
+2019-06-04 14:14:26,692 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:14:26,693 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 14:14:26,693 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 19(Long)
+2019-06-04 14:14:26,694 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2019-06-04 14:14:26,696 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:14:26,697 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 102(Long)
+2019-06-04 14:14:26,698 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:14:26,699 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:14:26,699 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(Long)
+2019-06-04 14:14:26,700 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:14:26,701 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 14:14:26,701 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 20(Long)
+2019-06-04 14:14:26,702 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:14:26,703 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:14:26,703 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(Long)
+2019-06-04 14:14:26,704 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:14:26,705 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 14:14:26,706 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 21(Long)
+2019-06-04 14:14:26,706 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:14:26,707 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:14:26,707 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 7(Long)
+2019-06-04 14:14:26,708 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:14:26,709 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 14:14:26,709 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 22(Long)
+2019-06-04 14:14:26,710 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:14:26,710 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:14:26,711 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(Long)
+2019-06-04 14:14:26,712 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:14:26,713 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 14:14:26,714 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 23(Long)
+2019-06-04 14:14:26,715 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2019-06-04 14:14:26,715 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:14:26,716 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(Long)
+2019-06-04 14:14:26,717 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:14:26,717 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:14:26,718 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Long)
+2019-06-04 14:14:26,718 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:14:26,719 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 14:14:26,719 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 24(Long)
+2019-06-04 14:14:26,720 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:14:26,720 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:14:26,720 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Long)
+2019-06-04 14:14:26,721 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:14:26,722 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 14:14:26,722 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 25(Long)
+2019-06-04 14:14:26,723 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:14:26,724 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:14:26,724 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 102(Long)
+2019-06-04 14:14:26,725 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:14:26,725 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 14:14:26,725 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 26(Long)
+2019-06-04 14:14:26,726 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-06-04 14:14:26,727 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:14:26,727 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Long)
+2019-06-04 14:14:26,728 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:14:26,730 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:14:26,731 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(Long)
+2019-06-04 14:14:26,732 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:14:26,732 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:14:26,733 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 102(Long)
+2019-06-04 14:14:26,733 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:14:26,734 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 14:14:26,734 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 27(Long)
+2019-06-04 14:14:26,735 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:14:26,735 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:14:26,736 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 102(Long)
+2019-06-04 14:14:26,737 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:14:26,738 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 14:14:26,738 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 28(Long)
+2019-06-04 14:14:26,739 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:14:26,739 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:14:26,739 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 7(Long)
+2019-06-04 14:14:26,740 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:14:26,741 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 14:14:26,741 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 29(Long)
+2019-06-04 14:14:26,741 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:14:26,742 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:14:26,742 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 102(Long)
+2019-06-04 14:14:26,743 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:14:26,743 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 14:14:26,743 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 30(Long)
+2019-06-04 14:14:26,744 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:14:26,745 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:14:26,746 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 102(Long)
+2019-06-04 14:14:26,747 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:14:26,748 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 14:14:26,749 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 31(Long)
+2019-06-04 14:14:26,750 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:14:26,750 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:14:26,750 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(Long)
+2019-06-04 14:14:26,751 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:14:26,752 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 14:14:26,752 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 32(Long)
+2019-06-04 14:14:26,752 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:14:26,753 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:14:26,753 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 102(Long)
+2019-06-04 14:14:26,754 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:14:26,754 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 14:14:26,755 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 33(Long)
+2019-06-04 14:14:26,755 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2019-06-04 14:14:26,756 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:14:26,756 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 101(Long)
+2019-06-04 14:14:26,756 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:14:26,757 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:14:26,757 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 102(Long)
+2019-06-04 14:14:26,758 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:14:27,945 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE canteen_id = ? 
+2019-06-04 14:14:27,946 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 9(Integer)
+2019-06-04 14:14:27,948 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2019-06-04 14:14:27,954 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image,canteen_mark_number,canteen_mark,sales,takeout_money FROM canteen WHERE canteen_id = ? 
+2019-06-04 14:14:27,954 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 9(Integer)
+2019-06-04 14:14:27,955 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:14:27,958 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: DELETE FROM cart_info WHERE food_num = ? 
+2019-06-04 14:14:27,959 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer)
+2019-06-04 14:14:27,960 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 0
+2019-06-04 14:14:27,961 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,cart_id,food_id,food_num FROM cart_info 
+2019-06-04 14:14:27,962 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-06-04 14:14:27,963 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2019-06-04 14:14:27,963 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:14:27,964 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 7(Long)
+2019-06-04 14:14:27,965 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:14:27,967 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:14:27,967 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 6(Long)
+2019-06-04 14:14:27,968 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:14:27,969 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT cart_id,user_id,all_price FROM cart WHERE user_id = ? 
+2019-06-04 14:14:27,970 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 75(Long)
+2019-06-04 14:14:27,971 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:14:29,828 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT order_id,user_id,user_email,all_price,user_address,user_name,order_remark,order_time,user_phone,order_state,created_time FROM ord WHERE user_id = ? 
+2019-06-04 14:14:29,830 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 75(Long)
+2019-06-04 14:14:29,832 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2019-06-04 14:14:29,833 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 14:14:29,833 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 18(Long)
+2019-06-04 14:14:29,834 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:14:29,834 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:14:29,834 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 102(Long)
+2019-06-04 14:14:29,835 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:14:29,836 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 14:14:29,836 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 19(Long)
+2019-06-04 14:14:29,837 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2019-06-04 14:14:29,837 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:14:29,838 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 102(Long)
+2019-06-04 14:14:29,839 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:14:29,839 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:14:29,840 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(Long)
+2019-06-04 14:14:29,841 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:14:29,841 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 14:14:29,842 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 20(Long)
+2019-06-04 14:14:29,842 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:14:29,844 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:14:29,845 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(Long)
+2019-06-04 14:14:29,846 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:14:29,847 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 14:14:29,848 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 21(Long)
+2019-06-04 14:14:29,848 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:14:29,849 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:14:29,849 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 7(Long)
+2019-06-04 14:14:29,850 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:14:29,851 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 14:14:29,851 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 22(Long)
+2019-06-04 14:14:29,852 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:14:29,852 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:14:29,853 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(Long)
+2019-06-04 14:14:29,853 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:14:29,854 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 14:14:29,854 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 23(Long)
+2019-06-04 14:14:29,855 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2019-06-04 14:14:29,855 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:14:29,856 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(Long)
+2019-06-04 14:14:29,856 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:14:29,857 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:14:29,857 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Long)
+2019-06-04 14:14:29,858 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:14:29,859 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 14:14:29,859 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 24(Long)
+2019-06-04 14:14:29,860 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:14:29,860 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:14:29,862 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Long)
+2019-06-04 14:14:29,863 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:14:29,865 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 14:14:29,865 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 25(Long)
+2019-06-04 14:14:29,866 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:14:29,867 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:14:29,867 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 102(Long)
+2019-06-04 14:14:29,868 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:14:29,868 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 14:14:29,869 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 26(Long)
+2019-06-04 14:14:29,869 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-06-04 14:14:29,870 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:14:29,870 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Long)
+2019-06-04 14:14:29,872 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:14:29,872 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:14:29,873 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(Long)
+2019-06-04 14:14:29,873 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:14:29,874 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:14:29,874 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 102(Long)
+2019-06-04 14:14:29,875 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:14:29,875 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 14:14:29,876 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 27(Long)
+2019-06-04 14:14:29,877 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:14:29,877 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:14:29,878 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 102(Long)
+2019-06-04 14:14:29,879 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:14:29,880 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 14:14:29,881 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 28(Long)
+2019-06-04 14:14:29,882 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:14:29,883 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:14:29,883 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 7(Long)
+2019-06-04 14:14:29,884 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:14:29,884 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 14:14:29,885 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 29(Long)
+2019-06-04 14:14:29,885 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:14:29,886 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:14:29,886 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 102(Long)
+2019-06-04 14:14:29,886 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:14:29,887 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 14:14:29,888 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 30(Long)
+2019-06-04 14:14:29,888 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:14:29,889 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:14:29,889 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 102(Long)
+2019-06-04 14:14:29,890 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:14:29,890 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 14:14:29,890 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 31(Long)
+2019-06-04 14:14:29,891 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:14:29,891 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:14:29,892 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(Long)
+2019-06-04 14:14:29,892 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:14:29,893 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 14:14:29,894 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 32(Long)
+2019-06-04 14:14:29,894 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:14:29,895 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:14:29,895 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 102(Long)
+2019-06-04 14:14:29,896 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:14:29,898 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 14:14:29,899 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 33(Long)
+2019-06-04 14:14:29,899 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2019-06-04 14:14:29,900 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:14:29,900 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 101(Long)
+2019-06-04 14:14:29,901 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:14:29,902 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:14:29,902 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 102(Long)
+2019-06-04 14:14:29,903 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:24:32,993 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT user_id,user_phone,user_pwd,user_email,user_status,user_name,canteen_id,verify_code,cart_id FROM user WHERE user_pwd = ? AND user_email = ? 
+2019-06-04 14:24:32,994 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 310dcbbf4cce62f762a2aaa148d556bd(String), 333@qq.com(String)
+2019-06-04 14:24:32,998 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:24:33,102 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image,canteen_mark_number,canteen_mark,sales,takeout_money FROM canteen WHERE canteen_id = ? 
+2019-06-04 14:24:33,103 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-06-04 14:24:33,104 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:24:41,563 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT order_id,user_id,user_email,all_price,user_address,user_name,order_remark,order_time,user_phone,order_state,created_time FROM ord WHERE order_state = ? 
+2019-06-04 14:24:41,563 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer)
+2019-06-04 14:24:41,564 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-06-04 14:24:41,565 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 14:24:41,565 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 25(Long)
+2019-06-04 14:24:41,566 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:24:41,566 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:24:41,567 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 102(Long)
+2019-06-04 14:24:41,567 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:24:41,568 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 14:24:41,568 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 26(Long)
+2019-06-04 14:24:41,569 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-06-04 14:24:41,570 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:24:41,571 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Long)
+2019-06-04 14:24:41,572 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:24:41,573 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:24:41,575 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(Long)
+2019-06-04 14:24:41,576 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:24:41,577 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:24:41,577 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 102(Long)
+2019-06-04 14:24:41,578 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:24:41,579 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 14:24:41,579 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 27(Long)
+2019-06-04 14:24:41,580 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:24:41,581 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:24:41,581 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 102(Long)
+2019-06-04 14:24:41,582 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:24:41,582 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 14:24:41,583 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 28(Long)
+2019-06-04 14:24:41,583 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:24:41,584 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:24:41,584 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 7(Long)
+2019-06-04 14:24:41,585 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:24:41,585 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 14:24:41,585 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 29(Long)
+2019-06-04 14:24:41,586 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:24:41,586 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:24:41,587 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 102(Long)
+2019-06-04 14:24:41,587 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:24:41,588 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 14:24:41,589 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 30(Long)
+2019-06-04 14:24:41,591 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:24:41,592 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:24:41,593 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 102(Long)
+2019-06-04 14:24:41,594 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:24:41,595 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 14:24:41,596 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 31(Long)
+2019-06-04 14:24:41,597 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:24:41,598 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:24:41,598 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(Long)
+2019-06-04 14:24:41,599 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:24:41,600 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 14:24:41,600 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 32(Long)
+2019-06-04 14:24:41,601 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:24:41,603 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:24:41,603 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 102(Long)
+2019-06-04 14:24:41,604 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:24:41,605 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,order_id,food_id,food_num FROM order_info WHERE order_id = ? 
+2019-06-04 14:24:41,605 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 33(Long)
+2019-06-04 14:24:41,607 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2019-06-04 14:24:41,608 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:24:41,609 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 101(Long)
+2019-06-04 14:24:41,610 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:24:41,611 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:24:41,611 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 102(Long)
+2019-06-04 14:24:41,612 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:26:18,627 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE canteen_id = ? 
+2019-06-04 14:26:18,628 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-06-04 14:26:18,632 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 6
+2019-06-04 14:26:20,453 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT food_id,food_describe,food_price,food_image,canteen_id,food_name,food_rate,food_rate_number,created_time,food_sale FROM food WHERE food_id = ? 
+2019-06-04 14:26:20,453 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Long)
+2019-06-04 14:26:20,454 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 15:30:08,351 INFO (SpringApplication.java:597)- The following profiles are active: dev
+2019-06-04 15:30:27,687 INFO (StartupInfoLogger.java:57)- Started AdminServiceApp in 23.793 seconds (JVM running for 26.388)
+2019-06-04 15:32:02,847 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT user_id,user_phone,user_pwd,user_email,user_status,user_name,canteen_id,verify_code,cart_id FROM user WHERE user_pwd = ? AND user_email = ? 
+2019-06-04 15:32:02,864 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 310dcbbf4cce62f762a2aaa148d556bd(String), 759646095@qq.com(String)
+2019-06-04 15:32:02,875 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 15:32:06,586 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image,canteen_mark_number,canteen_mark,sales,takeout_money FROM canteen 
+2019-06-04 15:32:06,588 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-06-04 15:32:06,592 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-06-04 15:32:07,562 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image,canteen_mark_number,canteen_mark,sales,takeout_money FROM canteen 
+2019-06-04 15:32:07,563 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-06-04 15:32:07,574 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-06-04 15:32:11,813 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image,canteen_mark_number,canteen_mark,sales,takeout_money FROM canteen 
+2019-06-04 15:32:11,814 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-06-04 15:32:11,817 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-06-04 15:32:15,331 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image,canteen_mark_number,canteen_mark,sales,takeout_money FROM canteen WHERE canteen_id = ? 
+2019-06-04 15:32:15,334 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-06-04 15:32:15,337 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 15:33:06,329 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image,canteen_mark_number,canteen_mark,sales,takeout_money FROM canteen WHERE canteen_id = ? 
+2019-06-04 15:33:06,330 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 8(Integer)
+2019-06-04 15:33:06,332 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 15:33:32,336 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image,canteen_mark_number,canteen_mark,sales,takeout_money FROM canteen 
+2019-06-04 15:33:32,336 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-06-04 15:33:32,339 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-06-04 15:33:36,065 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image,canteen_mark_number,canteen_mark,sales,takeout_money FROM canteen 
+2019-06-04 15:33:36,066 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-06-04 15:33:36,069 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-06-04 15:33:47,604 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image,canteen_mark_number,canteen_mark,sales,takeout_money FROM canteen 
+2019-06-04 15:33:47,604 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-06-04 15:33:47,646 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-06-04 15:35:45,884 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image,canteen_mark_number,canteen_mark,sales,takeout_money FROM canteen 
+2019-06-04 15:35:45,884 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-06-04 15:35:45,887 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-06-04 15:51:13,891 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image,canteen_mark_number,canteen_mark,sales,takeout_money FROM canteen 
+2019-06-04 15:51:13,892 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-06-04 15:51:13,896 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-06-04 15:51:16,031 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image,canteen_mark_number,canteen_mark,sales,takeout_money FROM canteen WHERE canteen_id = ? 
+2019-06-04 15:51:16,032 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 9(Integer)
+2019-06-04 15:51:16,034 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 15:51:21,319 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image,canteen_mark_number,canteen_mark,sales,takeout_money FROM canteen 
+2019-06-04 15:51:21,320 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-06-04 15:51:21,322 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-06-04 15:51:23,523 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image,canteen_mark_number,canteen_mark,sales,takeout_money FROM canteen WHERE canteen_id = ? 
+2019-06-04 15:51:23,524 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 11(Integer)
+2019-06-04 15:51:23,525 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 15:51:34,694 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: update canteen SET canteen_des=? where canteen_id=? 
+2019-06-04 15:51:34,695 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 好吃不贵(String), 11(Integer)
+2019-06-04 15:51:34,702 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2019-06-04 15:51:38,814 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image,canteen_mark_number,canteen_mark,sales,takeout_money FROM canteen 
+2019-06-04 15:51:38,816 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-06-04 15:51:38,818 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 9
+2019-06-04 15:51:41,774 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image,canteen_mark_number,canteen_mark,sales,takeout_money FROM canteen WHERE canteen_id = ? 
+2019-06-04 15:51:41,775 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 11(Integer)
+2019-06-04 15:51:41,777 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1

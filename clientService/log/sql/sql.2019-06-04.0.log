@@ -1,0 +1,39 @@
+2019-06-04 12:50:26,068 INFO (SpringApplication.java:597)- The following profiles are active: dev
+2019-06-04 12:50:44,678 INFO (StartupInfoLogger.java:57)- Started ClientServiceApp in 22.725 seconds (JVM running for 25.641)
+2019-06-04 12:54:24,412 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,user_id,canteen_id FROM user_collect WHERE user_id = ? AND canteen_id = ? 
+2019-06-04 12:54:24,435 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 75(Long), 8(Integer)
+2019-06-04 12:54:24,446 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:07:03,823 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,user_id,canteen_id FROM user_collect WHERE user_id = ? AND canteen_id = ? 
+2019-06-04 13:07:03,829 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 75(Long), 9(Integer)
+2019-06-04 13:07:03,832 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:07:06,657 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,user_id,canteen_id FROM user_collect WHERE user_id = ? AND canteen_id = ? 
+2019-06-04 13:07:06,662 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 75(Long), 8(Integer)
+2019-06-04 13:07:06,663 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:24:03,649 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,user_id,canteen_id FROM user_collect WHERE user_id = ? AND canteen_id = ? 
+2019-06-04 13:24:03,650 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 75(Long), 9(Integer)
+2019-06-04 13:24:03,652 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:24:12,111 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,user_id,canteen_id FROM user_collect WHERE user_id = ? AND canteen_id = ? 
+2019-06-04 13:24:12,112 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 75(Long), 8(Integer)
+2019-06-04 13:24:12,113 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:53:35,298 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,user_id,canteen_id FROM user_collect WHERE user_id = ? AND canteen_id = ? 
+2019-06-04 13:53:35,301 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 75(Long), 9(Integer)
+2019-06-04 13:53:35,309 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:54:22,115 INFO (SpringApplication.java:597)- The following profiles are active: dev
+2019-06-04 13:54:42,510 INFO (StartupInfoLogger.java:57)- Started ClientServiceApp in 25.711 seconds (JVM running for 29.639)
+2019-06-04 13:56:34,693 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,user_id,canteen_id FROM user_collect WHERE user_id = ? AND canteen_id = ? 
+2019-06-04 13:56:34,713 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 75(Long), 9(Integer)
+2019-06-04 13:56:34,724 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:56:36,186 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,user_id,canteen_id FROM user_collect WHERE user_id = ? AND canteen_id = ? 
+2019-06-04 13:56:36,187 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 75(Long), 8(Integer)
+2019-06-04 13:56:36,188 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:57:04,822 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,user_id,canteen_id FROM user_collect WHERE user_id = ? AND canteen_id = ? 
+2019-06-04 13:57:04,823 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 75(Long), 8(Integer)
+2019-06-04 13:57:04,824 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 13:59:19,321 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,user_id,canteen_id FROM user_collect WHERE user_id = ? AND canteen_id = ? 
+2019-06-04 13:59:19,322 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 75(Long), 8(Integer)
+2019-06-04 13:59:19,324 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 14:14:27,959 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,user_id,canteen_id FROM user_collect WHERE user_id = ? AND canteen_id = ? 
+2019-06-04 14:14:27,960 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 75(Long), 9(Integer)
+2019-06-04 14:14:27,962 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-04 15:30:47,381 INFO (SpringApplication.java:597)- The following profiles are active: dev
+2019-06-04 15:31:03,992 INFO (StartupInfoLogger.java:57)- Started ClientServiceApp in 20.82 seconds (JVM running for 23.485)

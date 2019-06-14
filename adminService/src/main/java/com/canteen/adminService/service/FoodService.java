@@ -27,6 +27,7 @@ public class FoodService {
     FoodMapper foodMapper;
 
     public BiliResult addFood(Food food){
+        food.setFoodSale(0);
     Integer i1=foodMapper.insert(food);
     if(i1==0){
         return  BiliResult.build(201,"添加食品失败");
@@ -93,5 +94,13 @@ public class FoodService {
         return BiliResult.oK(list);
     }
 
-
+    /**
+     * 通过销量查询某食堂的所有食品
+     * @param canteenId
+     * @return
+     */
+    public  BiliResult selectManyByDesc(Integer canteenId){
+        List<Food>list=foodMapper.selectManyByDesc(canteenId);
+        return BiliResult.oK(list);
+    }
 }

@@ -1,20 +1,19 @@
 package com.canteen.adminService.util;
 
-import com.canteen.adminService.dao.CartInfoMapper;
-import com.canteen.adminService.dao.CartMapper;
-import com.canteen.adminService.dao.FoodMapper;
+import com.canteen.adminService.dao.*;
 import com.canteen.common.pojo.*;
 import com.canteen.common.pojoVo.CommentVo;
 import com.canteen.common.pojoVo.FoodVo;
 import com.canteen.common.pojoVo.OrderVo;
 import com.netflix.discovery.converters.Auto;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Configuration;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
+@Configuration
 public class EasyUtil {
 
     @Autowired
@@ -25,6 +24,12 @@ public class EasyUtil {
 
     @Autowired
     CartMapper cartMapper;
+
+    @Autowired
+    OrdMapper ordMapper;
+
+    @Autowired
+    OrderInfoMapper orderInfoMapper;
 
     public FoodVo getFoodVo(Food food){
         FoodVo foodVo=new FoodVo();
@@ -88,5 +93,22 @@ public class EasyUtil {
         map.put("foodVoList",foodVoList);
         map.put("cart",cartRes);
         return map;
+    }
+
+    /**
+     * 更新销量
+     * @return
+     */
+    public Integer updateFoodSale(){
+          Object b=orderInfoMapper;
+            List<Long>foodIds=orderInfoMapper.getfoodIds();
+            for (Long foodId :foodIds){
+                Integer foodSales=orderInfoMapper.getfoodSale(foodId);
+                Food food=new Food();
+                food.setFoodId(foodId);
+                food.setFoodSale(foodSales);
+                foodMapper.updateFood(food);
+            }
+            return 1;
     }
 }

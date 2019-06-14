@@ -9,22 +9,22 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
 @RestController
-@RequestMapping("/Food")
+@RequestMapping("/Food/")
 public class FoodController {
     @Autowired
     FoodService foodService;
 
-    @RequestMapping("/addFood")
+    @RequestMapping("addFood")
     public BiliResult addFood(Food food){
         return  foodService.addFood(food);
     }
 
-    @RequestMapping("/batchDel")
+    @RequestMapping("batchDel")
     public BiliResult batchDel(String foods){
         return  foodService.delFood(foods);
     }
 
-    @RequestMapping("/updateFood")
+    @RequestMapping("updateFood")
     public  BiliResult updateFood(Food food){
         return foodService.updatefood(food);
     }
@@ -48,4 +48,10 @@ public class FoodController {
     public BiliResult selectByName(String foodName,Integer canteenId){
         return foodService.selectByName(foodName,canteenId);
     }
+
+    @RequestMapping("selectManyByDesc")
+    public BiliResult selectManyByDesc(Integer canteenId){
+        return foodService.selectManyByDesc(canteenId);
+    }
+
 }
