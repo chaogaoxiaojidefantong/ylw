@@ -73,4 +73,8 @@ public class UserController {
         return userService.updateUserByCode(user);
     }
 
+    @RequestMapping("loginByWeChat")
+    public BiliResult loginByWeChat(User user){
+        return userService.loginByWeChat(user);
+    }
 }

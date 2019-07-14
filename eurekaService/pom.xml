@@ -21,8 +21,10 @@
             <artifactId>logback-classic</artifactId>
         </dependency>
     </dependencies>
+
     <build>
-        <finalName>eureka-10000</finalName>
+
+        <finalName>eureka-10003</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

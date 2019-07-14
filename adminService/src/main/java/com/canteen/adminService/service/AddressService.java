@@ -59,4 +59,10 @@ public class AddressService {
         return BiliResult.oK("修改成功");
     }
 
+    public BiliResult selectOne(Address address){
+       Address addressResult=addressMapper.selectOne(address);
+       return BiliResult.oK(addressResult);
+    }
+
+
 }

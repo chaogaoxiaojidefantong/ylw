@@ -25,10 +25,13 @@
         user_name=#{userName},
       </if>
       <if test="canteenId!=null and canteenId!=''">
-        canteen_id=#{canteenId}
+        canteen_id=#{canteenId},
       </if>
       <if test="verifyCode!=null and verifyCode!=''">
-        verify_code=#{verifyCode}
+        verify_code=#{verifyCode},
+      </if>
+      <if test="cartId!=null and cartId!=''">
+        cart_id=#{cartId}
       </if>
     </trim>
     <trim prefix="WHERE" prefixOverrides="AND|OR">

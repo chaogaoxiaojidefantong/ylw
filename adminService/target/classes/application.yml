@@ -11,3 +11,4 @@ mybatis:
 spring:
   profiles:
     active: dev
+

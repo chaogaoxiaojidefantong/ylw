@@ -34,5 +34,11 @@ public class AddressController {
         return addressService.updateOne(address);
     }
 
+    @RequestMapping("selectOne")
+    public BiliResult selectOne(Address address){
+        return addressService.selectOne(address);
+    }
+
+
 
 }

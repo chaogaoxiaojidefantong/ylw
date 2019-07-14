@@ -1,8 +1,0 @@
-2019-06-05 23:00:35,546 INFO (SpringApplication.java:597)- The following profiles are active: dev
-2019-06-05 23:00:58,890 INFO (StartupInfoLogger.java:57)- Started AdminServiceApp in 30.024 seconds (JVM running for 34.997)
-2019-06-05 23:04:19,539 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT user_id,user_phone,user_pwd,user_email,user_status,user_name,canteen_id,verify_code,cart_id FROM user WHERE user_pwd = ? AND user_email = ? 
-2019-06-05 23:04:19,724 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 310dcbbf4cce62f762a2aaa148d556bd(String), 759646095@qq.com(String)
-2019-06-05 23:04:19,757 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
-2019-06-05 23:11:54,805 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT user_id,user_phone,user_pwd,user_email,user_status,user_name,canteen_id,verify_code,cart_id FROM user WHERE user_pwd = ? AND user_email = ? 
-2019-06-05 23:11:54,814 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 310dcbbf4cce62f762a2aaa148d556bd(String), 759646095@qq.com(String)
-2019-06-05 23:11:54,825 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1

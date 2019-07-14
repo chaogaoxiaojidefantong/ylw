@@ -1,2 +1,0 @@
-2019-04-30 21:39:54,689 INFO (SpringApplication.java:597)- The following profiles are active: dev
-2019-04-30 21:40:09,799 INFO (StartupInfoLogger.java:57)- Started ClientServiceApp in 20.051 seconds (JVM running for 21.882)

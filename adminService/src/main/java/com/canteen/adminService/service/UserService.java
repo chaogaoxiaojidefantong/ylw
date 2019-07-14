@@ -132,6 +132,41 @@ public class UserService {
         }
     }
 
+    /**
+     * 微信登录
+     * @param user
+     * @return
+     */
+    public BiliResult loginByWeChat(User user){
+        User user1=null;
+       user1= userMapper.selectOne(user);
+       if(user1==null){
+           userMapper.insert(user);//如果数据库没有这个用户，则需要先注册进去
+           User userResult=userMapper.selectOne(user);
+           Cart cartResult=insertCart(userResult.getUserId());
+           userResult.setCartId(cartResult.getCartId());
+           userMapper.updateUser(userResult);
+          user1=userMapper.selectOne(user);
+       }
+       Map map=handleToken(user1);
+       return BiliResult.oK(map);
+    }
+
+    /**
+     * 给新注册的账号添加购物车,并返回添加后的购物车
+     * @param userId
+     */
+    public Cart  insertCart(Long userId){
+        Cart cart=new Cart();
+        cart.setUserId(userId);
+        cart.setAllPrice(0);
+        cartMapper.insert(cart);
+        Cart cartResult=cartMapper.selectOne(cart);
+        return cartResult;
+    }
+
+
+
 
     public BiliResult userList(User user) {
         return BiliResult.oK(userMapper.select(user));
@@ -175,6 +210,4 @@ public class UserService {
         }
         return BiliResult.oK();
     }
-
-
 }

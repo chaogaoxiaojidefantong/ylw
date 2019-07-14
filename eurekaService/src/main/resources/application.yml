@@ -8,5 +8,5 @@ eureka:
 
 spring:
   profiles:
-    active: #spring.profiles.active#
+    active: dev
 
