@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
       <module fileurl="file://$PROJECT_DIR$/eurekaService/eurekaService.iml" filepath="$PROJECT_DIR$/eurekaService/eurekaService.iml" />
       <module fileurl="file://$PROJECT_DIR$/generator/generator.iml" filepath="$PROJECT_DIR$/generator/generator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/t1/t1.iml" filepath="$PROJECT_DIR$/t1/t1.iml" />
       <module fileurl="file://$PROJECT_DIR$/zipkinService/zipkinService.iml" filepath="$PROJECT_DIR$/zipkinService/zipkinService.iml" />
       <module fileurl="file://$PROJECT_DIR$/zuulService/zuulService.iml" filepath="$PROJECT_DIR$/zuulService/zuulService.iml" />
     </modules>

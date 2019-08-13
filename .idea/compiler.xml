@@ -11,6 +11,7 @@
         <module name="common" />
         <module name="adminService" />
         <module name="zipkinService" />
+        <module name="t1" />
         <module name="clientService" />
         <module name="zuulService" />
       </profile>
@@ -22,6 +23,7 @@
       <module name="common" target="1.8" />
       <module name="eurekaService" target="1.8" />
       <module name="generator" target="1.8" />
+      <module name="t1" target="1.8" />
       <module name="zipkinService" target="1.8" />
       <module name="zuulService" target="1.8" />
     </bytecodeTargetLevel>

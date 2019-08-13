@@ -44,10 +44,10 @@
     </trim>
     where canteen_id=#{canteenId}
   </update>
-
   <select id="selectByName" resultType="com.canteen.common.pojo.Canteen">
 select
     <include refid="canteenColumns"></include>
     from canteen where canteen_name like #{canteenName}
   </select>
+
 </mapper>

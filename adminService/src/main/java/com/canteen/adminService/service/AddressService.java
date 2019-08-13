@@ -5,6 +5,7 @@ import com.canteen.common.pojo.Address;
 import com.canteen.common.vo.BiliResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
 
 import java.util.List;
 
@@ -13,12 +14,16 @@ public class AddressService {
     @Autowired
     AddressMapper addressMapper;
 
+    @Autowired
+    RestTemplate restTemplate;
+
     /**
      * 添加一条地址
      * @param address
      * @return
      */
     public BiliResult addOne(Address address){
+
         Integer i1=addressMapper.insert(address);
         if(i1==0){
             return BiliResult.build(201,"添加失败");

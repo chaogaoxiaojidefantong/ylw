@@ -1,0 +1,20 @@
+2019-07-21 10:44:04,407 INFO (SpringApplication.java:597)- The following profiles are active: dev
+2019-07-21 10:44:50,811 INFO (StartupInfoLogger.java:57)- Started ClientServiceApp in 54.484 seconds (JVM running for 58.045)
+2019-07-21 14:08:36,587 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,user_id,canteen_id FROM user_collect WHERE user_id = ? AND canteen_id = ? 
+2019-07-21 14:08:36,648 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 75(Long), 8(Integer)
+2019-07-21 14:08:36,687 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-07-21 14:08:36,717 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,user_id,canteen_id FROM user_collect WHERE user_id = ? AND canteen_id = ? 
+2019-07-21 14:08:36,720 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 75(Long), 8(Integer)
+2019-07-21 14:08:36,722 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-07-21 14:08:42,993 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,user_id,canteen_id FROM user_collect WHERE user_id = ? AND canteen_id = ? 
+2019-07-21 14:08:42,996 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 75(Long), 8(Integer)
+2019-07-21 14:08:42,999 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-07-21 14:21:34,660 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,user_id,canteen_id FROM user_collect WHERE user_id = ? AND canteen_id = ? 
+2019-07-21 14:21:34,662 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 75(Long), 9(Integer)
+2019-07-21 14:21:34,664 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-07-21 18:42:50,263 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,user_id,canteen_id FROM user_collect WHERE user_id = ? AND canteen_id = ? 
+2019-07-21 18:42:50,285 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 75(Long), 9(Integer)
+2019-07-21 18:42:50,290 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-07-21 18:42:52,550 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,user_id,canteen_id FROM user_collect WHERE user_id = ? AND canteen_id = ? 
+2019-07-21 18:42:52,552 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 75(Long), 10(Integer)
+2019-07-21 18:42:52,557 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1

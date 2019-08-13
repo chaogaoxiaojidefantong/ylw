@@ -117,8 +117,9 @@ public class CartService {
      */
     public Map selectOneCart(Cart cart) {
         Map map = new HashMap();
+        Cart cartObj=cartMapper.selectOne(cart);
         CartInfo cartInfo = new CartInfo();
-        cartInfo.setCartId(cart.getCartId());
+        cartInfo.setCartId(cartObj.getCartId());
         CartInfo delObj = new CartInfo();
         delObj.setFoodNum(0);
         cartInfoMapper.delete(delObj);//删除表里所有数量为0的食品

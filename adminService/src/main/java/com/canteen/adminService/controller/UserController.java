@@ -17,7 +17,6 @@ public class UserController {
     public BiliResult login(User user){
         return userService.login(user);
     }
-
     @RequestMapping("/regist")
     public BiliResult regist(User user){
         return userService.regist(user);
@@ -76,5 +75,10 @@ public class UserController {
     @RequestMapping("loginByWeChat")
     public BiliResult loginByWeChat(User user){
         return userService.loginByWeChat(user);
+    }
+
+    @RequestMapping("registEmailJudge")
+    public BiliResult registEmailJudge(String email){
+        return userService.registEmailJudge(email);
     }
 }

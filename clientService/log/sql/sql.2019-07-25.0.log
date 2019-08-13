@@ -1,0 +1,73 @@
+2019-07-25 09:05:46,322 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,user_id,canteen_id FROM user_collect WHERE user_id = ? AND canteen_id = ? 
+2019-07-25 09:05:46,770 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 75(Long), 8(Integer)
+2019-07-25 09:05:46,791 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2019-07-25 09:30:43,981 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,user_id,canteen_id FROM user_collect WHERE user_id = ? AND canteen_id = ? 
+2019-07-25 09:30:44,050 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 75(Long), 8(Integer)
+2019-07-25 09:30:44,062 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2019-07-25 09:30:49,945 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,user_id,canteen_id FROM user_collect WHERE user_id = ? AND canteen_id = ? 
+2019-07-25 09:30:49,948 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 75(Long), 8(Integer)
+2019-07-25 09:30:49,949 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2019-07-25 09:30:51,736 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,user_id,canteen_id FROM user_collect WHERE user_id = ? AND canteen_id = ? 
+2019-07-25 09:30:51,741 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 75(Long), 9(Integer)
+2019-07-25 09:30:51,745 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2019-07-25 09:30:54,758 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,user_id,canteen_id FROM user_collect WHERE user_id = ? AND canteen_id = ? 
+2019-07-25 09:30:54,762 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 75(Long), 9(Integer)
+2019-07-25 09:30:54,764 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2019-07-25 09:31:16,047 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,user_id,canteen_id FROM user_collect WHERE user_id = ? AND canteen_id = ? 
+2019-07-25 09:31:16,048 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 75(Long), 10(Integer)
+2019-07-25 09:31:16,059 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-07-25 09:32:55,383 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,user_id,canteen_id FROM user_collect WHERE user_id = ? AND canteen_id = ? 
+2019-07-25 09:32:55,384 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 75(Long), 9(Integer)
+2019-07-25 09:32:55,387 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2019-07-25 09:32:57,200 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,user_id,canteen_id FROM user_collect WHERE user_id = ? AND canteen_id = ? 
+2019-07-25 09:32:57,201 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 75(Long), 8(Integer)
+2019-07-25 09:32:57,204 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2019-07-25 10:08:50,823 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,user_id,canteen_id FROM user_collect WHERE user_id = ? AND canteen_id = ? 
+2019-07-25 10:08:50,829 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 75(Long), 8(Integer)
+2019-07-25 10:08:50,832 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2019-07-25 10:23:29,928 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,user_id,canteen_id FROM user_collect WHERE user_id = ? AND canteen_id = ? 
+2019-07-25 10:23:29,958 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 100(Long), 8(Integer)
+2019-07-25 10:23:29,961 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2019-07-25 10:23:33,629 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,user_id,canteen_id FROM user_collect WHERE user_id = ? AND canteen_id = ? 
+2019-07-25 10:23:33,631 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 100(Long), 8(Integer)
+2019-07-25 10:23:33,633 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2019-07-25 10:24:15,688 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,user_id,canteen_id FROM user_collect WHERE user_id = ? AND canteen_id = ? 
+2019-07-25 10:24:15,690 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 100(Long), 8(Integer)
+2019-07-25 10:24:15,692 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2019-07-25 10:24:20,262 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,user_id,canteen_id FROM user_collect WHERE user_id = ? AND canteen_id = ? 
+2019-07-25 10:24:20,266 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 100(Long), 8(Integer)
+2019-07-25 10:24:20,270 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2019-07-25 10:24:27,833 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: INSERT INTO user_collect ( id,user_id,canteen_id ) VALUES( ?,?,? ) 
+2019-07-25 10:24:27,860 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: null, 100(Long), 8(Integer)
+2019-07-25 10:24:27,864 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2019-07-25 10:24:29,278 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: DELETE FROM user_collect WHERE user_id = ? AND canteen_id = ? 
+2019-07-25 10:24:29,279 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 100(Long), 8(Integer)
+2019-07-25 10:24:29,283 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2019-07-25 11:50:28,006 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,user_id,canteen_id FROM user_collect WHERE user_id = ? AND canteen_id = ? 
+2019-07-25 11:50:28,034 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 75(Long), 8(Integer)
+2019-07-25 11:50:28,039 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2019-07-25 18:01:39,664 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,user_id,canteen_id FROM user_collect WHERE user_id = ? AND canteen_id = ? 
+2019-07-25 18:01:39,756 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 75(Long), 8(Integer)
+2019-07-25 18:01:39,771 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2019-07-25 18:01:42,325 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,user_id,canteen_id FROM user_collect WHERE user_id = ? AND canteen_id = ? 
+2019-07-25 18:01:42,330 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 75(Long), 9(Integer)
+2019-07-25 18:01:42,372 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2019-07-25 18:01:46,818 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,user_id,canteen_id FROM user_collect WHERE user_id = ? AND canteen_id = ? 
+2019-07-25 18:01:46,819 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 75(Long), 9(Integer)
+2019-07-25 18:01:46,824 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2019-07-25 20:00:26,844 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,user_id,canteen_id FROM user_collect WHERE user_id = ? AND canteen_id = ? 
+2019-07-25 20:00:26,864 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 75(Long), 8(Integer)
+2019-07-25 20:00:26,869 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2019-07-25 20:24:36,283 INFO (SpringApplication.java:597)- The following profiles are active: dev
+2019-07-25 20:24:59,977 INFO (StartupInfoLogger.java:57)- Started ClientServiceApp in 29.732 seconds (JVM running for 86778.354)
+2019-07-25 20:26:06,001 INFO (SpringApplication.java:597)- The following profiles are active: dev
+2019-07-25 20:56:16,626 INFO (SpringApplication.java:597)- The following profiles are active: dev
+2019-07-25 20:56:29,481 INFO (SpringApplication.java:597)- The following profiles are active: dev
+2019-07-25 23:40:20,684 INFO (SpringApplication.java:597)- The following profiles are active: dev
+2019-07-25 23:40:59,465 INFO (StartupInfoLogger.java:57)- Started ClientServiceApp in 45.702 seconds (JVM running for 49.562)
+2019-07-25 23:47:08,511 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,user_id,canteen_id FROM user_collect WHERE user_id = ? AND canteen_id = ? 
+2019-07-25 23:47:08,691 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 75(Long), 9(Integer)
+2019-07-25 23:47:08,763 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2019-07-25 23:52:02,558 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,user_id,canteen_id FROM user_collect WHERE user_id = ? AND canteen_id = ? 
+2019-07-25 23:52:02,560 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 75(Long), 9(Integer)
+2019-07-25 23:52:02,567 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0

@@ -46,6 +46,7 @@ public class UserService {
     }
 
     public BiliResult regist(User user) {
+        User userResult=null;
         user.setUserPwd(DigestUtils.md5Hex(user.getUserPwd()));
         Integer i1 = userMapper.insert(user);
         if (i1 == 0) {
@@ -54,7 +55,7 @@ public class UserService {
         if (user.getUserStatus() == 3) {//如果是顾客注册则添加购物车
             User userOne = new User();
             userOne.setUserEmail(user.getUserEmail());
-            User userResult = userMapper.selectOne(userOne);
+            userResult = userMapper.selectOne(userOne);
             Cart cart = new Cart();
             cart.setAllPrice(0);
             cart.setUserId(userResult.getUserId());
@@ -63,7 +64,7 @@ public class UserService {
             userResult.setCartId(cartResult.getCartId());
             userMapper.updateUser(userResult);
         }
-        return BiliResult.oK();
+        return BiliResult.oK(userResult);
     }
 
     /**
@@ -139,7 +140,9 @@ public class UserService {
      */
     public BiliResult loginByWeChat(User user){
         User user1=null;
-       user1= userMapper.selectOne(user);
+        User userSelect=new User();
+        userSelect.setUserEmail(user.getUserEmail());
+       user1= userMapper.selectOne(userSelect);
        if(user1==null){
            userMapper.insert(user);//如果数据库没有这个用户，则需要先注册进去
            User userResult=userMapper.selectOne(user);
@@ -210,4 +213,20 @@ public class UserService {
         }
         return BiliResult.oK();
     }
+
+    /**
+     *判断邮箱是否已被注册
+     * @param email
+     * @return
+     */
+    public BiliResult registEmailJudge(String email){
+        User user=new User();
+        user.setUserEmail(email);
+        User userResult=userMapper.selectOne(user);
+        if(userResult==null){
+            return BiliResult.oK();
+        }
+        return BiliResult.build(201,"该邮箱已被注册");
+    }
+
 }

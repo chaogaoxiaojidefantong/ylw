@@ -13,6 +13,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
+import java.util.Map;
+
 @RestController
 @RequestMapping("/Canteen")
 public class CanteenController {
@@ -57,5 +59,10 @@ public class CanteenController {
     @RequestMapping("selectByName")
     public BiliResult selectByName(String canteenName){
     return canteenService.selectByName(canteenName);
+    }
+
+    @RequestMapping("selectT1")
+    public BiliResult selectT1(){
+       return canteenService.selectT1();
     }
 }

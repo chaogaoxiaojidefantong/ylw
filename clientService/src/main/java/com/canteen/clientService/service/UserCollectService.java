@@ -1,14 +1,15 @@
 package com.canteen.clientService.service;
 
 import com.canteen.clientService.dao.UserCollectMapper;
-import com.canteen.common.pojo.Canteen;
 import com.canteen.common.pojo.UserCollect;
 import com.canteen.common.vo.BiliResult;
-import com.google.gson.Gson;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import java.util.List;
+import org.springframework.util.LinkedMultiValueMap;
+import org.springframework.util.MultiValueMap;
+import org.springframework.web.client.RestTemplate;
+import java.util.*;
 
 @Service
 public class UserCollectService {
@@ -16,8 +17,10 @@ public class UserCollectService {
     @Autowired
     UserCollectMapper userCollectMapper;
 
+    @Autowired
+    RestTemplate restTemplate;
 
-
+    public ObjectMapper objectMapper;
     /**
      * 收藏
      * @param userCollect
@@ -57,12 +60,22 @@ public class UserCollectService {
         return BiliResult.oK(u1);
     }
 
-//    public BiliResult selectMany(UserCollect userCollect){
-//        List<UserCollect> list=userCollectMapper.select(userCollect);
-//        for(UserCollect userCollect1:list){
-//            Canteen canteen=new Canteen();
-//            canteen.setCanteenId(userCollect1.getCanteenId());
-//
-//        }
-//    }
+    /**
+     * 获得某个用户收藏的店铺
+     * @return
+     */
+    public BiliResult getUserCollet(Long userId){
+       UserCollect userCollect=new UserCollect();
+       userCollect.setUserId(userId);
+       List<UserCollect>list=userCollectMapper.select(userCollect);
+       List<Map>canteenList=new ArrayList<>();
+       for(int i=0;i<list.size();i++) {
+           MultiValueMap<String,String> multiValueMap = new LinkedMultiValueMap();
+           multiValueMap.add("canteenId",list.get(i).getCanteenId()+"");
+           BiliResult biliResult=restTemplate.postForObject("http://adminService/Canteen/selectOneCanteen",multiValueMap , BiliResult.class);
+           LinkedHashMap mapResult= (LinkedHashMap)biliResult.getData();
+            canteenList.add(mapResult);
+       }
+       return BiliResult.oK(canteenList);
+    }
 }

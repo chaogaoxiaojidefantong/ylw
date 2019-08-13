@@ -18,7 +18,7 @@ public class CartController {
 //    @RequestMapping("cartAddOneFood")
 //    public BiliResult cartAddOneFood(Cart cart, CartInfo cartInfo){
 //    return  cartService.cartAddOneFood(cart,cartInfo);
-//    }
+//    }foodReduceOneNum
 
     @RequestMapping("foodAddNum")
     public BiliResult foodAddNum(Cart cart,CartInfo cartInfo)

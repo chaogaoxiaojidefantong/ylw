@@ -1,0 +1,43 @@
+2019-07-17 23:02:38,314 INFO (SpringApplication.java:597)- The following profiles are active: dev
+2019-07-17 23:02:58,202 INFO (StartupInfoLogger.java:57)- Started AdminServiceApp in 26.636 seconds (JVM running for 33.044)
+2019-07-17 23:03:40,276 INFO (SpringApplication.java:597)- The following profiles are active: dev
+2019-07-17 23:03:58,677 INFO (StartupInfoLogger.java:57)- Started AdminServiceApp in 22.872 seconds (JVM running for 25.563)
+2019-07-17 23:13:09,580 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT user_id,user_phone,user_pwd,user_email,user_status,user_name,canteen_id,verify_code,cart_id FROM user WHERE user_email = ? AND user_name = ? 
+2019-07-17 23:13:09,600 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image,canteen_mark_number,canteen_mark,sales,takeout_money FROM canteen 
+2019-07-17 23:13:09,607 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image,canteen_mark_number,canteen_mark,sales,takeout_money FROM canteen 
+2019-07-17 23:13:10,121 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-07-17 23:13:10,121 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-07-17 23:13:10,127 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: oYozN4mtf-bSuByIIBtEAWFNA014(String), 超高校级的饭桶(String)
+2019-07-17 23:13:10,175 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-07-17 23:13:10,178 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2019-07-17 23:13:10,183 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2019-07-17 23:14:02,946 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image,canteen_mark_number,canteen_mark,sales,takeout_money FROM canteen 
+2019-07-17 23:14:02,947 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-07-17 23:14:02,951 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2019-07-17 23:14:03,523 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT user_id,user_phone,user_pwd,user_email,user_status,user_name,canteen_id,verify_code,cart_id FROM user WHERE user_email = ? AND user_name = ? 
+2019-07-17 23:14:03,524 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: oYozN4mtf-bSuByIIBtEAWFNA014(String), 超高校级的饭桶(String)
+2019-07-17 23:14:03,527 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-07-17 23:38:41,693 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT address_id,user_name,user_phone,user_email,user_id,user_address FROM address WHERE user_id = ? 
+2019-07-17 23:38:41,695 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 84(Long)
+2019-07-17 23:38:41,706 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-07-17 23:38:45,073 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT address_id,user_name,user_phone,user_email,user_id,user_address FROM address WHERE address_id = ? 
+2019-07-17 23:38:45,074 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 6(Long)
+2019-07-17 23:38:45,076 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-07-17 23:52:36,933 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image,canteen_mark_number,canteen_mark,sales,takeout_money FROM canteen 
+2019-07-17 23:52:36,934 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-07-17 23:52:36,941 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2019-07-17 23:52:38,545 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT user_id,user_phone,user_pwd,user_email,user_status,user_name,canteen_id,verify_code,cart_id FROM user WHERE user_email = ? AND user_name = ? 
+2019-07-17 23:52:38,546 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: oYozN4mtf-bSuByIIBtEAWFNA014(String), 超高校级的饭桶(String)
+2019-07-17 23:52:38,548 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-07-17 23:52:43,730 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT address_id,user_name,user_phone,user_email,user_id,user_address FROM address WHERE user_id = ? 
+2019-07-17 23:52:43,732 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 84(Long)
+2019-07-17 23:52:43,734 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-07-17 23:52:45,328 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT address_id,user_name,user_phone,user_email,user_id,user_address FROM address WHERE address_id = ? 
+2019-07-17 23:52:45,330 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 6(Long)
+2019-07-17 23:52:45,332 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-07-17 23:53:16,013 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: update address SET user_name=?, user_phone=?, user_address=? where address_id=? 
+2019-07-17 23:53:16,019 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: ylw(String), 18281635009(String), 龙翔大道信访办自行车租赁点(龙德南路)(String), 6(Long)
+2019-07-17 23:53:16,035 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2019-07-17 23:53:16,037 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: update address SET user_name=?, user_phone=?, user_address=? where address_id=? 
+2019-07-17 23:53:16,043 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: ylw(String), 18281635009(String), 龙翔大道信访办自行车租赁点(龙德南路)(String), 6(Long)
+2019-07-17 23:53:16,053 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1

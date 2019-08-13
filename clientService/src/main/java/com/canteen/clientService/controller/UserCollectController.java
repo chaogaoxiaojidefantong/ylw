@@ -27,5 +27,8 @@ public class UserCollectController {
         return userCollectService.selectOne(userCollect);
     }
 
-
+    @RequestMapping("/getUserCollet")
+    public  BiliResult getUserCollet(Long userId){
+        return userCollectService.getUserCollet(userId);
+    }
 }

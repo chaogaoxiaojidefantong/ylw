@@ -1,0 +1,21 @@
+2019-07-30 09:46:46,726 INFO (SpringApplication.java:597)- The following profiles are active: dev
+2019-07-30 10:16:55,482 INFO (SpringApplication.java:597)- The following profiles are active: dev
+2019-07-30 10:17:06,773 INFO (StartupInfoLogger.java:57)- Started AdminServiceApp in 15.147 seconds (JVM running for 40813.122)
+2019-07-30 10:36:27,768 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image,canteen_mark_number,canteen_mark,sales,takeout_money FROM canteen 
+2019-07-30 10:36:27,798 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-07-30 10:36:27,838 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2019-07-30 10:36:30,074 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image,canteen_mark_number,canteen_mark,sales,takeout_money FROM canteen 
+2019-07-30 10:36:30,075 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-07-30 10:36:30,084 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2019-07-30 10:36:59,792 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM canteen 
+2019-07-30 10:36:59,792 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-07-30 10:36:59,797 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-07-30 10:36:59,798 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image,canteen_mark_number,canteen_mark,sales,takeout_money FROM canteen LIMIT ? 
+2019-07-30 10:36:59,800 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(Integer)
+2019-07-30 10:36:59,802 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-07-30 10:37:35,930 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM canteen 
+2019-07-30 10:37:35,931 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-07-30 10:37:35,933 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-07-30 10:37:35,934 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT canteen_id,canteen_label,canteen_name,canteen_des,canteen_image,canteen_mark_number,canteen_mark,sales,takeout_money FROM canteen LIMIT ? 
+2019-07-30 10:37:35,935 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(Integer)
+2019-07-30 10:37:35,937 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3

@@ -1,5 +1,6 @@
 package com.canteen.adminService.service;
 
+import com.alibaba.druid.support.json.JSONUtils;
 import com.canteen.adminService.dao.CanteenMapper;
 import com.canteen.adminService.dao.FoodMapper;
 import com.canteen.common.pojo.Canteen;
@@ -8,6 +9,9 @@ import com.canteen.common.util.FileUtil;
 import com.canteen.common.util.UploadImg;
 import com.canteen.common.vo.BiliResult;
 import com.canteen.common.vo.PicUploadResult;
+import com.github.pagehelper.Page;
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
@@ -15,6 +19,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
 import java.util.List;
+import java.util.Map;
 
 
 @Service
@@ -52,8 +57,8 @@ public class CanteenService {
      * @return
      */
     public BiliResult updateCanteen(Canteen canteen) {
-        //Integer i1=canteenMapper.updateCanteen(canteen);
         Integer i1 = canteenMapper.updateCanteenTest(canteen);
+
         if (i1 == 0) {
             return BiliResult.build(201, "更新失败");
         }
@@ -128,5 +133,12 @@ public class CanteenService {
         return BiliResult.oK(list);
     }
 
+    public BiliResult selectT1(){
+        PageHelper.startPage(1,3);
+        List<Canteen>list=canteenMapper.select(null);
+        PageInfo pageInfo = new PageInfo(list);
+        System.out.println("hehe");
+        return null;
+    }
 
 }
