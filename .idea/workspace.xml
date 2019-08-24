@@ -5,34 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="52e70a48-0b4d-4345-8740-56d136f876f4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jsqlparser_jsqlparser_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_5_1_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/t1/t1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/adminService/adminService.iml" beforeDir="false" afterPath="$PROJECT_DIR$/adminService/adminService.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/adminService/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminService/src/main/java/com/canteen/adminService/AdminServiceApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/adminService/src/main/java/com/canteen/adminService/AdminServiceApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminService/src/main/java/com/canteen/adminService/controller/CanteenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/adminService/src/main/java/com/canteen/adminService/controller/CanteenController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminService/src/main/java/com/canteen/adminService/controller/CartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/adminService/src/main/java/com/canteen/adminService/controller/CartController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminService/src/main/java/com/canteen/adminService/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/adminService/src/main/java/com/canteen/adminService/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminService/src/main/java/com/canteen/adminService/service/AddressService.java" beforeDir="false" afterPath="$PROJECT_DIR$/adminService/src/main/java/com/canteen/adminService/service/AddressService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminService/src/main/java/com/canteen/adminService/service/CanteenService.java" beforeDir="false" afterPath="$PROJECT_DIR$/adminService/src/main/java/com/canteen/adminService/service/CanteenService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminService/src/main/java/com/canteen/adminService/service/CartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/adminService/src/main/java/com/canteen/adminService/service/CartService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminService/src/main/java/com/canteen/adminService/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/adminService/src/main/java/com/canteen/adminService/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/adminService/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminService/src/main/resources/mapping/CanteenMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/adminService/src/main/resources/mapping/CanteenMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminService/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/adminService/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminService/target/classes/mapping/CanteenMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/adminService/target/classes/mapping/CanteenMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientService/src/main/java/com/canteen/clientService/ClientServiceApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/clientService/src/main/java/com/canteen/clientService/ClientServiceApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientService/src/main/java/com/canteen/clientService/controller/UserCollectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/clientService/src/main/java/com/canteen/clientService/controller/UserCollectController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientService/src/main/java/com/canteen/clientService/service/UserCollectService.java" beforeDir="false" afterPath="$PROJECT_DIR$/clientService/src/main/java/com/canteen/clientService/service/UserCollectService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientService/target/classes/com/canteen/clientService/ClientServiceApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/clientService/target/classes/com/canteen/clientService/ClientServiceApp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientService/target/classes/com/canteen/clientService/controller/UserCollectController.class" beforeDir="false" afterPath="$PROJECT_DIR$/clientService/target/classes/com/canteen/clientService/controller/UserCollectController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientService/target/classes/com/canteen/clientService/service/UserCollectService.class" beforeDir="false" afterPath="$PROJECT_DIR$/clientService/target/classes/com/canteen/clientService/service/UserCollectService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuulService/src/main/java/com/canteen/zuulService/zuul/ZuulApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/zuulService/src/main/java/com/canteen/zuulService/zuul/ZuulApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuulService/src/main/resources/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuulService/target/classes/com/canteen/zuulService/zuul/ZuulApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/zuulService/target/classes/com/canteen/zuulService/zuul/ZuulApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuulService/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/zuulService/target/classes/templates/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -62,10 +40,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/adminService/pom.xml">
+        <entry file="file://$PROJECT_DIR$/adminService/src/main/resources/application-dev.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="501">
-              <caret line="103" column="19" selection-start-line="103" selection-start-column="19" selection-end-line="103" selection-end-column="19" />
+            <state relative-caret-position="202">
+              <caret line="37" column="8" lean-forward="true" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -96,10 +74,16 @@
       <find>canteenColumns</find>
       <find>selectOneCart</find>
       <find>foodReduceOneNum</find>
+      <find>spring-boot-starter-actuator</find>
+      <find>starter-web</find>
+      <find>spring-boot-starter-web</find>
     </findStrings>
     <replaceStrings>
       <replace>client</replace>
     </replaceStrings>
+    <dirStrings>
+      <dir>D:\mystudy\xikecanteen</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -107,7 +91,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/generator/src/main/resources/generatorConfig.xml" />
         <option value="$PROJECT_DIR$/adminService/src/main/resources/mapping/CommentMapper.xml" />
         <option value="$PROJECT_DIR$/adminService/src/main/java/com/canteen/adminService/dao/CommentMapper.java" />
         <option value="$PROJECT_DIR$/common/src/main/java/com/canteen/common/pojo/Comment.java" />
@@ -131,7 +114,6 @@
         <option value="$PROJECT_DIR$/adminService/src/main/java/com/canteen/adminService/util/EasyUtil.java" />
         <option value="$PROJECT_DIR$/eurekaService/src/main/resources/application-dev.yml" />
         <option value="$PROJECT_DIR$/adminService/src/main/resources/mapping/UserMapper.xml" />
-        <option value="$PROJECT_DIR$/adminService/src/main/resources/application-dev.yml" />
         <option value="$PROJECT_DIR$/eurekaService/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/clientService/pom.xml" />
         <option value="$PROJECT_DIR$/zuulService/src/main/resources/application-dev.yml" />
@@ -158,6 +140,8 @@
         <option value="$PROJECT_DIR$/adminService/pom.xml" />
         <option value="$PROJECT_DIR$/adminService/src/main/java/com/canteen/adminService/service/CanteenService.java" />
         <option value="$PROJECT_DIR$/adminService/src/main/java/com/canteen/adminService/controller/CanteenController.java" />
+        <option value="$PROJECT_DIR$/zuulService/src/main/java/com/canteen/zuulService/zuul/ZuulApp.java" />
+        <option value="$PROJECT_DIR$/adminService/src/main/resources/application-dev.yml" />
       </list>
     </option>
   </component>
@@ -206,7 +190,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -223,6 +207,19 @@
               <item name="xikecanteen" type="b2602c69:ProjectViewProjectNode" />
               <item name="xikecanteen" type="462c0819:PsiDirectoryNode" />
               <item name="adminService" type="462c0819:PsiDirectoryNode" />
+              <item name="log" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xikecanteen" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xikecanteen" type="462c0819:PsiDirectoryNode" />
+              <item name="adminService" type="462c0819:PsiDirectoryNode" />
+              <item name="log" type="462c0819:PsiDirectoryNode" />
+              <item name="error" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xikecanteen" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xikecanteen" type="462c0819:PsiDirectoryNode" />
+              <item name="adminService" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -231,43 +228,6 @@
               <item name="adminService" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xikecanteen" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xikecanteen" type="462c0819:PsiDirectoryNode" />
-              <item name="adminService" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xikecanteen" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xikecanteen" type="462c0819:PsiDirectoryNode" />
-              <item name="adminService" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="adminService" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xikecanteen" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xikecanteen" type="462c0819:PsiDirectoryNode" />
-              <item name="adminService" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="adminService" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xikecanteen" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xikecanteen" type="462c0819:PsiDirectoryNode" />
-              <item name="adminService" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="adminService" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="xikecanteen" type="b2602c69:ProjectViewProjectNode" />
@@ -277,11 +237,20 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="xikecanteen" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xikecanteen" type="462c0819:PsiDirectoryNode" />
+              <item name="adminService" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mapping" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -294,7 +263,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="D:/work/2019-8-8-1" />
+    <property name="last_opened_file_path" value="D:/work/tops" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -303,8 +272,12 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\mystudy\xikecanteen\common\src\main\resources\lib" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\mystudy\xikecanteen\zuulService\src\main\resources\templates" />
+      <recent name="D:\mystudy\xikecanteen\eurekaService\src\main\java" />
+      <recent name="D:\mystudy\xikecanteen\eurekaService\src\main\resources" />
+      <recent name="D:\mystudy\xikecanteen\adminService\src\main\resources\mapping" />
+      <recent name="D:\mystudy\xikecanteen\common\src\main\java\com\canteen\common\pojo" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.canteen.common.pojo" />
@@ -312,12 +285,8 @@
       <recent name="com.canteen.common.pojoVo" />
       <recent name="com.canteen.common.util" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\mystudy\xikecanteen\eurekaService\src\main\java" />
-      <recent name="D:\mystudy\xikecanteen\eurekaService\src\main\resources" />
-      <recent name="D:\mystudy\xikecanteen\adminService\src\main\resources\mapping" />
-      <recent name="D:\mystudy\xikecanteen\common\src\main\java\com\canteen\common\pojo" />
-      <recent name="D:\mystudy\canteenproject\clientService\src\main\resources\mapping" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\mystudy\xikecanteen\common\src\main\resources\lib" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -533,11 +502,20 @@
       <workItem from="1564412140069" duration="5900000" />
       <workItem from="1565339514495" duration="382000" />
       <workItem from="1565339943208" duration="74000" />
+      <workItem from="1565833038378" duration="1425000" />
+      <workItem from="1565918479869" duration="656000" />
+      <workItem from="1565931357076" duration="645000" />
+      <workItem from="1566006398210" duration="1714000" />
+      <workItem from="1566115644630" duration="1088000" />
+      <workItem from="1566116833359" duration="212000" />
+      <workItem from="1566285772014" duration="1608000" />
+      <workItem from="1566289603514" duration="2964000" />
+      <workItem from="1566576873092" duration="1184000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="439894000" />
+    <option name="totallyTimeSpent" value="451390000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -550,8 +528,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21045576" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23592493" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -562,7 +541,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32956153" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.36685553" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49932975" weight="0.38526914" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49932975" visible="true" weight="0.38526914" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.30169973" />
@@ -603,48 +582,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/generator/src/main/resources/mapping/CartMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-449">
-          <caret line="18" column="20" lean-forward="true" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/generator/src/main/resources/mapping/FoodMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="8" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/generator/src/main/java/com/canteen/common/pojo/Address.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/clientService/src/main/resources/application-dev.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1026">
-          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/adminService/src/main/java/com/canteen/adminService/controller/AddressController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="26" column="32" lean-forward="true" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/adminService/src/main/java/com/canteen/adminService/util/EasyUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-551">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/adminService/src/main/resources/mapping/UserMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="874">
@@ -656,13 +593,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zuulService/src/main/resources/application-dev.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -825,13 +755,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/adminService/src/main/resources/application-dev.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="56" column="24" lean-forward="true" selection-start-line="56" selection-start-column="24" selection-end-line="56" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/adminService/src/main/java/com/canteen/adminService/controller/FoodController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="608">
@@ -867,23 +790,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/adminService/src/main/java/com/canteen/adminService/service/CartService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="130" column="64" selection-start-line="130" selection-start-column="64" selection-end-line="130" selection-end-column="64" />
-          <folding>
-            <element signature="e#3421#3429#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/adminService/src/main/java/com/canteen/adminService/config/AdminConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="27" column="48" lean-forward="true" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/adminService/src/main/java/com/canteen/adminService/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -905,29 +811,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eurekaService/src/main/java/com/canteen/eurekaService/eureka/EurekaApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#349#350#0" expanded="true" />
-            <element signature="e#408#409#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zuulService/src/main/java/com/canteen/zuulService/zuul/ZuulApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="16" column="44" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#629#630#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/adminService/src/main/java/com/canteen/adminService/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1277">
@@ -938,61 +821,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/adminService/src/main/java/com/canteen/adminService/AdminServiceApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#695#696#0" expanded="true" />
-            <element signature="e#760#761#0" expanded="true" />
-            <element signature="e#835#836#0" expanded="true" />
-            <element signature="e#876#877#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/clientService/src/main/java/com/canteen/clientService/ClientServiceApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#740#741#0" expanded="true" />
-            <element signature="e#781#782#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/softfile/maven2/repo/com/github/pagehelper/pagehelper/5.1.10/pagehelper-5.1.10.jar!/com/github/pagehelper/Page.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zuulService/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="44" lean-forward="true" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/adminService/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="14" selection-start-line="14" selection-end-line="21" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/adminService/src/main/java/com/canteen/adminService/controller/CanteenController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="63" column="31" lean-forward="true" selection-start-line="63" selection-start-column="31" selection-end-line="63" selection-end-column="31" />
-          <folding>
-            <element signature="e#1523#1524#0" expanded="true" />
-            <element signature="e#1586#1587#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1006,10 +838,149 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/adminService/src/main/java/com/canteen/adminService/controller/TestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adminService/src/main/java/com/canteen/adminService/service/CartService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-240">
+          <caret line="130" column="64" selection-start-line="130" selection-start-column="64" selection-end-line="130" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zuulService/src/main/resources/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="28" selection-start-column="28" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zuulService/src/main/resources/application-dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zuulService/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="40" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adminService/src/main/java/com/canteen/adminService/controller/CanteenController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="34" column="35" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="35" />
+          <folding>
+            <element signature="e#1523#1524#0" expanded="true" />
+            <element signature="e#1586#1587#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adminService/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adminService/src/main/java/com/canteen/adminService/config/AdminConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" selection-start-line="5" selection-end-line="7" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/adminService/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="103" column="19" selection-start-line="103" selection-start-column="19" selection-end-line="103" selection-end-column="19" />
+        <state relative-caret-position="95">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="45" column="30" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eurekaService/src/main/java/com/canteen/eurekaService/eureka/EurekaApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="44" lean-forward="true" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#408#409#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zuulService/src/main/java/com/canteen/zuulService/zuul/ZuulApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="13" column="24" lean-forward="true" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adminService/src/main/java/com/canteen/adminService/AdminServiceApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#695#696#0" expanded="true" />
+            <element signature="e#760#761#0" expanded="true" />
+            <element signature="e#835#836#0" expanded="true" />
+            <element signature="e#876#877#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clientService/src/main/java/com/canteen/clientService/ClientServiceApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#740#741#0" expanded="true" />
+            <element signature="e#781#782#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adminService/src/main/resources/logback-boot.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="98" lean-forward="true" selection-start-line="98" selection-end-line="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adminService/src/main/resources/mapping/AddressMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-151" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adminService/src/main/resources/mapping/CartInfoMapper.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adminService/src/main/resources/application-dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="37" column="8" lean-forward="true" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -1070,7 +1041,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>clientService</last-edited>
+          <last-edited>adminService</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
