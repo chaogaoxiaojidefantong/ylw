@@ -4,9 +4,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 public class GoApp {
     public static void main(String[] args) {
-        System.out.println("heh");
-        int []c={3,4,8,5,2};
-        quickSort(c,0,5);
+        int []c={3,4,8,5,2,7,10,9};
+        quickSort(c,0,7);
+            //regTest("759646095@qq.com");
     }
 
     public static void quickSort(int a[], int l, int r) {
@@ -38,5 +38,13 @@ public class GoApp {
         a[i] = key;
         quickSort(a, l, i - 1);//递归调用
         quickSort(a, i + 1, r);//递归调用
+    }
+
+
+    public  static  Boolean regTest(String val){
+        //String reg="/^[1]([3-9])[0-9]{9}$/";
+        String reg2="^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\\.[a-zA-Z0-9_-]+)+$";
+        Boolean res=val.matches(reg2);
+        return  res;
     }
 }
