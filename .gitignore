@@ -1,0 +1,4 @@
+adminService/log/
+**/target/**
+*/target/**
+/common/target/**
