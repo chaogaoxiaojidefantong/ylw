@@ -12,7 +12,7 @@ eureka:
     prefer-ip-address: true
     instance-id: ${spring.application.name}:${spring.cloud.client.ipAddress}:${spring.application.instance_id:${server.port}}
 
-hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 60000
+
 ribbon:
   ConnectTimeout: 60000
   #该时间是 zuul 转发请求的超时时间 。超过此时间，zuul 无法向下转发，报500错误
