@@ -27,7 +27,7 @@
     </dependencies>
 
     <build>
-        <finalName>zuul-10001</finalName>
+        <finalName>zuul-8181</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

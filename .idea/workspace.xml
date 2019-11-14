@@ -5,16 +5,56 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="52e70a48-0b4d-4345-8740-56d136f876f4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/canteenproject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/canteenproject.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/adminService/adminService.iml" beforeDir="false" afterPath="$PROJECT_DIR$/adminService/adminService.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/adminService/target/classes/META-INF/adminService.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminService/target/classes/com/canteen/adminService/AdminServiceApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminService/target/classes/com/canteen/adminService/config/AdminConfiguration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminService/target/classes/com/canteen/adminService/controller/AddressController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminService/target/classes/com/canteen/adminService/controller/CanteenController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminService/target/classes/com/canteen/adminService/controller/CartController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminService/target/classes/com/canteen/adminService/controller/CommentController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminService/target/classes/com/canteen/adminService/controller/FoodController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminService/target/classes/com/canteen/adminService/controller/OrderController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminService/target/classes/com/canteen/adminService/controller/OrderInfoController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminService/target/classes/com/canteen/adminService/controller/TestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminService/target/classes/com/canteen/adminService/controller/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminService/target/classes/com/canteen/adminService/dao/AddressMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminService/target/classes/com/canteen/adminService/dao/CanteenMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminService/target/classes/com/canteen/adminService/dao/CartInfoMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminService/target/classes/com/canteen/adminService/dao/CartMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminService/target/classes/com/canteen/adminService/dao/CommentMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminService/target/classes/com/canteen/adminService/dao/FoodMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminService/target/classes/com/canteen/adminService/dao/OrdMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminService/target/classes/com/canteen/adminService/dao/OrderInfoMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminService/target/classes/com/canteen/adminService/dao/UserMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminService/target/classes/com/canteen/adminService/service/AddressService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminService/target/classes/com/canteen/adminService/service/CanteenService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminService/target/classes/com/canteen/adminService/service/CartInfoService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminService/target/classes/com/canteen/adminService/service/CartService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminService/target/classes/com/canteen/adminService/service/CommentService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminService/target/classes/com/canteen/adminService/service/FoodService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminService/target/classes/com/canteen/adminService/service/OrderInfoService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminService/target/classes/com/canteen/adminService/service/OrderService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminService/target/classes/com/canteen/adminService/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminService/target/classes/com/canteen/adminService/util/EasyUtil.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/clientService/clientService.iml" beforeDir="false" afterPath="$PROJECT_DIR$/clientService/clientService.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientService/target/clientService-8091.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientService/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientService/target/classes/com/canteen/clientService/ClientServiceApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientService/target/classes/com/canteen/clientService/config/ClientConfiguration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientService/target/classes/com/canteen/clientService/controller/UserCollectController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientService/target/classes/com/canteen/clientService/dao/UserCollectMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientService/target/classes/com/canteen/clientService/service/UserCollectService.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/common/common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/common/common.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/target/classes/META-INF/common.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/canteen/common/util/RandomUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/canteen/common/util/RandomUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eurekaService/eurekaService.iml" beforeDir="false" afterPath="$PROJECT_DIR$/eurekaService/eurekaService.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eurekaService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eurekaService/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/generator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/generator/generator.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/generator/target/classes/META-INF/generator.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zipkinService/zipkinService.iml" beforeDir="false" afterPath="$PROJECT_DIR$/zipkinService/zipkinService.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuulService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/zuulService/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuulService/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/zuulService/src/main/resources/application-dev.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/zuulService/zuulService.iml" beforeDir="false" afterPath="$PROJECT_DIR$/zuulService/zuulService.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -45,23 +85,67 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eurekaService/src/main/java/com/canteen/eurekaService/eureka/EurekaApp.java">
+        <entry file="file://$PROJECT_DIR$/eurekaService/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="44" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#408#409#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="475">
+              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+        <entry file="file://$PROJECT_DIR$/zuulService/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="11" lean-forward="true" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+            <state relative-caret-position="152">
+              <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zuulService/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="10" column="40" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zuulService/src/main/resources/application-dev.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zuulService/src/main/java/com/canteen/zuulService/zuul/ZuulApp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/eurekaService/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/eurekaService/src/main/resources/application-dev.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="7" column="48" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -133,7 +217,6 @@
         <option value="$PROJECT_DIR$/adminService/src/main/resources/mapping/UserMapper.xml" />
         <option value="$PROJECT_DIR$/eurekaService/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/clientService/pom.xml" />
-        <option value="$PROJECT_DIR$/zuulService/src/main/resources/application-dev.yml" />
         <option value="$PROJECT_DIR$/adminService/src/main/java/com/canteen/adminService/controller/AddressController.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/adminService/src/main/resources/mapping/CanteenMapper.xml" />
@@ -159,14 +242,14 @@
         <option value="$PROJECT_DIR$/zuulService/src/main/java/com/canteen/zuulService/zuul/ZuulApp.java" />
         <option value="$PROJECT_DIR$/adminService/src/main/resources/application-dev.yml" />
         <option value="$PROJECT_DIR$/eurekaService/pom.xml" />
-        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/zuulService/src/main/resources/application-dev.yml" />
+        <option value="$PROJECT_DIR$/zuulService/pom.xml" />
       </list>
     </option>
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="localRepository" value="D:\softfile\maven2\repo" />
         <option name="mavenHome" value="D:/softfile/maven2/apache-maven-3.3.9" />
         <option name="userSettingsFile" value="D:\softfile\maven2\apache-maven-3.3.9\conf\settings.xml" />
       </MavenGeneralSettings>
@@ -184,28 +267,32 @@
     </option>
   </component>
   <component name="MavenProjectNavigator">
+    <option name="groupStructurally" value="true" />
     <treeState>
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="common" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Profiles" type="6783ec58:MavenProjectsStructure$ProfilesNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="common" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+          <item name="canteenproject" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="common" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
-          <item name="clean" type="36feed69:MavenProjectsStructure$PluginNode" />
+          <item name="canteenproject" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="canteenproject" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Modules" type="87271259:MavenProjectsStructure$ModulesNode" />
         </path>
       </expand>
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="15" />
     <option name="y" value="10" />
     <option name="width" value="1165" />
@@ -216,8 +303,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -228,18 +315,45 @@
             <path>
               <item name="ylw" type="b2602c69:ProjectViewProjectNode" />
               <item name="ylw" type="462c0819:PsiDirectoryNode" />
-              <item name="adminService" type="462c0819:PsiDirectoryNode" />
+              <item name="zuulService" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ylw" type="b2602c69:ProjectViewProjectNode" />
               <item name="ylw" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="zuulService" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ylw" type="b2602c69:ProjectViewProjectNode" />
               <item name="ylw" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="zuulService" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ylw" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ylw" type="462c0819:PsiDirectoryNode" />
+              <item name="zuulService" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ylw" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ylw" type="462c0819:PsiDirectoryNode" />
+              <item name="zuulService" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zuul" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ylw" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ylw" type="462c0819:PsiDirectoryNode" />
+              <item name="zuulService" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -257,13 +371,13 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../gs-service-registration-and-discovery-master/complete" />
+    <property name="last_opened_file_path" value="D:/javastudy/gs-service-registration-and-discovery-master" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -355,6 +469,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ClientServiceApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="clientService" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.canteen.clientService.ClientServiceApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EurekaApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="eurekaService" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.canteen.eurekaService.eureka.EurekaApp" />
@@ -379,8 +500,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.ZuulApp" />
-        <item itemvalue="Application.AdminServiceApp" />
         <item itemvalue="Application.ClientServiceApp" />
+        <item itemvalue="Application.AdminServiceApp" />
         <item itemvalue="Spring Boot.AdminServiceApp" />
         <item itemvalue="Application.GoApp" />
       </list>
@@ -505,17 +626,14 @@
       <workItem from="1566285772014" duration="1608000" />
       <workItem from="1566289603514" duration="2964000" />
       <workItem from="1566576873092" duration="1184000" />
-      <workItem from="1572354989877" duration="2188000" />
-      <workItem from="1572449674130" duration="932000" />
-      <workItem from="1572756134396" duration="1103000" />
-      <workItem from="1573270547651" duration="78000" />
-      <workItem from="1573649898473" duration="2277000" />
-      <workItem from="1573735554267" duration="956000" />
+      <workItem from="1573709371217" duration="300000" />
+      <workItem from="1573709730675" duration="2479000" />
+      <workItem from="1573729438703" duration="940000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="458924000" />
+    <option name="totallyTimeSpent" value="455109000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -527,10 +645,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25603217" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24360341" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -540,8 +658,8 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32956153" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3895184" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49932975" weight="0.39660057" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.36659437" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49932975" visible="true" weight="0.38503253" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.30169973" />
@@ -549,17 +667,17 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.3286119" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50067025" side_tool="true" weight="0.398017" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5010661" side_tool="true" weight="0.38503253" />
       <window_info anchor="bottom" id="Spring" order="12" weight="0.3286119" />
-      <window_info anchor="bottom" id="Java Enterprise" order="13" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" sideWeight="0.4989339" weight="0.329718" />
       <window_info anchor="bottom" id="Messages" order="14" weight="0.32719547" />
-      <window_info anchor="bottom" id="Problems" order="15" weight="0.36402267" />
+      <window_info anchor="bottom" id="Problems" order="15" sideWeight="0.7030917" weight="0.3275488" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="right" id="Maven" order="5" visible="true" weight="0.3150134" />
+      <window_info anchor="right" id="Maven" order="5" visible="true" weight="0.195629" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Database" order="8" />
@@ -582,6 +700,30 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/clientService/src/main/java/com/canteen/clientService/controller/UserCollectController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="31" column="44" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/canteen/common/pojo/OrderInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/canteen/common/pojo/Address.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="29" lean-forward="true" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/common/src/main/java/com/canteen/common/pojoVo/CommentVo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
@@ -798,20 +940,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zuulService/src/main/resources/application-dev.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zuulService/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="40" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/adminService/src/main/java/com/canteen/adminService/controller/CanteenController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -820,6 +948,13 @@
             <element signature="e#1523#1524#0" expanded="true" />
             <element signature="e#1586#1587#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adminService/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -837,10 +972,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/adminService/src/main/java/com/canteen/adminService/AdminServiceApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="45" column="30" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="30" />
+        <state relative-caret-position="171">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#695#696#0" expanded="true" />
+            <element signature="e#760#761#0" expanded="true" />
+            <element signature="e#835#836#0" expanded="true" />
+            <element signature="e#876#877#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -871,98 +1013,81 @@
     <entry file="file://$PROJECT_DIR$/adminService/src/main/resources/mapping/CartInfoMapper.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/clientService/src/main/java/com/canteen/clientService/controller/UserCollectController.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zuulService/src/main/java/com/canteen/zuulService/zuul/ZuulApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="14" column="42" lean-forward="true" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/adminService/src/main/java/com/canteen/adminService/AdminServiceApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#695#696#0" expanded="true" />
-            <element signature="e#760#761#0" expanded="true" />
-            <element signature="e#835#836#0" expanded="true" />
-            <element signature="e#876#877#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/adminService/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+        <state relative-caret-position="-95">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/adminService/src/main/resources/application-dev.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="33" column="21" lean-forward="true" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eurekaService/target/classes/com/canteen/eurekaService/eureka/EurekaApp.class">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eurekaService/eurekaService.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3420" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eurekaService/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="29" column="10" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eurekaService/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eurekaService/src/main/resources/application-dev.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+        <state relative-caret-position="53">
+          <caret line="37" column="8" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/eurekaService/src/main/java/com/canteen/eurekaService/eureka/EurekaApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="44" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
+        <state relative-caret-position="133">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#349#350#0" expanded="true" />
             <element signature="e#408#409#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/eurekaService/src/main/resources/application-dev.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="11" lean-forward="true" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+        <state relative-caret-position="133">
+          <caret line="7" column="48" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eurekaService/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eurekaService/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zuulService/src/main/resources/application-dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zuulService/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="40" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zuulService/src/main/java/com/canteen/zuulService/zuul/ZuulApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zuulService/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -1023,7 +1148,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>zuulService</last-edited>
+          <last-edited>adminService</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
