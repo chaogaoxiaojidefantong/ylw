@@ -9,6 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>adminService</artifactId>
+    <packaging>jar</packaging>
     <dependencies>
         <dependency>
             <groupId>javax.activation</groupId>
@@ -112,6 +113,13 @@
             <artifactId>pagehelper</artifactId>
             <version>5.1.10</version>
         </dependency>
+<!--        <dependency>-->
+<!--            <groupId>canteenproject</groupId>-->
+<!--            <version>1.0</version>-->
+<!--            <artifactId>common</artifactId>-->
+<!--            <scope>system</scope> <-->
+<!--            <systemPath>${basedir}\src\libs\common-1.0-SNAPSHOT.jar</systemPath> -->
+<!--        </dependency>-->
     </dependencies>
     <build>
         <finalName>adminService-8090</finalName>

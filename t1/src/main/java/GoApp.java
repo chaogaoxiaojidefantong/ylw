@@ -1,5 +1,6 @@
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import redis.clients.jedis.Jedis;
 
 
 public class GoApp {
@@ -8,6 +9,10 @@ public class GoApp {
         int []c={3,4,8,5,2};
         quickSort(c,0,5);
     }
+
+    Jedis jedis = new Jedis();
+
+
 
     public static void quickSort(int a[], int l, int r) {
         if (l >= r)

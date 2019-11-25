@@ -1,6 +1,7 @@
 package com.canteen.adminService.service;
 
 import com.canteen.adminService.dao.AddressMapper;
+import com.canteen.adminService.dao.CommentMapper;
 import com.canteen.common.pojo.Address;
 import com.canteen.common.vo.BiliResult;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,6 +17,8 @@ public class AddressService {
 
     @Autowired
     RestTemplate restTemplate;
+
+
 
     /**
      * 添加一条地址

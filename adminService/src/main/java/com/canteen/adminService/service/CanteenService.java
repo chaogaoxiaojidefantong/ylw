@@ -16,6 +16,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
+import redis.clients.jedis.Jedis;
 
 import java.io.File;
 import java.util.List;
@@ -35,6 +36,8 @@ public class CanteenService {
 
     @Autowired
     FoodMapper foodMapper;
+
+    Jedis jedis = new Jedis();
 
     /**
      * 添加食堂
@@ -72,6 +75,8 @@ public class CanteenService {
      * @return
      */
     public BiliResult selectCanteen(Canteen canteen) {
+//        jedis.set("name","sansan");
+//        String name=jedis.get("name");
         List<Canteen> list = canteenMapper.select(canteen);
         if (list.size() == 0) {
             return BiliResult.build(201, "查询失败或者没有数据");

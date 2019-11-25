@@ -10,4 +10,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>t1</artifactId>
+    <dependencies>
+        <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+        </dependency>
+    </dependencies>
 </project>
