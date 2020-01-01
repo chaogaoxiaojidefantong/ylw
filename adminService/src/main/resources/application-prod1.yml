@@ -3,12 +3,9 @@ spring:
     name: adminService
   datasource:
     name:
-#    url: jdbc:mysql://39.105.190.207:3306/canteen?useUnicode=true&characterEncoding=UTF-8
-#    username: root
-#    password: root123
-    url: jdbc:mysql://localhost:3306/canteen?useUnicode=true&characterEncoding=UTF-8
+    url: jdbc:mysql://39.105.190.207:3306/canteen?useUnicode=true&characterEncoding=UTF-8
     username: root
-    password:
+    password: root123
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.jdbc.Driver
     filters: stat
@@ -48,8 +45,7 @@ eureka:
       enabled: false   #关闭健康检查，不然无法注册到eureka注册中心
     #普通安全级别设置访问Eureka的访问密码
     serviceUrl:
-#      defaultZone: http://39.105.190.207:10003/eureka
-      defaultZone: http://localhost:10003/eureka
+      defaultZone: http://39.105.190.207:10003/eureka
   instance:
     prefer-ip-address: true
     #自定义 eureka 监控服务的ip服务名等
@@ -57,10 +53,8 @@ eureka:
 #ribbon.eureka.enable: true
 
 file:
-  dir: D:/canteen-upload
-  url: http://image.xikecanteen.com
-#  dir: /www/canteen/canteen-upload
-#  url: http://39.105.190.207:7779
+  dir: /www/canteen/canteen-upload
+  url: http://39.105.190.207:7779
 
 
 
