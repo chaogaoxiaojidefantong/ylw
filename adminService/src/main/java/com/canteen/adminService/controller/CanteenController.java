@@ -12,9 +12,9 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
-
+import org.apache.poi.hwpf.extractor.WordExtractor;
 import java.util.Map;
-
+import  org.apache.poi.hwpf.HWPFDocument;
 @RestController
 @RequestMapping("/Canteen")
 public class CanteenController {
@@ -51,6 +51,17 @@ public class CanteenController {
     public BiliResult uploadCanteenPhoto(MultipartFile file,Canteen canteen){
         return  canteenService.uploadCanteenPhoto(file,canteen);
     }
+
+    @RequestMapping("/uploadDoc")
+    public  BiliResult uploadDoc(MultipartFile file){
+        System.out.println("shazi");
+        return  canteenService.uploadDoc(file);
+    }
+
+
+
+
+
     /**
      * 通过名字模糊查询
      * @param canteenName

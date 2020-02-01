@@ -40,8 +40,8 @@ public class UserService {
         if (user1 == null) {
             return BiliResult.build(201, "登录有误");
         } else {
-            //Map map = handleToken(user1);
-            return BiliResult.oK(user1);
+            Map map = handleToken(user1);
+            return BiliResult.oK(map);
         }
     }
 

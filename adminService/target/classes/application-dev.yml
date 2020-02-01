@@ -57,9 +57,9 @@ eureka:
 #ribbon.eureka.enable: true
 
 file:
-#  dir: D:/canteen-upload
+  dir: D:/canteen-upload
 #  url: http://image.xikecanteen.com
-  dir: /www/canteen/canteen-upload
+#  dir: /www/canteen/canteen-upload
   url: http://39.105.190.207:7779
 
 

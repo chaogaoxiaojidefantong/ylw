@@ -14,6 +14,6 @@ eureka:
 
 
 ribbon:
-  ConnectTimeout: 600000
+  ConnectTimeout: 1000000
   #该时间是 zuul 转发请求的超时时间 。超过此时间，zuul 无法向下转发，报500错误
-  ReadTimeout: 600000
+  ReadTimeout: 1000000
