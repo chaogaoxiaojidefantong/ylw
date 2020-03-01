@@ -1,16 +1,14 @@
 package com.canteen.common.util;
-import java.util.Properties;
-import javax.mail.Authenticator;
-import javax.mail.Message;
-import javax.mail.MessagingException;
-import javax.mail.PasswordAuthentication;
-import javax.mail.Session;
-import javax.mail.Transport;
+
+import javax.mail.*;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
+import java.util.Properties;
+
+
 public class EmailUtil {
     public String emailFrom="759646095@qq.com";
-    public String emailAuthorization="osncxfknzvhqbdgb";
+    public String emailAuthorization="boxpurjjugqmbfbc";
     public String getEmailFrom() {
         return emailFrom;
     }
@@ -29,7 +27,6 @@ public class EmailUtil {
     public void setEmailAuthorization(String emailAuthorization) {
         this.emailAuthorization = emailAuthorization;
     }
-
 
     /**
      *
@@ -76,4 +73,5 @@ public class EmailUtil {
         }
         return verifyCode;
     }
+
 }

@@ -1,12 +1,12 @@
 package com.canteen.common.util;
 
-import java.awt.image.BufferedImage;
-import java.io.File;
-
-import javax.imageio.ImageIO;
 
 import com.canteen.common.vo.PicUploadResult;
 import org.springframework.web.multipart.MultipartFile;
+
+import javax.imageio.ImageIO;
+import java.awt.image.BufferedImage;
+import java.io.File;
 
 
 public class UploadImg {
@@ -18,7 +18,7 @@ public class UploadImg {
 	 * @param productName 图片要放在的文件夹名
 	 * @return
 	 */
-	public static  PicUploadResult doImgUpload(MultipartFile file, String dirPath, String urlPath, String productName) {
+	public static PicUploadResult doImgUpload(MultipartFile file, String dirPath, String urlPath, String productName) {
 		PicUploadResult result=new PicUploadResult();
 		String fileName=file.getOriginalFilename();
 		fileName=fileName.toLowerCase();

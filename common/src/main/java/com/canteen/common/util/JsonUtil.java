@@ -1,16 +1,11 @@
 	package com.canteen.common.util;
 
-import java.io.IOException;
-import java.util.ArrayList;
+    import com.fasterxml.jackson.core.JsonProcessingException;
+    import com.fasterxml.jackson.databind.ObjectMapper;
+    import net.sf.json.JSONArray;
 
-import java.util.List;
-
-import com.fasterxml.jackson.core.JsonProcessingException;
-
-import com.fasterxml.jackson.databind.JsonMappingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
-
-import net.sf.json.JSONArray;
+    import java.util.ArrayList;
+    import java.util.List;
 
     public class JsonUtil<T> {
         /**

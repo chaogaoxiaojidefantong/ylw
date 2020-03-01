@@ -48,14 +48,14 @@ public class FileUtil {
      * @return
      */
     public static String uploadFile(MultipartFile file, String dirPath, String urlPath, String productName){
-        String fileName=file.getOriginalFilename();
-        fileName=fileName.toLowerCase();
-        String filePath=dirPath+"/"+productName;
-        File mkdirFile=new File(filePath);//创建文件夹
-        if(!mkdirFile.exists()) {
-            mkdirFile.mkdirs();
-        }
-        File reallyFile=new File(filePath+"/"+fileName);
+            String fileName=file.getOriginalFilename();
+            fileName=fileName.toLowerCase();
+            String filePath=dirPath+"/"+productName;
+            File mkdirFile=new File(filePath);//创建文件夹
+            if(!mkdirFile.exists()) {
+                mkdirFile.mkdirs();
+            }
+            File reallyFile=new File(filePath+"/"+fileName);
         try {
             file.transferTo(reallyFile);
             String url=urlPath+"/"+productName+"/"+fileName;
